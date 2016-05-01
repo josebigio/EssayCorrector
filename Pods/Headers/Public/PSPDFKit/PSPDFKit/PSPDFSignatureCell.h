@@ -1,0 +1,1 @@
+../../../../PSPDFKit/PSPDFKit.framework/Headers/PSPDFSignatureCell.h

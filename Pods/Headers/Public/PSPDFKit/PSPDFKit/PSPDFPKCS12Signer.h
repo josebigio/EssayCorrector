@@ -1,0 +1,1 @@
+../../../../PSPDFKit/PSPDFKit.framework/Headers/PSPDFPKCS12Signer.h

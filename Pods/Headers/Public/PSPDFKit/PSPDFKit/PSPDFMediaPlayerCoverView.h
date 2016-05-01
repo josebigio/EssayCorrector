@@ -1,0 +1,1 @@
+../../../../PSPDFKit/PSPDFKit.framework/Headers/PSPDFMediaPlayerCoverView.h

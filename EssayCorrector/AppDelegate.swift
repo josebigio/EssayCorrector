@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PSPDFKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        PSPDFKit.setLicenseKey("TAQBcd1mzc3/yk2VvHhxnTsgIsEYWOFKodI2KPBv+NIIbT4IUm4PhMp6EUlR+4TckaZf9J2QPquXkmzsvOea8ewkQPpHl5PP1QQdrPrJx+E14gX4raF+QliDcPvLDp0IEwYOda0zy1hSod5cnjGiciGorUyyusvTdMXSV27pAnXIrbV4ecufHPzfZauuCVTXVnL3VeMBIQFUAkqZdAz42aAYAWOghDJcRVoKBkxuzfC5zDEia50iIlq2Y0DGHTDuuNZpBABiEIqeH7ls7fJXit2BFMvuDQwO1qnuRtfXwsa/E2YEf4jT1WM1gcoIjELvi0QRWmVbgdxkp3Q56YZGVmFMmA/hQeoAjgcKLOB1y+NxQ9AeC9xoxQq09fzlo2eIEsfvLIuAKk893ExOVdCyAfcChpvkZ5xMxW3ztAaZKUnzXa319WCyDlGiJ45FoNuc")
         return true
     }
 
@@ -40,7 +42,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        print("trying to open the file");
+        NSUserDefaults.standardUserDefaults().setValue(url.absoluteString, forKey: ViewController.LAST_FILE_KEY)
+        return true;
+    }
+    
+    func getDocumentsDirectory() -> NSString {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
 
 }
 

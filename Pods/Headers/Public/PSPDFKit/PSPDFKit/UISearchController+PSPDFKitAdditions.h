@@ -1,0 +1,1 @@
+../../../../PSPDFKit/PSPDFKit.framework/Headers/UISearchController+PSPDFKitAdditions.h

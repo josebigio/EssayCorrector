@@ -1,0 +1,10 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/PSPDFKit/**" "${PODS_ROOT}/PSPDFKit"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2 $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PSPDFKit"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Alamofire.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FileBrowser.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Mapper.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Moya.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Moya_ModelMapper.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Result.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/RxCocoa.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/RxOptional.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/RxSwift.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/PSPDFKit"
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"sqlite3" -l"xml2" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "Alamofire" -framework "AssetsLibrary" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreText" -framework "FileBrowser" -framework "Foundation" -framework "GLKit" -framework "ImageIO" -framework "JavaScriptCore" -framework "Mapper" -framework "MediaPlayer" -framework "MessageUI" -framework "MobileCoreServices" -framework "Moya" -framework "Moya_ModelMapper" -framework "OpenGLES" -framework "PSPDFKit" -framework "QuartzCore" -framework "QuickLook" -framework "Result" -framework "RxCocoa" -framework "RxOptional" -framework "RxSwift" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-EssayCorrector
+PODS_ROOT = ${SRCROOT}/Pods
