@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7A01336926E92408D469112B'
-               BlueprintName = 'Moya'
+               BlueprintIdentifier = '57DA2BE053BC7F84A603001F'
+               BlueprintName = 'PySwiftyRegex'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Moya.framework'>
+               BuildableName = 'PySwiftyRegex.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

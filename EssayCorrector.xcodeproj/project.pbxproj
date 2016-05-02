@@ -16,6 +16,7 @@
 		4D2AD99D1CC5D52B000E8812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2AD99B1CC5D52B000E8812 /* LaunchScreen.storyboard */; };
 		4D2AD9A81CC5D52B000E8812 /* EssayCorrectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2AD9A71CC5D52B000E8812 /* EssayCorrectorTests.swift */; };
 		4D2AD9B31CC5D52B000E8812 /* EssayCorrectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2AD9B21CC5D52B000E8812 /* EssayCorrectorUITests.swift */; };
+		4DDCE2621CD68D8D0008C95C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCE2611CD68D8D0008C95C /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4D2AD9AE1CC5D52B000E8812 /* EssayCorrectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssayCorrectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D2AD9B21CC5D52B000E8812 /* EssayCorrectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssayCorrectorUITests.swift; sourceTree = "<group>"; };
 		4D2AD9B41CC5D52B000E8812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDCE2611CD68D8D0008C95C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7F9F20C46E20E908AF3405AD /* Pods-EssayCorrector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EssayCorrector.release.xcconfig"; path = "Pods/Target Support Files/Pods-EssayCorrector/Pods-EssayCorrector.release.xcconfig"; sourceTree = "<group>"; };
 		A67D9091E9E2B8F3E4237352 /* Pods_EssayCorrector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EssayCorrector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 				4D2AD9991CC5D52B000E8812 /* Assets.xcassets */,
 				4D2AD99B1CC5D52B000E8812 /* LaunchScreen.storyboard */,
 				4D2AD99E1CC5D52B000E8812 /* Info.plist */,
+				4DDCE2611CD68D8D0008C95C /* Utilities.swift */,
 			);
 			path = EssayCorrector;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDCE2621CD68D8D0008C95C /* Utilities.swift in Sources */,
 				4D2AD9951CC5D52B000E8812 /* ViewController.swift in Sources */,
 				4D2AD9931CC5D52B000E8812 /* AppDelegate.swift in Sources */,
 			);

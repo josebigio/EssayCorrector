@@ -9,10 +9,14 @@
 import UIKit
 import PSPDFKit
 
+protocol FileChangerDelegate: class {
+    func onFileChanged(sender: AppDelegate)
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
+    static var changerDelegate: FileChangerDelegate?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -46,6 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
         print("trying to open the file");
         NSUserDefaults.standardUserDefaults().setValue(url.absoluteString, forKey: ViewController.LAST_FILE_KEY)
+        AppDelegate.changerDelegate?.onFileChanged(self)
         return true;
     }
     

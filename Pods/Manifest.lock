@@ -18,6 +18,7 @@ PODS:
     - Moya/Core
     - RxSwift (~> 2.0)
   - PSPDFKit (5.3.3)
+  - PySwiftyRegex (0.2.2)
   - Result (2.0.0)
   - RxCocoa (2.4):
     - RxSwift (~> 2.4)
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - Moya-ModelMapper/RxSwift
   - Moya/RxSwift
   - PSPDFKit (from `https://customers.pspdfkit.com/cocoapods/07zJIrQpBT01ce0XuO1zzhbF6rLOLFfBni968oB2_8rcq2VNmGAwcT_WN5Oi3oInuDLDwsSixPURzOCRnceO_w/latest.podspec`)
+  - PySwiftyRegex (~> 0.2.0)
   - RxCocoa
   - RxOptional
 
@@ -45,6 +47,7 @@ SPEC CHECKSUMS:
   Moya: 4d526954c8afd79820991393d40d7d8af756ceee
   Moya-ModelMapper: 8956f8e834eea3cf776e79ddbf6680e0d53c5923
   PSPDFKit: 9b9ab3bee7df37e4138f33167310b51db497218e
+  PySwiftyRegex: 78f989c59ee3bec812f9dc980b3723d60d0e5dca
   Result: 9e75e1111c774c6ac594e14907b15057053a7959
   RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
   RxOptional: b77fb47a0190213cf8a37c7a2b7fda28160b4563

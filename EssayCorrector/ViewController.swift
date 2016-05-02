@@ -10,8 +10,11 @@ import UIKit
 import RxSwift
 import PSPDFKit
 import FileBrowser
+import PySwiftyRegex
 
-class ViewController: UIViewController, PSPDFDocumentDelegate {
+
+class ViewController: UIViewController, PSPDFDocumentDelegate, FileChangerDelegate {
+    
     
     
     @IBOutlet weak var pdfView: UIView!
@@ -24,6 +27,7 @@ class ViewController: UIViewController, PSPDFDocumentDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad()")
+        AppDelegate.changerDelegate = self
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -39,12 +43,18 @@ class ViewController: UIViewController, PSPDFDocumentDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    func onFileChanged(sender: AppDelegate) {
+        initialize()
+    }
+    
     func initialize() {
         if let lastFile = NSUserDefaults.standardUserDefaults().stringForKey(ViewController.LAST_FILE_KEY) {
             let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+            print("utilities:" + Utilities.fixPath(lastFile)!)
             print("lastFile: " + lastFile)
             print("Documents dir: " + documentsPath)
-            document = PSPDFDocument(URL: NSURL(fileURLWithPath: lastFile))
+            let correctedPath = Utilities.fixPath(lastFile)
+            document = PSPDFDocument(URL: NSURL(fileURLWithPath: correctedPath!))
             if(pdfController == nil) {
                 setUpPDFVC(document!)
             }
