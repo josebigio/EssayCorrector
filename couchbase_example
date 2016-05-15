@@ -1,0 +1,110 @@
+//
+//  NotesViewController.swift
+//  EssayCorrector
+//
+//  Created by Jose Bigio on 5/8/16.
+//  Copyright © 2016 Jose Bigio. All rights reserved.
+//
+
+import Foundation
+class NotesViewController: UIViewController{
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("Notes: viewDidLoad()")
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        print("viewDidAppear")
+        let database = CBObjects.sharedInstance.database
+        createDocument(database!, name: "jose", age: "16",date:"2015")
+        createDocument(database!, name: "diego", age: "16",date: "2016")
+        createDocument(database!, name: "luis", age: "16",date: "2017")
+        createDocument(database!, name: "andres", age: "16",date: "2012")
+
+        createOrderedByDateView()
+        outputOrderedByDate()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func createDocument(databse: CBLDatabase, name:String, age:String, date: String) -> String {
+        let dict :[String:String] = ["Name":name,"Age":age,"Date":date]
+        let doc = databse.createDocument()
+        let docID = doc.documentID
+        var docRev:CBLSavedRevision?
+        do {
+            docRev = try doc.putProperties(dict)
+        }
+        catch {
+            
+        }
+        if((docRev) != nil) {
+            print("Document with " + docID + " created")
+        }
+        return docID
+    }
+    
+    func updateDocument(databse:CBLDatabase,docID: String) -> Bool {
+        let doc = databse.documentWithID(docID)
+        var properties = doc?.properties
+        properties!["Address"] = "1000 East 5th street, apt 419"
+        let newRev: CBLRevision
+        do {
+            newRev = try doc!.putProperties(properties!)
+            print("updated document \(docID), revision: \(newRev.properties) ")
+        }
+        catch let error as NSError{
+            print("could not update document: " + error.localizedDescription)
+            return false
+        }
+       
+        return true
+    }
+    
+    func getView() -> CBLView {
+        return (CBObjects.sharedInstance.database?.viewNamed("byDate"))!
+    }
+   
+    func createOrderedByDateView() {
+        let phoneView = getView()
+        phoneView.setMapBlock({ (doc, emit) in
+            if let phone = doc["Date"] as? String {
+               emit(phone, doc["Name"])
+            }
+            }, version: "2")
+    }
+
+    func outputOrderedByDate() {
+        let orderedByDateView = getView()
+        var orderedByDateQuery = orderedByDateView.createQuery()
+        orderedByDateQuery.descending = true
+//        orderedByDateQuery.startKey = "2012"
+//        orderedByDateQuery.endKey = "2016"
+        orderedByDateQuery.limit = 100
+        var result: CBLQueryEnumerator?
+        do {
+            try result = orderedByDateQuery.run()
+        }
+        catch let error as NSError{
+            print("Error quering: \(error)")
+        }
+        if(result != nil) {
+            for row in result! {
+                print("row: \(row)")
+            }
+        }
+        
+    }
+}
+
+
