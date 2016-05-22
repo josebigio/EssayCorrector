@@ -11,8 +11,7 @@ import UIKit
 class CriteriaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var criteria: UILabel!
-    @IBOutlet weak var addSubCriteria: UIButton!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

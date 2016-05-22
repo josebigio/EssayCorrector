@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BWGradientView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>ECStepperLabel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
 		<key>EssayCorrector.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>4D2AD9AD1CC5D52B000E8812</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D3280851CF0F1EA00F20E8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DDF5D331CE9671000800A2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

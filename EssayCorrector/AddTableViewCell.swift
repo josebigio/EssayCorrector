@@ -11,6 +11,7 @@ import UIKit
 class AddTableViewCell: UITableViewCell {
 
     @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var totalLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

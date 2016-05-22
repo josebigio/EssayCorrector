@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ukD-ip-O4u">
-                                <rect key="frame" x="0.0" y="64" width="600" height="503"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="360"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Hbg-G6-Niu" customClass="SubCriteriaTableViewCell" customModule="EssayCorrector" customModuleProvider="target">
@@ -62,25 +62,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09d-U3-KeY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09d-U3-KeY">
                                                     <rect key="frame" x="13" y="11" width="302" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4AH-Cl-RU0">
-                                                    <rect key="frame" x="451" y="11" width="77" height="27"/>
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-u4-pCi" customClass="ECStepperLabel" customModule="ECStepperLabel">
+                                                    <rect key="frame" x="458" y="3" width="120" height="36.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="B5F-u4-pCi" secondAttribute="trailing" constant="14" id="2Mt-8W-hsI"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="09d-U3-KeY" secondAttribute="bottom" constant="3.5" id="49a-05-UWb"/>
                                                 <constraint firstItem="09d-U3-KeY" firstAttribute="top" secondItem="miw-mc-cxc" secondAttribute="topMargin" constant="3" id="7E4-MM-m4Z"/>
+                                                <constraint firstItem="B5F-u4-pCi" firstAttribute="centerY" secondItem="miw-mc-cxc" secondAttribute="centerY" id="L6D-aI-Z10"/>
                                                 <constraint firstItem="09d-U3-KeY" firstAttribute="leading" secondItem="miw-mc-cxc" secondAttribute="leadingMargin" constant="5" id="mY1-IR-sBb"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="09d-U3-KeY" secondAttribute="trailing" constant="277" id="xHe-Or-PcD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="score" destination="B5F-u4-pCi" id="Acc-Gk-CTG"/>
                                             <outlet property="subCriteria" destination="09d-U3-KeY" id="JGk-gn-hbA"/>
                                         </connections>
                                     </tableViewCell>
@@ -97,24 +99,18 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9y-LM-YeM">
-                                                    <rect key="frame" x="537" y="11" width="22" height="22"/>
-                                                </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="aVW-43-ewy" firstAttribute="leading" secondItem="l8q-iw-l3J" secondAttribute="leadingMargin" constant="9" id="3YT-Zq-SF6"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="e9y-LM-YeM" secondAttribute="trailing" constant="33" id="dRt-tv-0iX"/>
-                                                <constraint firstItem="e9y-LM-YeM" firstAttribute="centerY" secondItem="l8q-iw-l3J" secondAttribute="centerY" id="m03-dZ-sOr"/>
                                                 <constraint firstItem="aVW-43-ewy" firstAttribute="centerY" secondItem="l8q-iw-l3J" secondAttribute="centerY" id="sty-MB-0pc"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="addSubCriteria" destination="e9y-LM-YeM" id="HAV-op-F4A"/>
                                             <outlet property="criteria" destination="aVW-43-ewy" id="YAb-0v-fEf"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCell" id="JcS-Dc-fWb" customClass="AddTableViewCell" customModule="EssayCorrector" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addCriteriaCell" id="JcS-Dc-fWb" customClass="AddTableViewCell" customModule="EssayCorrector" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="180" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JcS-Dc-fWb" id="PRd-SA-5Cy">
@@ -124,15 +120,45 @@
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJF-dc-Tt1">
                                                     <rect key="frame" x="268" y="11" width="22" height="22"/>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-zz-gZv">
+                                                    <rect key="frame" x="457" y="8" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="DJF-dc-Tt1" firstAttribute="centerY" secondItem="PRd-SA-5Cy" secondAttribute="centerY" id="GTj-iC-s74"/>
                                                 <constraint firstItem="DJF-dc-Tt1" firstAttribute="centerX" secondItem="PRd-SA-5Cy" secondAttribute="centerX" id="Jzg-Ff-PYr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bz3-zz-gZv" secondAttribute="trailing" constant="93" id="pa7-aT-LpR"/>
+                                                <constraint firstItem="bz3-zz-gZv" firstAttribute="centerY" secondItem="PRd-SA-5Cy" secondAttribute="centerY" id="vxd-lP-3iq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addButton" destination="DJF-dc-Tt1" id="Cy3-UP-aw7"/>
+                                            <outlet property="totalLabel" destination="bz3-zz-gZv" id="7gl-KB-1cf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addSubCriteriaCell" id="90S-F1-llk" customClass="AddSubCriteriaFooterCell" customModule="EssayCorrector" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="224" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="90S-F1-llk" id="qrJ-F6-epI">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-Qc-kAB">
+                                                    <rect key="frame" x="289" y="11" width="22" height="22"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="bwe-Qc-kAB" firstAttribute="centerX" secondItem="90S-F1-llk" secondAttribute="centerX" id="SGS-gm-jV2"/>
+                                            <constraint firstItem="bwe-Qc-kAB" firstAttribute="centerY" secondItem="90S-F1-llk" secondAttribute="centerY" id="mEU-Mj-8NT"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="addButton" destination="bwe-Qc-kAB" id="g2M-Tw-I6J"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -144,13 +170,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Tjs-Yf-VxZ" firstAttribute="top" secondItem="ukD-ip-O4u" secondAttribute="bottom" constant="132" id="HEu-NV-IpQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ukD-ip-O4u" secondAttribute="trailing" constant="-20" id="LXf-Vi-v9T"/>
                             <constraint firstItem="ukD-ip-O4u" firstAttribute="leading" secondItem="kT5-y8-fnO" secondAttribute="leadingMargin" constant="-20" id="Z6N-H0-tZm"/>
-                            <constraint firstItem="Tjs-Yf-VxZ" firstAttribute="top" secondItem="ukD-ip-O4u" secondAttribute="bottom" constant="-16" id="srK-OJ-DIr"/>
                             <constraint firstItem="ukD-ip-O4u" firstAttribute="top" secondItem="LDq-NG-qYs" secondAttribute="bottom" id="tDY-om-0UH"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="JQc-aa-f41"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="formTableView" destination="ukD-ip-O4u" id="M5H-xq-mqG"/>
                     </connections>
