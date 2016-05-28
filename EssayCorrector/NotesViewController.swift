@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class NotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddSubCriteriaFooterCellDelegate,SubCriteriaTableViewCellDelegate{
+class NotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddSubCriteriaFooterCellDelegate,SubCriteriaTableViewCellDelegate, SavedFormatViewControllerDelegate{
 
     @IBOutlet weak var formTableView: UITableView!
     let DEFAULT_MAX_SCORE = 5
@@ -19,7 +19,6 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     var data = ScoreData()
-    
     var footerCell:AddTableViewCell?
     
     
@@ -32,10 +31,19 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         footerCell = formTableView.dequeueReusableCellWithIdentifier("addCriteriaCell") as? AddTableViewCell
         footerCell!.addButton.addTarget(self, action: #selector(NotesViewController.addCriteria(_:)), forControlEvents: .TouchUpInside)
         formTableView.tableFooterView = footerCell!.contentView
+        let loadButton = self.navigationItem.rightBarButtonItems![1]
+        loadButton.action = #selector(NotesViewController.showStoredFormatVC)
+        loadButton.target = self
+       
+        let saveButton = self.navigationItem.rightBarButtonItems![0]
+        saveButton.target = self
+        saveButton.action = #selector(NotesViewController.saveData)
+
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        recalculateScore()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,7 +66,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var count = 0
-        for(criteria,subCriterias) in data.data {
+        for(criteria,subCriterias) in data.getData() {
             if(count == indexPath.row) {
                 //it is a CriteriaTableViewCell
                 let cell = tableView.dequeueReusableCellWithIdentifier("headerCell") as! CriteriaTableViewCell
@@ -94,7 +102,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         var count = 0
-        for(_,subcriteria)in data.data {
+        for(_,subcriteria)in data.getData() {
             if(count == indexPath.row) {
                 return true
             }
@@ -117,17 +125,19 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             var count = 0
-            for(criteria,subCriterias) in data.data {
+            var tempData = data.getData()
+            for(criteria,subCriterias) in tempData {
                 if(count == indexPath.row) {
                     var rowToDeleteCount = 1
                     var indexPaths = [NSIndexPath]()
                     indexPaths.append(indexPath)
-                    for _ in data.data[criteria]! {
+                    for _ in tempData[criteria]! {
                         indexPaths.append(NSIndexPath(forRow: rowToDeleteCount + indexPath.row, inSection: indexPath.section))
                         rowToDeleteCount+=1
                     }
                     indexPaths.append(NSIndexPath(forRow: rowToDeleteCount + indexPath.row, inSection: indexPath.section)) //for the addCell
-                    data.data.removeValueForKey(criteria)
+                    tempData.removeValueForKey(criteria)
+                    data.setData(tempData)
                     tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
                     recalculateScore()
                     return
@@ -137,9 +147,10 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                     var subCriteriaNum = 0
                     if(count == indexPath.row) {
                         //it is a SubCriteriaTableViewCell
-                        var subCriterias = data.data[criteria]
+                        var subCriterias = tempData[criteria]
                         subCriterias?.removeAtIndex(subCriteriaNum)
-                        data.data[criteria] = subCriterias
+                        tempData[criteria] = subCriterias
+                        data.setData(tempData)
                         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                         recalculateScore()
                         return
@@ -162,7 +173,8 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // MARK: SubCriteriaTableViewCellDelegate
     func scoreChanged(cell: SubCriteriaTableViewCell) {
-        for (criteria,subCriterias) in data.data {
+        var tempData = data.getData()
+        for (criteria,subCriterias) in tempData {
             var index = 0
             for subCriteria in subCriterias {
                 if(subCriteria.0.containsString(cell.subCriteria.text!)) {
@@ -170,13 +182,20 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                     var newCriteria = subCriteria
                     newCriteria.1.0 = cell.score.getScore()
                     newSubCriterias[index] = newCriteria
-                    data.data[criteria] = newSubCriterias
+                    tempData[criteria] = newSubCriterias
+                    data.setData(tempData)
                     recalculateScore()
                     return
                 }
                 index+=1
             }
         }
+    }
+    
+    //MARK SavedFormatViewControllerDelegate
+    func onFormatSelected(format: ScoreData) {
+        data = format
+        formTableView.reloadData()
     }
     
     // MARK AddSubCriteriaFooterCellDelegate
@@ -190,9 +209,11 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                 if (score == nil) {
                     score = self.DEFAULT_MAX_SCORE
                 }
-                var subCriterias = self.data.data[criteria!]
+                var tempData = self.data.getData()
+                var subCriterias = tempData[criteria!]
                 subCriterias?.append((name,(0,score!)))
-                self.data.data[criteria!] = subCriterias
+                tempData[criteria!] = subCriterias
+                self.data.setData(tempData)
                 self.formTableView.reloadData()
                 self.recalculateScore()
             }
@@ -205,10 +226,12 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // MARK private helpers
     func addSubCriteria(section: Int, subCriteria: String, maxScore:Int) {
-        var keys = [String](data.data.keys)
-        var subCriterias = data.data[keys[section]]
+        var tempData = data.getData()
+        var keys = [String](tempData.keys)
+        var subCriterias = tempData[keys[section]]
         subCriterias?.append((subCriteria,(0,maxScore)))
-        data.data[keys[section]] = subCriterias
+        tempData[keys[section]] = subCriterias
+        data.setData(tempData)
         formTableView.reloadData()
     }
     
@@ -217,7 +240,9 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         alertController.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
         alertController.addAction(UIAlertAction(title: "Add", style: .Default, handler: { (action: UIAlertAction) in
             if alertController.textFields!.first!.text!.characters.count > 0 {
-                self.data.data[alertController.textFields!.first!.text!] = []
+                var tempData = self.data.getData()
+                tempData[alertController.textFields!.first!.text!] = []
+                self.data.setData(tempData)
                 self.formTableView.reloadData()
             }
         }))
@@ -234,7 +259,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     private func getNumberOffCells() -> Int {
         var result = 0
-        for (_, subCriterias) in data.data {
+        for (_, subCriterias) in data.getData() {
             result+=2 //+2 to account for the subfooter and subheader
             for _ in subCriterias {
                 result+=1
@@ -242,6 +267,27 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         return result
    }
+    
+    func showStoredFormatVC() {
+        print("showStoredFormatVC")
+        let sfvc = self.storyboard?.instantiateViewControllerWithIdentifier("SavedFormatViewController") as! SavedFormatViewController
+        sfvc.delegate = self
+        navigationController?.pushViewController(sfvc, animated: true)
+    }
+    
+    func saveData() {
+        let alertController = UIAlertController(title: "Save Format", message: "", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Save", style: .Default, handler: { (action: UIAlertAction) in
+            if alertController.textFields!.first!.text!.characters.count > 0 {
+                self.data.setFileName(alertController.textFields!.first!.text!)
+                FormLoader.save(self.data)
+            }
+        }))
+        alertController.addTextFieldWithConfigurationHandler { (tf:UITextField) in}
+        presentViewController(alertController, animated: true, completion: nil)
+
+    }
     
     
 }

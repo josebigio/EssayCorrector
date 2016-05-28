@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.3.1)
+  - CXAlertView (1.1.0)
   - FileBrowser (0.1.4)
   - ModelMapper (2.0.0)
   - Moya (6.4.0):
@@ -28,6 +29,7 @@ PODS:
   - RxSwift (2.4)
 
 DEPENDENCIES:
+  - CXAlertView
   - FileBrowser (~> 0.1)
   - Moya-ModelMapper/RxSwift
   - Moya/RxSwift
@@ -42,6 +44,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  CXAlertView: 7387ca9af81796ab22d26ff2fc3cfcb082f3ee09
   FileBrowser: 4e48c118606571cf59fd1d20930ac41887c026d0
   ModelMapper: ba9a60ef4c695c3082e404fc14062e189dcc8409
   Moya: 4d526954c8afd79820991393d40d7d8af756ceee

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4F024A28B59EB41F92C529B1'
+               BlueprintIdentifier = 'D90775A13BCA7F872FA7FCE9'
                BlueprintName = 'Pods-EssayCorrector'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_EssayCorrector.framework'>

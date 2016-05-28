@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		302878F1D4CA22565BCEF763 /* Pods_EssayCorrector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67D9091E9E2B8F3E4237352 /* Pods_EssayCorrector.framework */; };
+		4D0FE3AA1CF8935200BE765F /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE3A91CF8935200BE765F /* CommentsViewController.swift */; };
+		4D0FE3AC1CF8970D00BE765F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE3AB1CF8970D00BE765F /* CommentCell.swift */; };
+		4D0FE3AE1CF8977C00BE765F /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE3AD1CF8977C00BE765F /* AddCommentCell.swift */; };
+		4D0FE3B21CF9532F00BE765F /* CommentSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE3B11CF9532F00BE765F /* CommentSaver.swift */; };
 		4D2167F51CDF006600784CFD /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2167F41CDF006600784CFD /* CouchbaseLite.framework */; };
 		4D2168331CDFAFE200784CFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2167B71CDEE48B00784CFD /* SystemConfiguration.framework */; };
 		4D2168341CDFAFEA00784CFD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2167B31CDEE47C00784CFD /* CFNetwork.framework */; };
@@ -32,9 +36,13 @@
 		4D3280961CF14DA900F20E8C /* ECStepperLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF5D451CE96C7300800A2F /* ECStepperLabel.swift */; };
 		4D3280981CF15DD200F20E8C /* AddSubCriteriaFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3280971CF15DD200F20E8C /* AddSubCriteriaFooterCell.swift */; };
 		4D32809A1CF243E300F20E8C /* ScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3280991CF243E300F20E8C /* ScoreData.swift */; };
+		4D32809D1CF2B2B500F20E8C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D32809B1CF2B2B500F20E8C /* Model.xcdatamodeld */; };
 		4D94F41A1CE7D303004DFA34 /* SubCriteriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94F4191CE7D303004DFA34 /* SubCriteriaTableViewCell.swift */; };
 		4D94F41C1CE7EA9F004DFA34 /* CriteriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94F41B1CE7EA9F004DFA34 /* CriteriaTableViewCell.swift */; };
 		4D94F41E1CE81C12004DFA34 /* AddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D94F41D1CE81C12004DFA34 /* AddTableViewCell.swift */; };
+		4D95A83D1CF4B6E400F5134C /* SavedFormatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95A83C1CF4B6E400F5134C /* SavedFormatsViewController.swift */; };
+		4D95A83F1CF4BEED00F5134C /* FormLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95A83E1CF4BEED00F5134C /* FormLoader.swift */; };
+		4DC907481CF5690B002C9196 /* StoredFormatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC907471CF5690B002C9196 /* StoredFormatCell.swift */; };
 		4DDCE2621CD68D8D0008C95C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCE2611CD68D8D0008C95C /* Utilities.swift */; };
 		4DDF5D371CE9671000800A2F /* ECStepperLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDF5D361CE9671000800A2F /* ECStepperLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DDF5D3B1CE9671000800A2F /* ECStepperLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDF5D341CE9671000800A2F /* ECStepperLabel.framework */; };
@@ -90,6 +98,10 @@
 
 /* Begin PBXFileReference section */
 		20FB8F5659A44E200417C114 /* Pods-EssayCorrector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EssayCorrector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EssayCorrector/Pods-EssayCorrector.debug.xcconfig"; sourceTree = "<group>"; };
+		4D0FE3A91CF8935200BE765F /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		4D0FE3AB1CF8970D00BE765F /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		4D0FE3AD1CF8977C00BE765F /* AddCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCommentCell.swift; sourceTree = "<group>"; };
+		4D0FE3B11CF9532F00BE765F /* CommentSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentSaver.swift; sourceTree = "<group>"; };
 		4D2167B31CDEE47C00784CFD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		4D2167B51CDEE48600784CFD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4D2167B71CDEE48B00784CFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -97,7 +109,6 @@
 		4D2167BB1CDEE4C900784CFD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4D2167F41CDF006600784CFD /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 		4D2168371CDFB3B400784CFD /* EssayCorrector-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EssayCorrector-Bridging-Header.h"; sourceTree = "<group>"; };
-		4D2168381CDFB3B500784CFD /* temp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = temp.h; sourceTree = "<group>"; };
 		4D2168391CDFBC0100784CFD /* CBObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBObjects.swift; sourceTree = "<group>"; };
 		4D21683B1CDFF44500784CFD /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		4D287DAE1CCD7BF8009F6093 /* Black_Cat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Black_Cat.pdf; sourceTree = "<group>"; };
@@ -120,9 +131,13 @@
 		4D3280921CF0F21200F20E8C /* BWGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWGradientView.swift; sourceTree = "<group>"; };
 		4D3280971CF15DD200F20E8C /* AddSubCriteriaFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSubCriteriaFooterCell.swift; sourceTree = "<group>"; };
 		4D3280991CF243E300F20E8C /* ScoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreData.swift; sourceTree = "<group>"; };
+		4D32809C1CF2B2B500F20E8C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4D94F4191CE7D303004DFA34 /* SubCriteriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCriteriaTableViewCell.swift; sourceTree = "<group>"; };
 		4D94F41B1CE7EA9F004DFA34 /* CriteriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CriteriaTableViewCell.swift; sourceTree = "<group>"; };
 		4D94F41D1CE81C12004DFA34 /* AddTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewCell.swift; sourceTree = "<group>"; };
+		4D95A83C1CF4B6E400F5134C /* SavedFormatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedFormatsViewController.swift; sourceTree = "<group>"; };
+		4D95A83E1CF4BEED00F5134C /* FormLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormLoader.swift; sourceTree = "<group>"; };
+		4DC907471CF5690B002C9196 /* StoredFormatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoredFormatCell.swift; sourceTree = "<group>"; };
 		4DDCE2611CD68D8D0008C95C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		4DDF5D341CE9671000800A2F /* ECStepperLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECStepperLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDF5D361CE9671000800A2F /* ECStepperLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECStepperLabel.h; sourceTree = "<group>"; };
@@ -230,7 +245,6 @@
 				4D2AD99B1CC5D52B000E8812 /* LaunchScreen.storyboard */,
 				4D2AD99E1CC5D52B000E8812 /* Info.plist */,
 				4DDCE2611CD68D8D0008C95C /* Utilities.swift */,
-				4D2168381CDFB3B500784CFD /* temp.h */,
 				4D2168371CDFB3B400784CFD /* EssayCorrector-Bridging-Header.h */,
 				4D2168391CDFBC0100784CFD /* CBObjects.swift */,
 				4D21683B1CDFF44500784CFD /* NotesViewController.swift */,
@@ -239,6 +253,14 @@
 				4D94F41D1CE81C12004DFA34 /* AddTableViewCell.swift */,
 				4D3280971CF15DD200F20E8C /* AddSubCriteriaFooterCell.swift */,
 				4D3280991CF243E300F20E8C /* ScoreData.swift */,
+				4D32809B1CF2B2B500F20E8C /* Model.xcdatamodeld */,
+				4D95A83C1CF4B6E400F5134C /* SavedFormatsViewController.swift */,
+				4D95A83E1CF4BEED00F5134C /* FormLoader.swift */,
+				4DC907471CF5690B002C9196 /* StoredFormatCell.swift */,
+				4D0FE3A91CF8935200BE765F /* CommentsViewController.swift */,
+				4D0FE3AB1CF8970D00BE765F /* CommentCell.swift */,
+				4D0FE3AD1CF8977C00BE765F /* AddCommentCell.swift */,
+				4D0FE3B11CF9532F00BE765F /* CommentSaver.swift */,
 			);
 			path = EssayCorrector;
 			sourceTree = "<group>";
@@ -556,17 +578,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D95A83D1CF4B6E400F5134C /* SavedFormatsViewController.swift in Sources */,
 				4DDCE2621CD68D8D0008C95C /* Utilities.swift in Sources */,
 				4D94F41A1CE7D303004DFA34 /* SubCriteriaTableViewCell.swift in Sources */,
 				4D3280981CF15DD200F20E8C /* AddSubCriteriaFooterCell.swift in Sources */,
 				4D3280941CF14DA700F20E8C /* ECStepperLabel.swift in Sources */,
+				4DC907481CF5690B002C9196 /* StoredFormatCell.swift in Sources */,
 				4D21683C1CDFF44500784CFD /* NotesViewController.swift in Sources */,
 				4D21683A1CDFBC0100784CFD /* CBObjects.swift in Sources */,
 				4D94F41C1CE7EA9F004DFA34 /* CriteriaTableViewCell.swift in Sources */,
+				4D0FE3AE1CF8977C00BE765F /* AddCommentCell.swift in Sources */,
+				4D0FE3AC1CF8970D00BE765F /* CommentCell.swift in Sources */,
+				4D95A83F1CF4BEED00F5134C /* FormLoader.swift in Sources */,
 				4D94F41E1CE81C12004DFA34 /* AddTableViewCell.swift in Sources */,
 				4D2AD9951CC5D52B000E8812 /* ViewController.swift in Sources */,
+				4D0FE3AA1CF8935200BE765F /* CommentsViewController.swift in Sources */,
 				4D32809A1CF243E300F20E8C /* ScoreData.swift in Sources */,
 				4D2AD9931CC5D52B000E8812 /* AppDelegate.swift in Sources */,
+				4D0FE3B21CF9532F00BE765F /* CommentSaver.swift in Sources */,
+				4D32809D1CF2B2B500F20E8C /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1118,6 +1148,7 @@
 				4D3280901CF0F1EA00F20E8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DDF5D3F1CE9671000800A2F /* Build configuration list for PBXNativeTarget "ECStepperLabel" */ = {
 			isa = XCConfigurationList;
@@ -1129,6 +1160,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D32809B1CF2B2B500F20E8C /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D32809C1CF2B2B500F20E8C /* Model.xcdatamodel */,
+			);
+			currentVersion = 4D32809C1CF2B2B500F20E8C /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4D2AD9871CC5D52B000E8812 /* Project object */;
 }

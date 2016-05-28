@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-EssayCorrector/Alamofire.framework"
+  install_framework "Pods-EssayCorrector/CXAlertView.framework"
   install_framework "Pods-EssayCorrector/FileBrowser.framework"
   install_framework "Pods-EssayCorrector/Mapper.framework"
   install_framework "Pods-EssayCorrector/Moya.framework"
@@ -98,6 +99,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-EssayCorrector/Alamofire.framework"
+  install_framework "Pods-EssayCorrector/CXAlertView.framework"
   install_framework "Pods-EssayCorrector/FileBrowser.framework"
   install_framework "Pods-EssayCorrector/Mapper.framework"
   install_framework "Pods-EssayCorrector/Moya.framework"
