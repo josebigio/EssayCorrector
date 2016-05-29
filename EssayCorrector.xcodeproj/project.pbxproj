@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		302878F1D4CA22565BCEF763 /* Pods_EssayCorrector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67D9091E9E2B8F3E4237352 /* Pods_EssayCorrector.framework */; };
+		4D07F5491CFB837600951561 /* CommentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D07F5481CFB837600951561 /* CommentData.swift */; };
 		4D0FE3AA1CF8935200BE765F /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE3A91CF8935200BE765F /* CommentsViewController.swift */; };
 		4D0FE3AC1CF8970D00BE765F /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE3AB1CF8970D00BE765F /* CommentCell.swift */; };
 		4D0FE3AE1CF8977C00BE765F /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0FE3AD1CF8977C00BE765F /* AddCommentCell.swift */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		20FB8F5659A44E200417C114 /* Pods-EssayCorrector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EssayCorrector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EssayCorrector/Pods-EssayCorrector.debug.xcconfig"; sourceTree = "<group>"; };
+		4D07F5481CFB837600951561 /* CommentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentData.swift; sourceTree = "<group>"; };
 		4D0FE3A91CF8935200BE765F /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		4D0FE3AB1CF8970D00BE765F /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		4D0FE3AD1CF8977C00BE765F /* AddCommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCommentCell.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				4D0FE3AD1CF8977C00BE765F /* AddCommentCell.swift */,
 				4D0FE3B11CF9532F00BE765F /* CommentSaver.swift */,
 				4D2B143F1CFA811D00F4E4C9 /* ECTabBarController.swift */,
+				4D07F5481CFB837600951561 /* CommentData.swift */,
 			);
 			path = EssayCorrector;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				4D94F41E1CE81C12004DFA34 /* AddTableViewCell.swift in Sources */,
 				4D2AD9951CC5D52B000E8812 /* ViewController.swift in Sources */,
 				4D0FE3AA1CF8935200BE765F /* CommentsViewController.swift in Sources */,
+				4D07F5491CFB837600951561 /* CommentData.swift in Sources */,
 				4D32809A1CF243E300F20E8C /* ScoreData.swift in Sources */,
 				4D2AD9931CC5D52B000E8812 /* AppDelegate.swift in Sources */,
 				4D0FE3B21CF9532F00BE765F /* CommentSaver.swift in Sources */,

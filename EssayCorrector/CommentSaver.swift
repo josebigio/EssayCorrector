@@ -13,10 +13,10 @@ import UIKit
 
 class CommentSaver {
     
-    static func save(commentsDataSource:[(String,Bool)]) -> Bool {
+    static func save(commentData: CommentData) -> Bool {
         var jsonData:NSData?
         do {
-            jsonData = try NSJSONSerialization.dataWithJSONObject(formatDataForSaving(commentsDataSource), options: NSJSONWritingOptions.PrettyPrinted)
+            jsonData = try NSJSONSerialization.dataWithJSONObject(formatDataForSaving(commentData.getData()), options: NSJSONWritingOptions.PrettyPrinted)
         } catch let error as NSError {
             print(error)
         }
@@ -53,7 +53,7 @@ class CommentSaver {
         }
     }
     
-    static func getSavedComment() -> [(String,Bool)]? {
+    static func getSavedComment() -> CommentData? {
         var comments = [NSManagedObject]()
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
@@ -77,9 +77,9 @@ class CommentSaver {
                 return nil
             }
             
-            return result
+            return CommentData(commentData: result)
         }
-       return [(String,Bool)]()
+       return CommentData()
     }
     
     static func formatDataForSaving(unFormated: [(String,Bool)]) -> [String:Bool] {
