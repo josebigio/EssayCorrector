@@ -18,6 +18,9 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     let DEFAULT_LABEL_FONT_SIZE:CGFloat = 15
     
     var dataSource = CommentData()
+    
+    static var PREVIEW_KEY = "COMMENTS"
+
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,7 +28,7 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         print("\(self): viewDidLoad()")
         dataSource = CommentSaver.getSavedComment()!
-        
+        pushPreview()
         tableView.registerClass(UITableViewCell.self,forCellReuseIdentifier: "Cell")
         tableView.delegate = self
         tableView.dataSource = self
@@ -71,6 +74,7 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
             tempData.removeAtIndex(indexPath.row)
             dataSource.setData(tempData)
             saveState()
+            pushPreview()
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         }
     }
@@ -88,6 +92,7 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
                 self.dataSource.setData(tempData)
                 self.saveState()
                 self.tableView.reloadData()
+                self.pushPreview()
             }
         }))
         alertController.addTextFieldWithConfigurationHandler { (tf:UITextField) in}
@@ -99,11 +104,35 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
         tempData[switchButton.tag].1 = switchButton.on
         self.dataSource.setData(tempData)
         saveState()
+        pushPreview()
     }
     
     func saveState() {
         CommentSaver.save(dataSource)
     }
+    
+    //MARK pdf generation
+    private func pushPreview() {
+        let eCTabBarVC = tabBarController as! ECTabBarController
+        eCTabBarVC.pushHtml(generateHtml(), key: CommentsViewController.PREVIEW_KEY)
+    }
+    
+    private func generateHtml() -> String {
+        var htmlResult = "<html><head><style>table{    border: 1px solid black;    border-collapse: collapse;}th, td {    padding: 5px;    text-align: left;    }</style></head><body><h2>Comentarios</h2><table style=\"width:100%\">"
+        for(comment,activated) in dataSource.getData() {
+            if(activated) {
+                htmlResult = htmlResult + generateSection(comment)
+            }
+        }
+        htmlResult = htmlResult + "</table></body></html>"
+        return htmlResult
+    }
+    
+    private func generateSection(section: String) -> String {
+        return "<tr><td>\(section)</td></tr>"
+    }
+    
+
     
 
 }
