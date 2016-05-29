@@ -284,7 +284,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RMs-WC-J61" id="XLl-Rf-irj">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-6g-rdt">
@@ -351,6 +351,40 @@
             </objects>
             <point key="canvasLocation" x="3654" y="1929"/>
         </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="wUg-fP-7PZ">
+            <objects>
+                <viewController id="Wc1-qU-hBf" customClass="PDFPreviewViewController" customModule="EssayCorrector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZjF-PC-sbd"/>
+                        <viewControllerLayoutGuide type="bottom" id="K9P-C1-7AR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3o7-g5-ZMc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOf-uc-v1f">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mOf-uc-v1f" firstAttribute="bottom" secondItem="K9P-C1-7AR" secondAttribute="top" id="Eyu-Rp-rs0"/>
+                            <constraint firstItem="mOf-uc-v1f" firstAttribute="leading" secondItem="3o7-g5-ZMc" secondAttribute="leading" id="i6h-FE-6DQ"/>
+                            <constraint firstAttribute="trailing" secondItem="mOf-uc-v1f" secondAttribute="trailing" id="lSO-p4-VXo"/>
+                            <constraint firstItem="mOf-uc-v1f" firstAttribute="top" secondItem="ZjF-PC-sbd" secondAttribute="bottom" id="xhz-qn-2UW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fk8-SH-McU"/>
+                    <connections>
+                        <outlet property="webView" destination="mOf-uc-v1f" id="L6J-dA-MeL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVA-P4-BMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5134" y="1128"/>
+        </scene>
         <!--PDF-->
         <scene sceneID="LWV-Qb-g4P">
             <objects>
@@ -373,7 +407,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="x7W-II-0aZ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ogj-j1-5w3" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ogj-j1-5w3" customClass="ECTabBarController" customModule="EssayCorrector" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hrh-Hh-SfV">
                         <autoresizingMask key="autoresizingMask"/>
@@ -383,6 +417,7 @@
                         <segue destination="kNB-aL-4MO" kind="relationship" relationship="viewControllers" id="psg-bJ-2ep"/>
                         <segue destination="gfl-rf-Ilb" kind="relationship" relationship="viewControllers" id="G6G-Ma-Ido"/>
                         <segue destination="k4q-aS-wqV" kind="relationship" relationship="viewControllers" id="X2T-mM-egZ"/>
+                        <segue destination="T63-K3-MDL" kind="relationship" relationship="viewControllers" id="0Ie-Pt-cwe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BrC-26-Q1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -407,6 +442,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cny-zu-xw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2842" y="1929"/>
+        </scene>
+        <!--Preview-->
+        <scene sceneID="fW9-tZ-ST1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T63-K3-MDL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Preview" id="QCz-bh-ywA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qQR-h7-dan">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wc1-qU-hBf" kind="relationship" relationship="rootViewController" id="1ja-qA-Kcy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gfm-Sx-5f2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4322" y="1128"/>
         </scene>
     </scenes>
 </document>

@@ -21,7 +21,7 @@ class CommentsViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("\(self): viewDidLoad()")
         dataSource = CommentSaver.getSavedComment()!
         
         tableView.registerClass(UITableViewCell.self,forCellReuseIdentifier: "Cell")

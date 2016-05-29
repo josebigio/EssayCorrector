@@ -18,13 +18,14 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         case Footer
     }
     
+    static var PREVIEW_KEY = "Notes"
     var data = ScoreData()
     var footerCell:AddTableViewCell?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Notes: viewDidLoad()")
+        print("\(self): viewDidLoad()")
         
         formTableView.registerClass(UITableViewCell.self,forCellReuseIdentifier: "Cell")
         
@@ -38,6 +39,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         let saveButton = self.navigationItem.rightBarButtonItems![0]
         saveButton.target = self
         saveButton.action = #selector(NotesViewController.saveData)
+        pushPreview()
 
     }
     
@@ -140,6 +142,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                     data.setData(tempData)
                     tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
                     recalculateScore()
+                    pushPreview()
                     return
                 }
                 count+=1
@@ -153,6 +156,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                         data.setData(tempData)
                         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                         recalculateScore()
+                        pushPreview()
                         return
                     }
                     count+=1
@@ -184,6 +188,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                     newSubCriterias[index] = newCriteria
                     tempData[criteria] = newSubCriterias
                     data.setData(tempData)
+                    pushPreview()
                     recalculateScore()
                     return
                 }
@@ -213,9 +218,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                 var subCriterias = tempData[criteria!]
                 subCriterias?.append((name,(0,score!)))
                 tempData[criteria!] = subCriterias
-                self.data.setData(tempData)
-                self.formTableView.reloadData()
-                self.recalculateScore()
+                self.updateModel(tempData)
             }
         }))
         alertController.addTextFieldWithConfigurationHandler { (tf:UITextField) in}
@@ -225,6 +228,13 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     // MARK private helpers
+    private func updateModel(newData: [String:[(String,(Int,Int))]]) {
+        self.data.setData(newData)
+        self.formTableView.reloadData()
+        self.recalculateScore()
+        pushPreview()
+    }
+    
     func addSubCriteria(section: Int, subCriteria: String, maxScore:Int) {
         var tempData = data.getData()
         var keys = [String](tempData.keys)
@@ -232,6 +242,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         subCriterias?.append((subCriteria,(0,maxScore)))
         tempData[keys[section]] = subCriterias
         data.setData(tempData)
+        pushPreview()
         formTableView.reloadData()
     }
     
@@ -243,6 +254,7 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
                 var tempData = self.data.getData()
                 tempData[alertController.textFields!.first!.text!] = []
                 self.data.setData(tempData)
+                self.pushPreview()
                 self.formTableView.reloadData()
             }
         }))
@@ -287,6 +299,42 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         alertController.addTextFieldWithConfigurationHandler { (tf:UITextField) in}
         presentViewController(alertController, animated: true, completion: nil)
 
+    }
+    
+    //MARK pdf generation
+    private func pushPreview() {
+        let eCTabBarVC = tabBarController as! ECTabBarController
+        eCTabBarVC.pushHtml(generateHtml(), key: NotesViewController.PREVIEW_KEY)
+    }
+    
+    private func generateHtml() -> String {
+        let total = data.getTotal()
+        var htmlResult = "<html><head><style>table, th, td {    border: 1px solid black;    border-collapse: collapse;}th, td {    padding: 5px;    text-align: center;    }</style></head><body><h2>Calificacion</h2><table style=\"width:100%\">  <tr>    <th>Indicador</th>    <th>Criterio</th>    <th>Puntaje</th>  </tr>"
+        for(criteria,subCriteriaList) in data.getData() {
+            htmlResult = htmlResult + generateSection((criteria,subCriteriaList))
+        }
+        htmlResult = htmlResult + "<tr><th colspan=\"2\">Total</th><td>\(total.0)/\(total.1)</td></tr>"
+        htmlResult = htmlResult + "</table></body></html>"
+        return htmlResult
+    }
+    
+    private func generateSection(section: (String,[(String,(Int,Int))])) -> String {
+        var htmlResult = ""
+        var isFirst = true
+        let criteria = section.0
+        let subCriteriaList = section.1
+        let rowSpan = subCriteriaList.count
+        for (subCriteria,scoreTuple) in subCriteriaList {
+            htmlResult = htmlResult + "<tr>"
+            if(isFirst) {
+                isFirst = false
+                htmlResult = htmlResult + "<th rowspan=\"\(rowSpan)\">\(criteria)</th>"
+            }
+            htmlResult = htmlResult + "<td>\(subCriteria)</td>"
+            htmlResult = htmlResult + "<td>\(scoreTuple.0)/\(scoreTuple.1)</td>"
+            htmlResult = htmlResult + "</tr>"
+        }
+        return htmlResult
     }
     
     

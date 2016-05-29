@@ -26,7 +26,7 @@ class ViewController: UIViewController, PSPDFDocumentDelegate, FileChangerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad()")
+        print("\(self): viewDidLoad()")
         AppDelegate.changerDelegate = self
     }
     
