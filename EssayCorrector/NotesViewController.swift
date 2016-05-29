@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
 class NotesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AddSubCriteriaFooterCellDelegate,SubCriteriaTableViewCellDelegate, SavedFormatViewControllerDelegate{
 
     @IBOutlet weak var formTableView: UITableView!

@@ -11,6 +11,8 @@ protocol SavedFormatViewControllerDelegate {
 }
 
 import Foundation
+import UIKit
+
 class SavedFormatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var storedFormatsTV: UITableView!

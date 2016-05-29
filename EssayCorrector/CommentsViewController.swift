@@ -9,6 +9,8 @@
 
 import Foundation
 import CXAlertView
+import UIKit
+
 
 class CommentsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
