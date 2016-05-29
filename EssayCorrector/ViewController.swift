@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RxSwift
 import PSPDFKit
 import FileBrowser
 import PySwiftyRegex
