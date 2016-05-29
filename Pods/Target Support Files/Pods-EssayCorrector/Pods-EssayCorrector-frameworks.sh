@@ -84,30 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-EssayCorrector/Alamofire.framework"
   install_framework "Pods-EssayCorrector/CXAlertView.framework"
   install_framework "Pods-EssayCorrector/FileBrowser.framework"
-  install_framework "Pods-EssayCorrector/Mapper.framework"
-  install_framework "Pods-EssayCorrector/Moya.framework"
-  install_framework "Pods-EssayCorrector/Moya_ModelMapper.framework"
   install_framework "${PODS_ROOT}/PSPDFKit/PSPDFKit.framework"
   install_framework "Pods-EssayCorrector/PySwiftyRegex.framework"
-  install_framework "Pods-EssayCorrector/Result.framework"
-  install_framework "Pods-EssayCorrector/RxCocoa.framework"
-  install_framework "Pods-EssayCorrector/RxOptional.framework"
-  install_framework "Pods-EssayCorrector/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-EssayCorrector/Alamofire.framework"
   install_framework "Pods-EssayCorrector/CXAlertView.framework"
   install_framework "Pods-EssayCorrector/FileBrowser.framework"
-  install_framework "Pods-EssayCorrector/Mapper.framework"
-  install_framework "Pods-EssayCorrector/Moya.framework"
-  install_framework "Pods-EssayCorrector/Moya_ModelMapper.framework"
   install_framework "${PODS_ROOT}/PSPDFKit/PSPDFKit.framework"
   install_framework "Pods-EssayCorrector/PySwiftyRegex.framework"
-  install_framework "Pods-EssayCorrector/Result.framework"
-  install_framework "Pods-EssayCorrector/RxCocoa.framework"
-  install_framework "Pods-EssayCorrector/RxOptional.framework"
-  install_framework "Pods-EssayCorrector/RxSwift.framework"
 fi

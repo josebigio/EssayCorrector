@@ -1,59 +1,23 @@
 PODS:
-  - Alamofire (3.3.1)
   - CXAlertView (1.1.0)
   - FileBrowser (0.1.4)
-  - ModelMapper (2.0.0)
-  - Moya (6.4.0):
-    - Moya/Core (= 6.4.0)
-  - Moya-ModelMapper/Core (2.0.1):
-    - ModelMapper (~> 2.0)
-    - Moya (~> 6.4)
-  - Moya-ModelMapper/RxSwift (2.0.1):
-    - Moya-ModelMapper/Core
-    - Moya/RxSwift (~> 6.4)
-    - RxSwift (~> 2.3)
-  - Moya/Core (6.4.0):
-    - Alamofire (~> 3.0)
-    - Result (~> 2.0)
-  - Moya/RxSwift (6.4.0):
-    - Moya/Core
-    - RxSwift (~> 2.0)
   - PSPDFKit (5.3.3)
   - PySwiftyRegex (0.2.2)
-  - Result (2.0.0)
-  - RxCocoa (2.4):
-    - RxSwift (~> 2.4)
-  - RxOptional (2.0.0):
-    - RxCocoa (~> 2.0)
-    - RxSwift (~> 2.0)
-  - RxSwift (2.4)
 
 DEPENDENCIES:
   - CXAlertView
   - FileBrowser (~> 0.1)
-  - Moya-ModelMapper/RxSwift
-  - Moya/RxSwift
   - PSPDFKit (from `https://customers.pspdfkit.com/cocoapods/07zJIrQpBT01ce0XuO1zzhbF6rLOLFfBni968oB2_8rcq2VNmGAwcT_WN5Oi3oInuDLDwsSixPURzOCRnceO_w/latest.podspec`)
   - PySwiftyRegex (~> 0.2.0)
-  - RxCocoa
-  - RxOptional
 
 EXTERNAL SOURCES:
   PSPDFKit:
     :podspec: https://customers.pspdfkit.com/cocoapods/07zJIrQpBT01ce0XuO1zzhbF6rLOLFfBni968oB2_8rcq2VNmGAwcT_WN5Oi3oInuDLDwsSixPURzOCRnceO_w/latest.podspec
 
 SPEC CHECKSUMS:
-  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   CXAlertView: 7387ca9af81796ab22d26ff2fc3cfcb082f3ee09
   FileBrowser: 4e48c118606571cf59fd1d20930ac41887c026d0
-  ModelMapper: ba9a60ef4c695c3082e404fc14062e189dcc8409
-  Moya: 4d526954c8afd79820991393d40d7d8af756ceee
-  Moya-ModelMapper: 8956f8e834eea3cf776e79ddbf6680e0d53c5923
   PSPDFKit: 9b9ab3bee7df37e4138f33167310b51db497218e
   PySwiftyRegex: 78f989c59ee3bec812f9dc980b3723d60d0e5dca
-  Result: 9e75e1111c774c6ac594e14907b15057053a7959
-  RxCocoa: 7d6cd877de99f5640306b3d6cf87f580c1d91b61
-  RxOptional: b77fb47a0190213cf8a37c7a2b7fda28160b4563
-  RxSwift: 67b9ef4e8b34fb394e200e754c6a09cc16559f94
 
 COCOAPODS: 0.39.0
