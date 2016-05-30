@@ -12,7 +12,7 @@
 
 #import "PSPDFStaticTableViewController.h"
 #import "PSPDFAppearanceModeManager.h"
-
+#import "PSPDFBrightnessManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -23,19 +23,8 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFBrightnessViewController : PSPDFStaticTabl
 
 /// @section Brightness
 
-/// Enables software dimming. Defaults to YES.
-@property (nonatomic) BOOL wantsSoftwareDimming;
-
-/// Enables software dimming to make the screen really dark. Defaults to YES.
-@property (nonatomic) BOOL wantsAdditionalSoftwareDimming;
-
-/// Defaults to 0.3. Only relevant if `wantsAdditionalSoftwareDimming` is YES.
-/// Especially for special use cases like airplane software that requires additional dimming.
-@property (nonatomic) CGFloat additionalBrightnessDimmingFactor;
-
-/// Defaults to 0.6. If you set this to 1 the screen will be *completely* dark.
-/// Only relevant if `wantsAdditionalSoftwareDimming` is YES.
-@property (nonatomic) CGFloat maximumAdditionalBrightnessDimmingFactor;
+/// Brightness manager responsible for brightness control.
+@property (nonatomic, nullable) PSPDFBrightnessManager *brightnessManager;
 
 /// @section Appearance
 
@@ -49,24 +38,21 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFBrightnessViewController : PSPDFStaticTabl
 
 @end
 
-/// Dimming view that is added to the main UIWindow.
-@interface PSPDFDimmingView : UIView
+@interface PSPDFBrightnessViewController (Deprecated)
 
-/// Software dimming factor.
-@property (nonatomic) CGFloat additionalBrightnessDimmingFactor;
+/// Enables software dimming. Defaults to YES.
+@property (nonatomic) BOOL wantsSoftwareDimming PSPDF_DEPRECATED(5.3.5, "Use PSPDFBrightnessManager's property.");
 
-@end
+/// Enables software dimming to make the screen really dark. Defaults to YES.
+@property (nonatomic) BOOL wantsAdditionalSoftwareDimming PSPDF_DEPRECATED(5.3.5, "Use PSPDFBrightnessManager's property.");;
 
-@interface PSPDFBrightnessViewController (SubclassingHooks)
+/// Defaults to 0.3. Only relevant if `wantsAdditionalSoftwareDimming` is YES.
+/// Especially for special use cases like airplane software that requires additional dimming.
+@property (nonatomic) CGFloat additionalBrightnessDimmingFactor PSPDF_DEPRECATED(5.3.5, "Use PSPDFBrightnessManager's property.");;
 
-/// Used for additional software dimming.
-@property (nonatomic, readonly) PSPDFDimmingView *dimmingView;
-
-/// Returns the current dimming view or lazily creates a new one.
-@property (nonatomic, readonly) PSPDFDimmingView *addDimmingView;
-
-/// Removes the current dimming view.
-- (void)removeDimmingView;
+/// Defaults to 0.6. If you set this to 1 the screen will be *completely* dark.
+/// Only relevant if `wantsAdditionalSoftwareDimming` is YES.
+@property (nonatomic) CGFloat maximumAdditionalBrightnessDimmingFactor PSPDF_DEPRECATED(5.3.5, "Use PSPDFBrightnessManager property.");;
 
 @end
 

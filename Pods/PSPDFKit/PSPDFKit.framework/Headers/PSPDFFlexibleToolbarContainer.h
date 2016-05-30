@@ -54,7 +54,7 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFSystemBar <NSObject> @end
 @interface UINavigationBar (PSPDFSystemBar) <PSPDFSystemBar> @end
 
 // Searches the responder chain for the closest system bar (toolbar/navigation bar).
-PSPDF_EXPORT UIView<PSPDFSystemBar> *PSPDFSystemBarForResponder(UIResponder *responder);
+PSPDF_EXPORT UIView<PSPDFSystemBar> *_Nullable PSPDFSystemBarForResponder(UIResponder *responder);
 
 /// The flexible toolbar container holds and manages a `PSPDFFlexibleToolbar` instance.
 /// Its main responsibilities include toolbar anchoring and drag & drop handling.

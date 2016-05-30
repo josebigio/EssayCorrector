@@ -45,10 +45,10 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFSpeechController : NSObject
 /// Available language codes, use for `selectedLanguage`.
 @property (nonatomic, copy, readonly) NSArray<NSString *> *languageCodes;
 
-/// Speech rate.
+/// Speech rate. Defaults to AVSpeechUtteranceDefaultSpeechRate.
 @property (nonatomic) float speakRate;
 
-/// Speech pitch. Defaults to 0.5f.
+/// Speech pitch. Defaults to 1.0f.
 @property (nonatomic) float pitchMultiplier;
 
 @end

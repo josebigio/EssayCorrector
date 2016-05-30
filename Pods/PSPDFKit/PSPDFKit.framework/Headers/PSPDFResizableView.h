@@ -26,6 +26,9 @@ typedef NS_ENUM(NSUInteger, PSPDFResizableViewOuterKnob) {
     PSPDFResizableViewOuterKnobBottomRight
 } PSPDF_ENUM_AVAILABLE;
 
+/// Constant used to always force guide snapping.
+PSPDF_EXPORT CGFloat const PSPDFGuideSnapAllowanceAlways;
+
 NS_ASSUME_NONNULL_BEGIN
 
 /// Delegate to be notified on session begin/end and frame changes.
@@ -48,7 +51,7 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFResizableViewDelegate <NSObject>
 typedef NS_ENUM(NSUInteger, PSPDFKnobType) {
     /// Used to resize the bounding box.
     PSPDFKnobTypeOuter,
-    /// Used to alter cerain shapes.
+    /// Used to alter certain shapes.
     PSPDFKnobTypeInner
 } PSPDF_ENUM_AVAILABLE;
 
@@ -125,7 +128,8 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFResizableView : UIView
 /// Shows the bounding box. Defaults to YES.
 @property (nonatomic) BOOL showBoundingBox;
 
-/// Defines how aggressively the guide works. Defaults to 20.f
+/// Defines how aggressively the guide works. Defaults to 20.f.
+/// Set to `PSPDFGuideSnapAllowanceAlways` if you want to always snap to guides.
 @property (nonatomic) CGFloat guideSnapAllowance;
 
 /// Override the minimum allowed width. This value is ignored if the view is smaller to begin with
@@ -163,7 +167,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFResizableView : UIView
 /// Creates and configures a new knob view.
 - (UIView<PSPDFKnobView> *)newKnobViewForType:(PSPDFKnobType)type;
 
-@property (nonatomic, readonly, nullable) PSPDFAnnotation *trackedAnnotation;
+@property (nonatomic, readonly) NSSet<PSPDFAnnotation *> *trackedAnnotations;
 
 /// Update the knobs.
 - (void)updateKnobsAnimated:(BOOL)animated;
@@ -172,6 +176,12 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFResizableView : UIView
 /// We have great defaults but subclassing this can be used to change the style.
 /// @warning Do *NOT* override `drawRect:` in this class, as it will consume a lot of memory when zoomed in.
 - (void)configureGuideLayer:(CAShapeLayer *)layer withZoomScale:(CGFloat)zoomScale NS_REQUIRES_SUPER;
+
+@end
+
+@interface PSPDFResizableView (Deprecated)
+
+@property (nonatomic, readonly, nullable) PSPDFAnnotation *trackedAnnotation PSPDF_DEPRECATED("5.3.6", "Use trackedAnnotations instead.");
 
 @end
 

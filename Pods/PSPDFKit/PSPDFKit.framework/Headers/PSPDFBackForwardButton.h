@@ -12,14 +12,14 @@
 
 #import "PSPDFButton.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSUInteger, PSPDFBackButtonStyle) {
     /// Single color. Default on iPhone 4.
     PSPDFBackButtonStyleFlat,
     /// Uses blur.
     PSPDFBackButtonStyleModern
 } PSPDF_ENUM_AVAILABLE;
-
-NS_ASSUME_NONNULL_BEGIN
 
 /// Back and forward buttons, used for the action stack navigation.
 PSPDF_CLASS_AVAILABLE @interface PSPDFBackForwardButton : PSPDFButton

@@ -25,9 +25,9 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFAESCryptoInputStream : PSPDFCryptoInputStr
 - (NSInteger)read:(uint8_t *)buffer maxLength:(NSUInteger)len;
 
 /// Use this method to close the stream and append the provided data to previously decrypted data.
-/// Returns leftovers of the decrypted data (due to the way CBC decryption works).
+/// @return leftovers of the decrypted data (due to the way CBC decryption works).
 /// Returns nil is the error is occurred, otherwise return NSData instance (even if there is no decrypted data left).
-- (NSData *)closeWithData;
+- (nullable NSData *)closeWithData;
 
 /// DO NOT CALL this method to close the stream. Instead, call the - (NSData *)closeWithData;
 /// Throws the exception if called.

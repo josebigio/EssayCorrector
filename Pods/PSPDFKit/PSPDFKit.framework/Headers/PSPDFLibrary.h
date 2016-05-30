@@ -53,10 +53,10 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 /// If no instance for this path exists yet, this method will create and return one. All subsequent calls
 /// will return the same instance. Hence there will only be one instance per path.
 /// This method will return `nil` for invalid paths.
-+ (instancetype)libraryWithPath:(NSString *)path error:(NSError **)error;
++ (nullable instancetype)libraryWithPath:(NSString *)path error:(NSError **)error;
 
 /// See `libraryWithPath:error:`. In addition it takes a `tokenizer` parameter, see `tokenizer`.
-+ (instancetype)libraryWithPath:(NSString *)path tokenizer:(nullable NSString *)tokenizer error:(NSError **)error;
++ (nullable instancetype)libraryWithPath:(NSString *)path tokenizer:(nullable NSString *)tokenizer error:(NSError **)error;
 
 /// @name Properties
 

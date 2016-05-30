@@ -26,7 +26,7 @@ PSPDF_EXPORT NSString *PSPDFLocalizeFormatted(NSString *stringToken, ...) NS_FOR
 /// Will override localization found in the bundle, if a value is found.
 /// Falls back to "en" if localization key is not found in dictionary.
 /// Set on the main thread.
-PSPDF_EXPORT void PSPDFSetLocalizationDictionary(NSDictionary *_Nullable localizationDict);
+PSPDF_EXPORT void PSPDFSetLocalizationDictionary(NSDictionary<NSString *, NSDictionary<NSString *, NSString *>*> *_Nullable localizationDict);
 
 /// Register a custom block that handles translation.
 /// If this block is NULL or returns nil, the PSPDFKit.bundle + localizationDict will be used.

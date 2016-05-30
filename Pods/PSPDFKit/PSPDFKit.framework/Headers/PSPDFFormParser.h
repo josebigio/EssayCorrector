@@ -31,14 +31,14 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 @property (nonatomic, copy, readonly) NSArray<__kindof PSPDFFormElement *> *forms;
 
 /// Return all "dirty" = unsaved form elements
-@property (nonatomic, readonly) NSArray<__kindof PSPDFFormElement *> *dirtyForms;
+@property (nonatomic, readonly, nullable) NSArray<__kindof PSPDFFormElement *> *dirtyForms;
 
 /// Finds a form element with its field name. Returns nil if not found.
-- (__kindof PSPDFFormElement *)findAnnotationWithFieldName:(NSString *)fieldName;
+- (nullable __kindof PSPDFFormElement *)findAnnotationWithFieldName:(NSString *)fieldName;
 
 /// Finds a form element with its fully qualified field name. Returns nil if not found.
 /// Set the parent to nil to search over all fields.
-- (__kindof PSPDFFormElement *)findAnnotationWithFullFieldName:(NSString *)fullFieldName descendingFromForm:(nullable PSPDFFormElement *)parent;
+- (nullable __kindof PSPDFFormElement *)findAnnotationWithFullFieldName:(NSString *)fullFieldName descendingFromForm:(nullable PSPDFFormElement *)parent;
 
 @end
 

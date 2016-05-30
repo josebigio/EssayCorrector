@@ -35,6 +35,9 @@ PSPDF_CLASS_AVAILABLE_SUBCLASSING_RESTRICTED @interface PSPDFSignatureManager : 
 /// Adds a trusted certificate to the stack.
 - (void)addTrustedCertificate:(PSPDFX509 *)x509;
 
+/// Removes all trusted certificates from the stack.
+- (void)clearTrustedCertificates;
+
 @end
 
 NS_ASSUME_NONNULL_END

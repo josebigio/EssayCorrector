@@ -50,7 +50,10 @@ typedef NS_OPTIONS(NSUInteger, PSPDFDocumentSharingOptions) {
 
     /// Offer to use the original file for sharing. See `originalFile` in `PSPDFDocument`.
     /// For this option, neither page selection nor annotations apply.
-    PSPDFDocumentSharingOptionOriginalFile                = 1 << 16
+    PSPDFDocumentSharingOptionOriginalFile                = 1 << 16,
+    /// Share the current page as an image.
+    /// For this option, page selection does not apply.
+    PSPDFDocumentSharingOptionImage                       = 1 << 17
 } PSPDF_ENUM_AVAILABLE;
 
 
@@ -65,7 +68,8 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFDocumentSharingViewControllerDelegate <PSPDF
 
 /// Content has been prepared.
 /// `resultingObjects` can either be `NSURL` or `NSData`.
-- (void)documentSharingViewController:(PSPDFDocumentSharingViewController *)shareController didFinishWithSelectedOptions:(PSPDFDocumentSharingOptions)selectedSharingOption files:(NSArray<PSPDFFile *> *)files annotationSummary:(nullable NSAttributedString *)annotationSummary error:(NSError *)error;
+/// Either `files` or `error` is nil.
+- (void)documentSharingViewController:(PSPDFDocumentSharingViewController *)shareController didFinishWithSelectedOptions:(PSPDFDocumentSharingOptions)selectedSharingOption files:(nullable NSArray<PSPDFFile *> *)files annotationSummary:(nullable NSAttributedString *)annotationSummary error:(nullable NSError *)error;
 
 @optional
 
@@ -100,6 +104,21 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFDocumentSharingViewControllerDelegate <PSPDF
 
 /// Allows to return a custom temporary directory that is used during the export process.
 - (nullable NSString *)temporaryDirectoryForDocumentSharingViewController:(PSPDFDocumentSharingViewController *)shareController;
+
+/// Notifies the delegate about the files that the document sharing view controller
+/// is about to share.
+///
+/// You can use this method to alter the files that will be shared.
+///
+/// @note It is your responsibility to ensure that, when altering the files, the
+///       shared files are compatible with the passed in files.
+///
+/// @param shareController The controller that will share the files.
+/// @param files           The files that will be shared.
+///
+/// @return An array of files that should be shared instead of the passed in ones.
+///         If you do not want to alter the files, `files` should be returned.
+- (NSArray<PSPDFFile *> *)documentSharingViewController:(PSPDFDocumentSharingViewController *)shareController willShareFiles:(NSArray<PSPDFFile *> *)files;
 
 @end
 

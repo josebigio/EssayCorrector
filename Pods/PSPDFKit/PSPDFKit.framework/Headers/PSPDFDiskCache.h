@@ -37,14 +37,14 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 /// @name Accessing Data
 
 /// Check if there's an matching entry in the cache.
-- (PSPDFCacheInfo *)cacheInfoForImageWithUID:(NSString *)UID page:(NSUInteger)page size:(CGSize)size infoSelector:(nullable PSPDFCacheInfoSelector)infoSelector;
+- (nullable PSPDFCacheInfo *)cacheInfoForImageWithUID:(NSString *)UID page:(NSUInteger)page size:(CGSize)size infoSelector:(nullable PSPDFCacheInfoSelector)infoSelector;
 
 /// Will load the image synchronously. The `decryptionHelper` is mandatory.
-- (UIImage *)imageWithUID:(NSString *)UID page:(NSUInteger)page size:(CGSize)size infoSelector:(nullable PSPDFCacheInfoSelector)infoSelector decryptionHelper:(PSPDFCacheDecryptionHelper)decryptionHelper cacheInfo:(PSPDFCacheInfo *_Nullable*_Nullable)outCacheInfo;
+- (nullable UIImage *)imageWithUID:(NSString *)UID page:(NSUInteger)page size:(CGSize)size infoSelector:(nullable PSPDFCacheInfoSelector)infoSelector decryptionHelper:(PSPDFCacheDecryptionHelper)decryptionHelper cacheInfo:(PSPDFCacheInfo *_Nullable*_Nullable)outCacheInfo;
 
 /// Accessing data will take some time, calls `completionBlock` when done. The `decryptionHelper` is mandatory.
 /// Returns `YES` if an image was found and a loading operation is scheduled.
-- (PSPDFCacheInfo *)scheduleLoadImageWithUID:(NSString *)UID page:(NSUInteger)page size:(CGSize)size infoSelector:(PSPDFCacheInfoSelector)infoSelector decryptionHelper:(PSPDFCacheDecryptionHelper)decryptionHelper completionBlock:(nullable void (^)(UIImage *cachedImage, PSPDFCacheInfo *cacheInfo))completionBlock;
+- (nullable PSPDFCacheInfo *)scheduleLoadImageWithUID:(NSString *)UID page:(NSUInteger)page size:(CGSize)size infoSelector:(PSPDFCacheInfoSelector)infoSelector decryptionHelper:(PSPDFCacheDecryptionHelper)decryptionHelper completionBlock:(nullable void (^)(UIImage *cachedImage, PSPDFCacheInfo *cacheInfo))completionBlock;
 
 /// @name Storing Data
 

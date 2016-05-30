@@ -23,11 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// Must pass appropriate values in the eventParams dictionary. In particular, `willCommit` and `change`, should be set correctly.
 /// The returned dictionary contains the response code and the modified change value possibly
 /// Handles K and V actions.
-- (NSDictionary<NSString *, id> *)executeValueChangedJSActionSequenceWithActionContainer:(nullable id)actionContainer application:(nullable id<PSPDFApplicationJSExport>)application eventParams:(nullable NSDictionary<NSString *, id> *)eventParams error:(NSError **)error;
+- (nullable NSDictionary<NSString *, id> *)executeValueChangedJSActionSequenceWithActionContainer:(nullable id)actionContainer application:(nullable id<PSPDFApplicationJSExport>)application eventParams:(nullable NSDictionary<NSString *, id> *)eventParams error:(NSError **)error;
 
 /// Executes the format action for the container. If no action exists, returns the value unchanged.
 /// Handles F actions from the additional actions dictionary.
-- (NSString *)executeFormatActionWithActionContainer:(nullable id)actionContainer application:(nullable id<PSPDFApplicationJSExport>)application eventParams:(nullable NSDictionary<NSString *, id> *)eventParams error:(NSError **)error;
+- (nullable NSString *)executeFormatActionWithActionContainer:(nullable id)actionContainer application:(nullable id<PSPDFApplicationJSExport>)application eventParams:(nullable NSDictionary<NSString *, id> *)eventParams error:(NSError **)error;
 
 /// Note for the calculation method below (Adobe Acrobat SDK JavaScript API - JavaScript for Acrobat API Reference) :
 ///

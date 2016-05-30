@@ -63,8 +63,8 @@ PSPDF_CLASS_AVAILABLE_SUBCLASSING_RESTRICTED @interface PSPDFRenderQueue : NSObj
 
 /// Requests a (freshly) rendered image from a specified document. Does not use the file cache.
 /// For options, see `PSPDFPageRender`.
-/// IF `queueAsNext` is set, the request will be processed ASAP, skipping the current queue.
-- (PSPDFRenderJob *)requestRenderedImageForDocument:(PSPDFDocument *)document page:(NSUInteger)page size:(CGSize)size clippedToRect:(CGRect)clipRect annotations:(nullable NSArray<__kindof PSPDFAnnotation *> *)annotations options:(nullable NSDictionary<NSString *, id> *)options priority:(PSPDFRenderQueuePriority)priority queueAsNext:(BOOL)queueAsNext delegate:(nullable id<PSPDFRenderDelegate>)delegate completionBlock:(nullable void (^)(PSPDFRenderJob *renderJob, PSPDFRenderQueue *renderQueue))completionBlock;
+/// If `queueAsNext` is set, the request will be processed ASAP, skipping the current queue.
+- (nullable PSPDFRenderJob *)requestRenderedImageForDocument:(PSPDFDocument *)document page:(NSUInteger)page size:(CGSize)size clippedToRect:(CGRect)clipRect annotations:(nullable NSArray<__kindof PSPDFAnnotation *> *)annotations options:(nullable NSDictionary<NSString *, id> *)options priority:(PSPDFRenderQueuePriority)priority queueAsNext:(BOOL)queueAsNext delegate:(nullable id<PSPDFRenderDelegate>)delegate completionBlock:(nullable void (^)(PSPDFRenderJob *renderJob, PSPDFRenderQueue *renderQueue))completionBlock;
 
 /// Return all queued jobs for the current `document` and `page`. (bound to `delegate`)
 - (NSArray<PSPDFRenderJob *> *)renderJobsForDocument:(PSPDFDocument *)document page:(NSUInteger)page delegate:(id<PSPDFRenderDelegate>)delegate;

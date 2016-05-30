@@ -26,10 +26,10 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 
 /// Parse XML and block until it's done. Returns the resulting annotations after parsing is finished
 /// (which can also be accessed later on).
-- (NSArray<__kindof PSPDFAnnotation *> *)parseWithError:(NSError **)error;
+- (nullable NSArray<PSPDFAnnotation *> *)parseWithError:(NSError **)error;
 
 /// Return all annotations as array. Annotations are sorted by page.
-@property (nonatomic, copy, readonly) NSArray<__kindof PSPDFAnnotation *> *annotations;
+@property (nonatomic, copy, readonly) NSArray<PSPDFAnnotation *> *annotations;
 
 /// Returns YES while we're parsing.
 @property (atomic, readonly, getter = isParsing) BOOL parsing;

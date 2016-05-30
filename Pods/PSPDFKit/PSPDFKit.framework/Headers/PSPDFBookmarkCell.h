@@ -1,5 +1,5 @@
 //
-//  PSPDFBookmarkTableViewCell.h
+//  PSPDFBookmarkCell.h
 //  PSPDFKit
 //
 //  Copyright (c) 2013-2016 PSPDFKit GmbH. All rights reserved.

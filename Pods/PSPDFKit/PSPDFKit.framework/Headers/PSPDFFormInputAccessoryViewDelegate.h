@@ -10,13 +10,13 @@
 //  This notice may not be removed from this file.
 //
 
-#import <Foundation/Foundation.h>
+#import "PSPDFEnvironment.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class PSPDFFormInputAccessoryView;
 
-@protocol PSPDFFormInputAccessoryViewDelegate <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFFormInputAccessoryViewDelegate <NSObject>
 
 - (void)doneButtonPressedOnFormInputView:(PSPDFFormInputAccessoryView *)inputView;
 - (void)previousButtonPressedOnFormInputView:(PSPDFFormInputAccessoryView *)inputView;

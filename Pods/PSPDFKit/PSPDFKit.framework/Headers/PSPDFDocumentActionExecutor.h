@@ -69,7 +69,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 @property (nonatomic, weak) id <PSPDFDocumentActionExecutorDelegate> delegate;
 
 /// The attached document this class operates on.
-@property (nonatomic) PSPDFDocument *document;
+@property (nonatomic, nullable) PSPDFDocument *document;
 
 /// Checks if `action` can be called. Returns NO on unknown actions, asserts if action is nil.
 - (BOOL)canExecuteAction:(NSString *)action;

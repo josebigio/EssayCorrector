@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 PSPDF_EXPORT NSString *const PSPDFFormInputAccessoryViewDidPressClearButtonNotification;
 
 /// Toolbar for Next|Previous controls for Form Elements.
-@interface PSPDFFormInputAccessoryView : UIView
+PSPDF_CLASS_AVAILABLE @interface PSPDFFormInputAccessoryView : UIView
 
 /// Display Done button. Defaults to YES.
 @property (nonatomic) BOOL displayDoneButton;

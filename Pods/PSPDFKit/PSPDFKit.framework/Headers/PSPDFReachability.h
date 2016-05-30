@@ -12,6 +12,8 @@
 
 #import "PSPDFEnvironment.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_ENUM(NSUInteger, PSPDFReachability) {
     PSPDFReachabilityUnknown,
     PSPDFReachabilityUnreachable,
@@ -19,3 +21,5 @@ typedef NS_ENUM(NSUInteger, PSPDFReachability) {
     /// iOS only
     PSPDFReachabilityWWAN
 } PSPDF_ENUM_AVAILABLE;
+
+NS_ASSUME_NONNULL_END

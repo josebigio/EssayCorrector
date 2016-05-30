@@ -12,6 +12,7 @@
 
 #import "PSPDFLinkAnnotation.h"
 #import <AVFoundation/AVFoundation.h>
+#import "PSPDFMacros.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,9 +30,37 @@ PSPDF_EXPORT NSString *const PSPDFSoundAnnotationEncodingALaw;
 /// PSPDFKit will always render sound annotations at a fixed size of 74x44pt, centered in the provided `boundingBox`.
 PSPDF_CLASS_AVAILABLE @interface PSPDFSoundAnnotation : PSPDFAnnotation
 
-/// Possible initializers.
+/// Determines if recording annotations are available.
+///
+/// Recording sound annotations are not available in all environments. E.g. when
+/// running inside an App Extension, sound annotations are unavailable as microphone
+/// access is disabled.
+///
+/// @see -initRecorder
+///
+/// @return `YES` if sound annotations are available, `NO` otherwise.
++ (BOOL)recordingAnnotationAvailable;
+
+// Possible initializers.
+
+/// Initializes an empty sound annotation that can be recorded into.
+///
+/// @warning Calling this initializer will throw an exception if `+recordingAnnotationAvailable`
+///          returns `NO`. Check this method before calling `-initRecorder`.
+///
+/// @see +recordingAnnotationAvailable
+///
+/// @return A new, empty instance of `PSPDFSoundAnnotation`.
 - (instancetype)initRecorder;
-- (instancetype)initWithRate:(NSUInteger)rate channels:(uint32_t)channels bits:(uint32_t)bits encoding:(NSString *)encoding;
+
+/// Initializes a sound annotation with the sound file located at the given URL.
+///
+/// Use this method if you want to initialize a sound annotation that already has an existing sound file.
+///
+/// @param soundURL The file URL to the sound file.
+/// @param error    Upon return contains an error if the creation was not possible.
+///
+/// @return A new sound annotation, ready to be played.
 - (instancetype)initWithURL:(NSURL *)soundURL error:(NSError **)error;
 
 /// The annotation controller.
@@ -63,6 +92,12 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFSoundAnnotation : PSPDFAnnotation
 
 /// Get the direct sound data.
 @property (nonatomic, readonly, nullable) NSData *soundData;
+
+@end
+
+@interface PSPDFSoundAnnotation (Deprecated)
+
+- (instancetype)initWithRate:(NSUInteger)rate channels:(uint32_t)channels bits:(uint32_t)bits encoding:(NSString *)encoding PSPDF_DEPRECATED(5.3.4, "This method is deprecated and will go away in one of the next releases.");
 
 @end
 

@@ -16,7 +16,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol PSPDFViewModePresenter <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFViewModePresenter <NSObject>
 
 /// Convenience initializer.
 /// @param layout The layout to use when loading the collection view.

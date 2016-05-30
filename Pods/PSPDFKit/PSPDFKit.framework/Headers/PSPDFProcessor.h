@@ -69,18 +69,36 @@ PSPDF_EXPORT const CGRect PSPDFPaperSizeLetter;
 /// Will override any defaults if set.
 PSPDF_EXPORT NSString *const PSPDFProcessorDocumentTitleKey;
 
+/// 1st argument: current page, 2nd argument: total pages
 typedef void (^PSPDFProgressBlock)(NSUInteger currentPage, NSUInteger totalPages);
 
 /// Create, merge or modify PDF documents. Also allows to flatten annotation data.
 PSPDF_CLASS_AVAILABLE_SUBCLASSING_RESTRICTED @interface PSPDFProcessor : NSObject
 
-/// Generates a new document based on `PSPDFProcessorConfiguration`.
-/// The result will be written into `fileURL` if the operation succeeds.
+/// Generates a new document based on `PSPDFProcessorConfiguration` and stores it
+/// to `fileURL`.
+///
+/// @param configuration The configuration you want to use for the processing.
+/// @param saveOptions   The save options to use or `nil` if you want to keep the ones from the original document.
+/// @param fileURL       The URL to save the generated document to. Needs to be a fileURL.
+/// @param progressBlock The progress block to monitor progress on the generation process. Can be `NULL`. The progress block is called on an arbitrary queue.
+/// @param error         On return, contains an error if one occured while generating the document.
+///
+/// @return `YES` if generation was successful, `NO` otherwise.
 + (BOOL)generatePDFFromConfiguration:(PSPDFProcessorConfiguration *)configuration saveOptions:(nullable PSPDFProcessorSaveOptions *)saveOptions outputFileURL:(NSURL *)fileURL progressBlock:(nullable PSPDFProgressBlock)progressBlock error:(NSError **)error;
 
-/// Generates a new document based on `PSPDFProcessorConfiguration`.
-/// Variant that returns NSData.
+/// Generates a new document based on `PSPDFProcessorConfiguration` and returns it.
+///
 /// @note The data object will be memory-mapped if possible, however we encourage you to use the file url based variant instead.
+///
+/// @see +generatePDFFromConfiguration:saveOptions:outputFileURL:progressBlock:error:
+///
+/// @param configuration The configuration you want to use for the processing.
+/// @param saveOptions   The save options to use or `nil` if you want to keep the ones from the original document.
+/// @param progressBlock The progress block to monitor progress on the generation process. Can be `NULL`. The progress block is called on an arbitrary queue.
+/// @param error         On return, contains an error if one occured while generating the document.
+///
+/// @return An `NSData` object containing the generated document. If possible, this object is memory-mapped.
 + (nullable NSData *)generatePDFFromConfiguration:(PSPDFProcessorConfiguration *)configuration saveOptions:(nullable PSPDFProcessorSaveOptions *)saveOptions progressBlock:(nullable PSPDFProgressBlock)progressBlock error:(NSError **)error;
 
 #if TARGET_OS_EMBEDDED || TARGET_OS_IPHONE
@@ -125,7 +143,7 @@ PSPDF_CLASS_AVAILABLE_SUBCLASSING_RESTRICTED @interface PSPDFProcessor : NSObjec
 /// When a password is set, only link annotations can be added as dictionary (this does not affect flattening)
 ///
 /// Don't use this for PDF files!
-+ (PSPDFConversionOperation *)generatePDFFromURL:(NSURL *)inputURL outputFileURL:(NSURL *)outputURL options:(nullable NSDictionary<NSString *, id> *)options completionBlock:(nullable void (^)(NSURL *fileURL, NSError * _Nullable error))completionBlock;
++ (nullable PSPDFConversionOperation *)generatePDFFromURL:(NSURL *)inputURL outputFileURL:(NSURL *)outputURL options:(nullable NSDictionary<NSString *, id> *)options completionBlock:(nullable void (^)(NSURL *fileURL, NSError * _Nullable error))completionBlock;
 
 /// Will create a PDF in-memory.
 + (PSPDFConversionOperation *)generatePDFFromURL:(NSURL *)inputURL options:(nullable NSDictionary<NSString *, id> *)options completionBlock:(nullable void (^)(NSData *fileData, NSError * _Nullable error))completionBlock;

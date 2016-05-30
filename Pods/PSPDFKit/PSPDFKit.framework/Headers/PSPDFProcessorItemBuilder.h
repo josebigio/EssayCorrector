@@ -23,7 +23,7 @@ typedef NS_ENUM(NSInteger, PSPDFItemZPosition) {
 
     /// Puts the item in the background
     PSPDFItemZPositionBackground
-};
+} PSPDF_ENUM_AVAILABLE;
 
 NS_ASSUME_NONNULL_BEGIN
 

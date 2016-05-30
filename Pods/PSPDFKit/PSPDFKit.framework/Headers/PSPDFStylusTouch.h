@@ -26,6 +26,7 @@ typedef NS_ENUM(NSInteger, PSPDFStylusTouchClassification) {
 PSPDF_AVAILABLE_DECL @protocol PSPDFStylusTouch <NSObject>
 
 @optional
+
 - (CGPoint)locationInView:(UIView *)view;
 @property (nonatomic, readonly) PSPDFStylusTouchClassification classification;
 @property (nonatomic, readonly) CGFloat pressure;
@@ -39,6 +40,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 - (instancetype)initWithClassification:(PSPDFStylusTouchClassification)classification pressure:(CGFloat)pressure NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, readonly) PSPDFStylusTouchClassification classification;
+
 @property (nonatomic, readonly) CGFloat pressure; // can be 0..1;
 
 @end

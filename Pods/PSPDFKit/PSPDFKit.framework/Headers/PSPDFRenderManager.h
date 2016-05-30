@@ -25,9 +25,8 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFPageRenderer <PSPDFPlugin>
 /// Currently `options` contains `PSPDFPageRendererPageInfoKey`.
 - (BOOL)drawPage:(NSUInteger)page inContext:(CGContextRef)context documentProvider:(PSPDFDocumentProvider *)documentProvider withOptions:(nullable NSDictionary<NSString *, id> *)options error:(NSError **)error;
 
-@optional
-
 /// Renders annotation appearance streams.
+/// @return NO if rendering failed.
 - (BOOL)renderAppearanceStream:(PSPDFAnnotation *)annotation inContext:(CGContextRef)context error:(NSError **)error;
 
 @end
@@ -85,16 +84,16 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFRenderManager <NSObject>
 /// Setup the graphics context to the current PDF.
 - (void)setupGraphicsContext:(CGContextRef)context rectangle:(CGRect)displayRectangle pageInfo:(PSPDFPageInfo *)pageInfo;
 
-/// The render queue.
+/// The render queue that manages render jobs.
 @property (nonatomic, readonly) PSPDFRenderQueue *renderQueue;
 
-/// Returns the name of the current PDF renderer.
-@property (nonatomic, copy, readonly) NSDictionary<NSString *, id> *rendererInfo;
+/// @name Deprecated
 
-/// Allows to set a custom renderer.
-/// @note PSPDFKit will find custom renderers automatically (classes that implement <PSPDFPageRenderer> and use the one with the highest plugin priority)
-/// If this is set to nil, PSPDFKit will fall back to the default core graphics renderer.
-@property (atomic, nullable) id<PSPDFPageRenderer> renderer;
+/// Returns the name of the current PDF renderer.
+@property (nonatomic, copy, readonly) NSDictionary<NSString *, id> *rendererInfo PSPDF_DEPRECATED(5.3, "Not useful");
+
+/// Returns the pdf renderer.
+@property (nonatomic, readonly) id<PSPDFPageRenderer> renderer PSPDF_DEPRECATED(5.3, "Should not be required to be called directly.");
 
 @end
 

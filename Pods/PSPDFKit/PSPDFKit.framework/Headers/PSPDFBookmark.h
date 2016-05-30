@@ -33,7 +33,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFBookmark : PSPDFModel
 - (instancetype)initWithPage:(NSUInteger)page;
 
 /// Initialize with an action object.
-- (instancetype)initWithAction:(PSPDFAction *)action;
+- (instancetype)initWithAction:(nullable PSPDFAction *)action;
 
 /// The PDF action. Usually this will be of type `PSPDFGoToAction`, but all action types are possible.
 @property (nonatomic, readonly, nullable) PSPDFAction *action;

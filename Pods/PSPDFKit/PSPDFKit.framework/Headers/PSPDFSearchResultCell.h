@@ -28,7 +28,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFSearchResultCell : PSPDFTableViewCell <PSP
 - (void)configureWithSearchResult:(PSPDFSearchResult *)searchResult;
 
 /// Will configure the cell with the given document, page, text and detail text.
-- (void)configureWithDocument:(PSPDFDocument *)document page:(NSUInteger)page text:(NSString *)text detailText:(NSAttributedString *)detailText;
+- (void)configureWithDocument:(PSPDFDocument *)document page:(NSUInteger)page text:(NSString *)text detailText:(nullable NSAttributedString *)detailText;
 
 /// Height calculation.
 + (CGFloat)heightForSearchPreviewText:(NSAttributedString *)text cellWidth:(CGFloat)cellWidth rotatedPageRect:(CGRect)rotatedPageRect maxNumberOfPreviewLines:(NSUInteger)numberOfPreviewLines;

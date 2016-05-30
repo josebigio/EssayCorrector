@@ -1,5 +1,5 @@
 //
-//  PSPDFUndoManager.h
+//  PSPDFUndoController.h
 //  PSPDFKit
 //
 //  Copyright (c) 2011-2016 PSPDFKit GmbH. All rights reserved.
@@ -45,7 +45,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 /// Listen to NSUndoManagerDid* and PSPDFUndoController* notification events instead.
 @property (nonatomic, readonly) BOOL canUndo;
 
-/// Returns YES if redoable operations have been recorded.
+/// Returns YES if recordable operations have been recorded.
 /// @note This is a calculated property and does not support KVO.
 /// Listen to NSUndoManagerDid* and PSPDFUndoController* notification events instead.
 @property (nonatomic, readonly) BOOL canRedo;

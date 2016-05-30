@@ -18,5 +18,6 @@
 /// Generic view for form elements. Adds the form accessory view and additional keyboard support.
 /// Form views are not synced with the page to allow snappier editing.
 PSPDF_CLASS_AVAILABLE @interface PSPDFFormElementView : PSPDFHostingAnnotationView <PSPDFFormInputAccessoryViewDelegate>
+
 @end
 

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '735FB88BEF99A6C5F9EF8F4A'
+               BlueprintIdentifier = '71733F048350DBD363F6B304'
                BlueprintName = 'CXAlertView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CXAlertView.framework'>

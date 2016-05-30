@@ -1,6 +1,6 @@
 {
   "name": "PSPDFKit",
-  "version": "5.3.3",
+  "version": "5.3.7",
   "homepage": "https://pspdfkit.com",
   "license": {
     "type": "Commercial",
@@ -19,7 +19,7 @@
     "ios": "8.0"
   },
   "source": {
-    "http": "https://customers.pspdfkit.com/cocoapods/07zJIrQpBT01ce0XuO1zzhbF6rLOLFfBni968oB2_8rcq2VNmGAwcT_WN5Oi3oInuDLDwsSixPURzOCRnceO_w/5.3.3.zip"
+    "http": "https://customers.pspdfkit.com/cocoapods/07zJIrQpBT01ce0XuO1zzhbF6rLOLFfBni968oB2_8rcq2VNmGAwcT_WN5Oi3oInuDLDwsSixPURzOCRnceO_w/5.3.7.zip"
   },
   "preserve_paths": "PSPDFKit.framework",
   "public_header_files": "PSPDFKit.framework/Headers/*.h",

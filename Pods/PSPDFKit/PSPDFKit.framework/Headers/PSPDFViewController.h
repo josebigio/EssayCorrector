@@ -35,7 +35,7 @@
 #import <MessageUI/MessageUI.h>
 
 @protocol PSPDFViewControllerDelegate, PSPDFAnnotationSetStore, PSPDFFormSubmissionDelegate;
-@class PSPDFDocument, PSPDFScrollView, PSPDFScrubberBar, PSPDFPageView, PSPDFRelayTouchesView, PSPDFPageViewController, PSPDFSearchResult, PSPDFViewState, PSPDFPageLabelView, PSPDFDocumentLabelView, PSPDFAnnotationViewCache, PSPDFAnnotationStateManager, PSPDFSearchHighlightViewManager, PSPDFAction, PSPDFAnnotationToolbar, PSPDFThumbnailViewController, PSPDFAnnotationToolbarController, PSPDFDocumentInfoCoordinator, PSPDFAppearanceModeManager, PSPDFDocumentEditorViewController;
+@class PSPDFDocument, PSPDFScrollView, PSPDFScrubberBar, PSPDFPageView, PSPDFRelayTouchesView, PSPDFPageViewController, PSPDFSearchResult, PSPDFViewState, PSPDFPageLabelView, PSPDFDocumentLabelView, PSPDFAnnotationViewCache, PSPDFAnnotationStateManager, PSPDFSearchHighlightViewManager, PSPDFAction, PSPDFAnnotationToolbar, PSPDFThumbnailViewController, PSPDFAnnotationToolbarController, PSPDFDocumentInfoCoordinator, PSPDFAppearanceModeManager, PSPDFBrightnessManager, PSPDFDocumentEditorViewController;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -162,6 +162,9 @@ PSPDF_EXPORT NSString *const PSPDFViewControllerSearchHeadlessKey;
 
 /// The appearance manager, responsible for the rendering style and app theme.
 @property (nonatomic, readonly) PSPDFAppearanceModeManager *appearanceModeManager;
+
+/// The brightness manager, responsible for controlling screen brightness.
+@property (nonatomic, readonly) PSPDFBrightnessManager *brightnessManager;
 
 /// Text extraction class for current document.
 /// The delegate is set to this controller. Don't change but create your own text search class instead if you need a different delegate.
@@ -385,9 +388,12 @@ PSPDF_EXPORT NSString *const PSPDFViewControllerSearchHeadlessKey;
 /// Presents the `UIActivityViewController` for various actions, including many of the above button items.
 @property (nonatomic, readonly) UIBarButtonItem *activityButtonItem;
 
+/// Presents the `PSPDFSettingsViewContoller` to control some aspects of PSPDFViewController UX.
+@property (nonatomic, readonly) UIBarButtonItem *settingsButtonItem;
+
 /// Add your custom `UIBarButtonItems` so that they won't be automatically enabled/disabled.
 /// @warning This needs to be set before setting `left/rightBarButtonItems`.
-@property (nonatomic, copy) NSArray<__kindof UIBarButtonItem *> *barButtonItemsAlwaysEnabled;
+@property (nonatomic, copy) NSArray<UIBarButtonItem *> *barButtonItemsAlwaysEnabled;
 
 /// Handler for all document related actions.
 @property (nonatomic, readonly) PSPDFDocumentActionExecutor *documentActionExecutor;
@@ -396,7 +402,7 @@ PSPDF_EXPORT NSString *const PSPDFViewControllerSearchHeadlessKey;
 @property (nonatomic, readonly) PSPDFDocumentInfoCoordinator *documentInfoCoordinator;
 
 /// Accesses and manages the annotation toolbar.
-/// To check if the toolbar is visible, check if a window is set.
+/// To check if the toolbar is visible, check if a window is set on the toolbar.
 @property (nonatomic, readonly, nullable) PSPDFAnnotationToolbarController *annotationToolbarController;
 
 @end
@@ -423,7 +429,7 @@ PSPDF_EXPORT NSString *const PSPDFViewControllerSearchHeadlessKey;
 - (void)updatePage:(NSUInteger)page animated:(BOOL)animated;
 
 /// Bar Button Actions
-- (void)annotationButtonPressed:(id)sender;
+- (void)annotationButtonPressed:(nullable id)sender;
 
 @end
 
@@ -435,12 +441,12 @@ PSPDF_EXPORT NSString *const PSPDFViewControllerSearchHeadlessKey;
 /// Defaults to `[closeButtonItem]` if view is presented modally.
 /// @note UIKit limits the left toolbar size if space is low in the toolbar, potentially cutting off buttons in those toolbars if the title is also too long. You can either reduce the number of buttons, cut down the text or use a `titleView` to fix this problem. It also appears that UIKit focuses on the leftToolbar, the right one is cut off much later. This problem only appears on the iPad in portrait mode. You can also use `updateSettingsForBoundsChangeBlock` to adapt the toolbar for portrait/landscape mode.
 /// @warning If you use any of the provided bar button items in a custom toolbar, make sure to set `leftBarButtonItems` and `rightBarButtonItems` to nil - an `UIBarButtonItem` can only ever have one parent, else some icons might "vanish" from your toolbar.
-@property (nonatomic, copy, null_resettable) NSArray<__kindof UIBarButtonItem *> *leftBarButtonItems PSPDF_DEPRECATED(5.3, "Use the appropriate methods on navigationItem instead.");
+@property (nonatomic, copy, null_resettable) NSArray<UIBarButtonItem *> *leftBarButtonItems PSPDF_DEPRECATED(5.3, "Use the appropriate methods on navigationItem instead.");
 
 /// Bar button items displayed at the right of the toolbar. Must be `UIBarButtonItem` instances.
 /// Defaults to `@[self.searchButtonItem, self.outlineButtonItem, self.thumbnailsButtonItem]`;
 /// @warning If you use any of the provided bar button items in a custom toolbar, make sure to set `leftBarButtonItems` and `rightBarButtonItems` to nil - an `UIBarButtonItem` can only ever have one parent, else some icons might "vanish" from your toolbar.
-@property (nonatomic, copy, null_resettable) NSArray<__kindof UIBarButtonItem *> *rightBarButtonItems PSPDF_DEPRECATED(5.3, "Use the appropriate methods on navigationItem instead. Note that the order of items will need to be reversed.");
+@property (nonatomic, copy, null_resettable) NSArray<UIBarButtonItem *> *rightBarButtonItems PSPDF_DEPRECATED(5.3, "Use the appropriate methods on navigationItem instead. Note that the order of items will need to be reversed.");
 
 /// Saves the view state into a serializable object. (`page`/`zoom`/`position`)
 /// @note For PSPDFPageTransitionCurl, only the _page_ is being restored.

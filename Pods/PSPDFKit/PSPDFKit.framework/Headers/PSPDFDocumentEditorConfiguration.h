@@ -16,7 +16,7 @@
 typedef NS_ENUM(NSInteger, PSPDFDocumentOrientation) {
     PSPDFDocumentOrientationPortrait,
     PSPDFDocumentOrientationLandscape,
-};
+} PSPDF_ENUM_AVAILABLE;
 
 @class PSPDFPagePattern, PSPDFPageSize, PSPDFDirectory;
 
@@ -40,9 +40,6 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFDocumentEditorConfiguration : NSObject
 /// @note Can't be empty if `currentDocumentPageSize` is `nil`.
 @property (nonatomic, null_resettable) NSArray<PSPDFPageSize *> *pageSizes;
 
-/// A list of predefined page background colors.
-@property (nonatomic, null_resettable) NSArray<UIColor *> *pageColors;
-
 /// Represents the directory of the current document.
 /// @note Can't be `nil` if `saveDirectories` is empty.
 @property (nonatomic, nullable) PSPDFDirectory *currentDocumentDirectory;
@@ -64,7 +61,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFDocumentEditorConfiguration : NSObject
 @property (nonatomic) PSPDFDocumentOrientation selectedOrientation;
 
 /// The currently selected page background color.
-/// Defaults to the first color in `pageColors`, if non-empty. Otherwise white is used.
+/// Setting this to `nil` will result in the default white color being used.
 @property (nonatomic, null_resettable) UIColor *selectedColor;
 
 /// The currently selected save directory.
@@ -91,7 +88,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 /// A thumbnail of the pattern
 ///
 /// @note this is a pattern in it self, so you need to draw this as a pattern image.
-@property (nonatomic, readonly) UIImage *thumbnail;
+@property (nonatomic, readonly, nullable) UIImage *thumbnail;
 
 @end
 
@@ -153,7 +150,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 
 @end
 
-@protocol PSPDFDocumentEditorConfigurationConfigurable <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFDocumentEditorConfigurationConfigurable <NSObject>
 
 /// Initializes the controller with a document editor configuration.
 - (instancetype)initWithDocumentEditorConfiguration:(PSPDFDocumentEditorConfiguration *)configuration;

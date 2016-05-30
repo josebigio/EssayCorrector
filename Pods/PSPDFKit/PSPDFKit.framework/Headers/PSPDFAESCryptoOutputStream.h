@@ -41,6 +41,6 @@ typedef NS_ENUM(NSInteger, PSPDFAESCryptoOutputStreamErrorCode) {
     PSPDFErrorCodeAESCryptoOutputStreamWritingToParentStreamFailed = 120,
     PSPDFErrorCodeAESCryptoOutputStreamFailedToAllocateMemory = 200,
     PSPDFErrorCodeAESCryptoOutputStreamUnknown = NSIntegerMax
-} PSPDF_CLASS_AVAILABLE;
+} PSPDF_ENUM_AVAILABLE;
 
 NS_ASSUME_NONNULL_END

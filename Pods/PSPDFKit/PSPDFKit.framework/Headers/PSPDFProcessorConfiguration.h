@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, PSPDFAnnotationChange) {
 
     /// The annotation will be embedded into the resulting document, allowing it to still be modified.
     PSPDFAnnotationChangeEmbed
-};
+} PSPDF_ENUM_AVAILABLE;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -41,13 +41,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// Learn more at https://pspdfkit.com/features/document-editor/ios
 PSPDF_CLASS_AVAILABLE @interface PSPDFProcessorConfiguration : NSObject <NSCopying>
 
-PSPDF_EMPTY_INIT_UNAVAILABLE
-
-/// Designated initializer. A valid document is required to initialize the configuration.
-- (instancetype)initWithDocument:(PSPDFDocument *)document NS_DESIGNATED_INITIALIZER;
+ /**
+ *  Designated initializer
+ *
+ *  @param document The document that the configuration is based on.
+ *  If a document is given, it needs to be valid, else we return nil.
+ *
+ *  @return The processor configuration or nil in case the document
+ *  cannot be processed or is not valid.
+ */
+- (nullable instancetype)initWithDocument:(nullable PSPDFDocument *)document;
 
 /// The source document.
-@property (nonatomic, readonly) PSPDFDocument *document;
+@property (nonatomic, readonly, nullable) PSPDFDocument *document;
 
 /// Returns the page count of the currently configured generated document.
 @property (nonatomic, readonly) NSInteger pageCount;
@@ -69,6 +75,39 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 /// Rotates a page. `degrees` must be a value of 0, 90, 180 or 270.
 /// @note This method requires the Document Editor component to be enabled for your license.
 - (void)rotatePage:(NSUInteger)pageIndex by:(NSUInteger)degrees;
+
+/// Scales the given page index to the given size. The size must be specified in PDF points.
+/// @note This method requires the Document Editor component to be enabled for your license.
+- (void)scalePage:(NSUInteger)pageIndex toSize:(CGSize)size;
+
+/// Scales the given page index to the given size. The size must be specified in millimeters.
+/// @note This method requires the Document Editor component to be enabled for your license.
+- (void)scalePage:(NSUInteger)pageIndex toSizeInMillimeter:(CGSize)mmSize;
+
+/// Changes the `CropBox` for the given page to the given rect. The rect must be specified in points.
+/// This does NOT scale the page. See `scalePage:toSizeInMillimeter:` and `scalePage:toSize:`.
+/// Definition of a `CropBox` from the PDF spec:
+///   The crop box defines the region to which the contents of the page shall be clipped (cropped) when
+///   displayed or printed. Unlike the other boxes, the crop box has no defined meaning in terms of physical
+///   page geometry or intended use; it merely imposes clipping on the page contents. However, in the absence
+///   of additional information (such as imposition instructions specified in a JDF or PJTF job ticket), the crop
+///   box determines how the page’s contents shall be positioned on the output medium. The default value is the
+///   page’s media box.
+/// TL;DR: The visible part of the page.
+/// @note This method requires the Document Editor component to be enabled for your license.
+- (void)changeCropBoxForPage:(NSUInteger)pageIndex toRect:(CGRect)rect;
+
+/// Changes the `MediaBox` for the given page to the given rect. The rect must be specified in points.
+/// This does NOT scale the page. See `scalePage:toSizeInMillimeter:` and `scalePage:toSize:`.
+/// Definition of a `MediaBox` from the PDF spec:
+///   The media box defines the boundaries of the physical medium on which the page is to be printed. It may
+///   include any extended area surrounding the finished page for bleed, printing marks, or other such purposes.
+///   It may also include areas close to the edges of the medium that cannot be marked because of physical
+///   limitations of the output device. Content falling outside this boundary may safely be discarded without
+///   affecting the meaning of the PDF file.
+/// TL;DR: The size of the page.
+/// @note This method requires the Document Editor component to be enabled for your license.
+- (void)changeMediaBoxForPage:(NSUInteger)pageIndex toRect:(CGRect)rect;
 
 /// Adds a new page at `destinationPageIndex`.
 /// If `newPageConfiguation` is nil, the size of the new page will match the page size of the first page.

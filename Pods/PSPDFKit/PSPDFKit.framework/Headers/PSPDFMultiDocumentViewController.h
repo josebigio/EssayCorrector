@@ -93,6 +93,10 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFMultiDocumentViewController : PSPDFBaseVie
 /// @note The `pdfController` argument might be `nil`, but the property of the same name will be non-nil after calling the superclass’s implementation.
 - (void)commonInitWithPDFController:(nullable PSPDFViewController *)pdfController NS_REQUIRES_SUPER;
 
+/// Returns the title of the loaded document at a specified index.
+/// Can be subclassed to customize what title should be set.
+- (NSString *)titleForDocumentAtIndex:(NSUInteger)idx;
+
 @end
 
 NS_ASSUME_NONNULL_END

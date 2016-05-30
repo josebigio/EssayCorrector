@@ -14,5 +14,5 @@
 #import "PSPDFGalleryItem.h"
 
 /// A web item in a gallery.
-@interface PSPDFGalleryWebItem : PSPDFGalleryItem
+PSPDF_CLASS_AVAILABLE @interface PSPDFGalleryWebItem : PSPDFGalleryItem
 @end

@@ -10,10 +10,10 @@
 //  This notice may not be removed from this file.
 //
 
-#import <Foundation/Foundation.h>
+#import "PSPDFEnvironment.h"
 
 /// Allows to override specific subclasses of a controller/view/model.
-@protocol PSPDFOverridable <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFOverridable <NSObject>
 
 @optional
 

@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EssayCorrector/NotesViewController.swift"
-            timestampString = "486242376.58157"
+            timestampString = "486250741.743342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
             landmarkName = "addCriteria(_:)"
             landmarkType = "5">
          </BreakpointContent>

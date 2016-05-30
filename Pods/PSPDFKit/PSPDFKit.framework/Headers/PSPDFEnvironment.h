@@ -84,7 +84,7 @@ PSPDF_EXTERN CGAffineTransform PSPDF_CGAffineTransformFromString(NSString *strin
 PSPDF_EXTERN NSString *const PSPDFApplicationDidReceiveMemoryWarningNotification;
 
 // This is implemented on PSPDFDocument, but if we ifdef there, apppledoc has parsing issues.
-@protocol UIActivityItemSource @end
+PSPDF_AVAILABLE_DECL @protocol UIActivityItemSource @end
 
 #import "PSPDFMacCompatibility.h"
 

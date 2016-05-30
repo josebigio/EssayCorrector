@@ -28,13 +28,11 @@ typedef NS_OPTIONS(NSUInteger, PSPDFDataProviderAdditionalOperations) {
 /// This protocol is to be used by all possible data providers for PDF access.
 /// E.g. a `PSPDFDataProvider` or `PSPDFAESCryptoDataProvider`.
 ///
-/// @note This replaces theCGDataProvidersupport in earlier versions of the SDK.
+/// @note This replaces the `CGDataProvider` support in earlier versions of the SDK.
 PSPDF_AVAILABLE_DECL @protocol PSPDFDataProvider <NSObject, NSSecureCoding>
 
 /// Creates a `NSData` object with all the data of the provider. Use with caution - this can take a while if the data provider is
 /// a remote source and it can quickly exhaust all your memory if it is a big data provider.
-///
-/// This should be removed in future versions as soon as we don't rely on `CGPDF*` anymore.
 @property (nonatomic, readonly, nullable) NSData *data;
 
 /// Returns the size of the data.
@@ -46,17 +44,18 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFDataProvider <NSObject, NSSecureCoding>
 /// Specifies which additional operations are supported, if any.
 @property (nonatomic, readonly) PSPDFDataProviderAdditionalOperations additionalOperationsSupported;
 
-/// Reads and returns data read from offset with size.
+/// Reads and returns data read from offset with size. You have to make sure not to read past the end of your data.
 - (NSData *)readDataWithSize:(uint64_t)size atOffset:(uint64_t)offset;
 
 @optional
 
-/// Creates a `PSPDFDataSink` that writes to a temporary location.
-/// This can later be used to replace the data in the receiver using `-[PSPDFDataProvider replaceWithDataSink:]`.
+/// This method should create a data sink for your data provider with the given options.
+/// PSPDFKit will write all the appropriate data into it and pass it to `replaceWithDataSink:` when appropriate.
 - (id<PSPDFDataSink>)createDataSinkWithOptions:(PSPDFDataSinkOptions)options;
 
-/// Replaces the data of the receiver with the data written into `replacementDataSink`.
-/// `replacementDataSink` finish must have been called before calling this.
+/// This method should replace your current data with the one written into `replacementDataSink`.
+/// `replacementDataSink` is the object instantiated in `createDataSinkWithOptions:`.
+/// Depending on the `PSPDFDataSinkOptions` used above, you either have to append or replace the data.
 - (BOOL)replaceWithDataSink:(id<PSPDFDataSink>)replacementDataSink;
 
 @end

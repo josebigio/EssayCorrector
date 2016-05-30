@@ -60,26 +60,27 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hbg-G6-Niu" id="miw-mc-cxc">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09d-U3-KeY">
-                                                    <rect key="frame" x="13" y="11" width="302" height="21"/>
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-u4-pCi" customClass="ECStepperLabel" customModule="ECStepperLabel">
+                                                    <rect key="frame" x="458" y="3" width="120" height="37"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09d-U3-KeY">
+                                                    <rect key="frame" x="8" y="8" width="480" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5F-u4-pCi" customClass="ECStepperLabel" customModule="ECStepperLabel">
-                                                    <rect key="frame" x="458" y="3" width="120" height="36.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="B5F-u4-pCi" secondAttribute="trailing" constant="14" id="2Mt-8W-hsI"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="09d-U3-KeY" secondAttribute="bottom" constant="3.5" id="49a-05-UWb"/>
-                                                <constraint firstItem="09d-U3-KeY" firstAttribute="top" secondItem="miw-mc-cxc" secondAttribute="topMargin" constant="3" id="7E4-MM-m4Z"/>
-                                                <constraint firstItem="B5F-u4-pCi" firstAttribute="centerY" secondItem="miw-mc-cxc" secondAttribute="centerY" id="L6D-aI-Z10"/>
-                                                <constraint firstItem="09d-U3-KeY" firstAttribute="leading" secondItem="miw-mc-cxc" secondAttribute="leadingMargin" constant="5" id="mY1-IR-sBb"/>
+                                                <constraint firstItem="B5F-u4-pCi" firstAttribute="centerY" secondItem="miw-mc-cxc" secondAttribute="centerY" id="46D-jx-FjL"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="09d-U3-KeY" secondAttribute="leading" id="5We-gu-4u6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="09d-U3-KeY" secondAttribute="trailing" constant="104" id="8US-mT-ZVn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="09d-U3-KeY" secondAttribute="bottom" constant="7" id="Pxb-CG-9p1"/>
+                                                <constraint firstItem="09d-U3-KeY" firstAttribute="centerY" secondItem="B5F-u4-pCi" secondAttribute="centerY" id="gGH-bT-FLx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="B5F-u4-pCi" secondAttribute="trailing" constant="14" id="rna-Gx-fIs"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -121,8 +122,8 @@
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJF-dc-Tt1">
                                                     <rect key="frame" x="268" y="11" width="22" height="22"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-zz-gZv">
-                                                    <rect key="frame" x="457" y="8" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIl-4Y-yrk">
+                                                    <rect key="frame" x="499" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -130,15 +131,15 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="IIl-4Y-yrk" firstAttribute="centerY" secondItem="PRd-SA-5Cy" secondAttribute="centerY" id="3KY-0D-4mm"/>
                                                 <constraint firstItem="DJF-dc-Tt1" firstAttribute="centerY" secondItem="PRd-SA-5Cy" secondAttribute="centerY" id="GTj-iC-s74"/>
                                                 <constraint firstItem="DJF-dc-Tt1" firstAttribute="centerX" secondItem="PRd-SA-5Cy" secondAttribute="centerX" id="Jzg-Ff-PYr"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bz3-zz-gZv" secondAttribute="trailing" constant="93" id="pa7-aT-LpR"/>
-                                                <constraint firstItem="bz3-zz-gZv" firstAttribute="centerY" secondItem="PRd-SA-5Cy" secondAttribute="centerY" id="vxd-lP-3iq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IIl-4Y-yrk" secondAttribute="trailing" constant="51" id="Zvg-Kx-vkB"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addButton" destination="DJF-dc-Tt1" id="Cy3-UP-aw7"/>
-                                            <outlet property="totalLabel" destination="bz3-zz-gZv" id="7gl-KB-1cf"/>
+                                            <outlet property="totalLabel" destination="IIl-4Y-yrk" id="ciL-v2-MTi"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addSubCriteriaCell" id="90S-F1-llk" customClass="AddSubCriteriaFooterCell" customModule="EssayCorrector" customModuleProvider="target">

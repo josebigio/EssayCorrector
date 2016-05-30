@@ -12,12 +12,15 @@
 
 #import "PSPDFStaticTableViewController.h"
 #import "PSPDFDocumentEditorConfiguration.h"
+#import "PSPDFOverridable.h"
 
 @class PSPDFNewPageViewController, PSPDFNewPageConfiguration;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol PSPDFNewPageViewControllerDelegate <NSObject>
+/// Delegate that allows connecting a `PSPDFNewPageViewController` to
+/// receive the event when a selection has been chosen.
+PSPDF_AVAILABLE_DECL @protocol PSPDFNewPageViewControllerDelegate <NSObject, PSPDFOverridable>
 
 /// Called when the selection process completes (i.e., the commit button is pressed).
 /// The delegate should dismiss the view controller at this point.

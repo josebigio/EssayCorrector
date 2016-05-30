@@ -76,7 +76,7 @@ typedef NS_OPTIONS(NSUInteger, PSPDFFeatureMask) {
     PSPDFFeatureMaskAll = UINT_MAX
 } PSPDF_ENUM_AVAILABLE;
 
-@protocol PSPDFSettings <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFSettings <NSObject>
 
 /// Allow generic array access.
 - (nullable id)objectForKeyedSubscript:(id)key;
@@ -95,8 +95,13 @@ PSPDF_CLASS_AVAILABLE_SUBCLASSING_RESTRICTED @interface PSPDFKit : NSObject <PSP
 /// @note This is the default instance used in document and pdf controller instances.
 + (instancetype)sharedInstance;
 
-/// Activate PSPDFKit with your license key from https://customers.pspdfkit.com .
+/// Activate PSPDFKit with your license key from https://customers.pspdfkit.com
 + (void)setLicenseKey:(NSString *)licenseKey;
+
+/// Activate PSPDFKit with your license key from https://customers.pspdfkit.com
+/// Variant that allows to set options.
+/// These can also later be changed via subscripting access.
++ (void)setLicenseKey:(NSString *)licenseKey options:(nullable NSDictionary<NSString *, id> *)options;
 
 /// Returns the PSPDFKit version string.
 @property (nonatomic, readonly) NSString *version;

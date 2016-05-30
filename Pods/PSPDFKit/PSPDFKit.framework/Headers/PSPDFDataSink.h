@@ -26,15 +26,17 @@ typedef NS_OPTIONS(NSUInteger, PSPDFDataSinkOptions) {
 /// This protocol allows `PSPDFDataProvider` to return a object that can be used to re-write/append to a data source.
 PSPDF_AVAILABLE_DECL @protocol PSPDFDataSink <NSObject>
 
-/// Checks if `finish` has been called.
+/// `isFinished` should return `YES` if `finish` has been called. This is used for
+/// consistency checks to make sure writing has actually finished.
 @property (nonatomic, readonly) BOOL isFinished;
 
-/// Writes data sequentially to the data source. If it returns NO, no further operations should be attempted on
-/// this `PSPDFDataSink`.
+/// This method should append the given `data` to your data source. If your data source is full or encounters a error,
+/// return `NO` and the write operation will be marked as a failure.
 - (BOOL)writeData:(NSData *)data;
 
-/// Call this when you're done writing to the `PSPDFDataSink`. Some `PSPDFDataSink` might need to execute
-/// a couple of operations after writing is done (e.g. finishing up encryption).
+/// This is called at the end of all the write operations. This gives you the opportunity to finish up any compression
+/// or encryption operation. After this, `writeData:` will no longer be called and the `PSPDFDataSink` is finished.
+/// If any error occurs, return `NO` and the write operation will be marked as a failure.
 - (BOOL)finish;
 
 @end

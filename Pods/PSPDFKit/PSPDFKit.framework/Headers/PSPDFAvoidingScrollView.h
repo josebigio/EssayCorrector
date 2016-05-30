@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class PSPDFAvoidingScrollView;
 
 /// Custom sub-protocol of `UIScrollViewDelegate` with additional optional callbacks.
-@protocol PSPDFAvoidingScrollViewDelegate <UIScrollViewDelegate>
+PSPDF_AVAILABLE_DECL @protocol PSPDFAvoidingScrollViewDelegate <UIScrollViewDelegate>
 
 @optional
 

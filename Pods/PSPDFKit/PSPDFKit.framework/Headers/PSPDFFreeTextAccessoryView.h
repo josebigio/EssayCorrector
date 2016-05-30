@@ -38,7 +38,7 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFFreeTextAccessoryViewDelegate <NSObject>
 - (void)clearButtonPressedOnFreeTextAccessoryView:(PSPDFFreeTextAccessoryView *)inputView;
 
 /// Show the text inspector (relevant only if the inspector button is used - only on iPhone by default).
-- (PSPDFAnnotationStyleViewController *)freeTextAccessoryViewDidRequestInspector:(PSPDFFreeTextAccessoryView *)inputView;
+- (nullable PSPDFAnnotationStyleViewController *)freeTextAccessoryViewDidRequestInspector:(PSPDFFreeTextAccessoryView *)inputView;
 
 /// Allow or reject a property change. Assumes always YES if left unimplemented.
 - (BOOL)freeTextAccessoryView:(PSPDFFreeTextAccessoryView *)styleController shouldChangeProperty:(NSString *)propertyName;

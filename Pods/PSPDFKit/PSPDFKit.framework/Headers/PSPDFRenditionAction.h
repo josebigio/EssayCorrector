@@ -32,7 +32,7 @@ PSPDF_EXPORT NSString *const PSPDFRenditionActionTypeTransformerName;
 PSPDF_CLASS_AVAILABLE @interface PSPDFRenditionAction : PSPDFAction
 
 /// Designated initializer.
-- (instancetype)initWithActionType:(PSPDFRenditionActionType)actionType javaScript:(NSString * _Nullable)javaScript annotation:(nullable PSPDFScreenAnnotation *)annotation;
+- (instancetype)initWithActionType:(PSPDFRenditionActionType)actionType javaScript:(nullable NSString *)javaScript annotation:(nullable PSPDFScreenAnnotation *)annotation;
 
 /// The rendition action type.
 @property (nonatomic, readonly) PSPDFRenditionActionType actionType;

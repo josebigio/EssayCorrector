@@ -36,7 +36,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFNavigationController : UINavigationControl
 /// The close button if `persistentCloseButtonMode` is set.
 /// If none is set, a default system close button will be created.
 /// Set the button before a VC is pushed to ensure it will be used instead of the auto-generated one.
-@property (nonatomic) UIBarButtonItem *persistentCloseButton;
+@property (nonatomic, nullable) UIBarButtonItem *persistentCloseButton;
 
 @end
 

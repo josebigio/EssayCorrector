@@ -28,7 +28,7 @@ PSPDF_EXPORT NSString *const PSPDFDocumentEditorToolbarControllerVisibilityDidCh
 /// Key inside the notification's userInfo.
 PSPDF_EXPORT NSString *const PSPDFDocumentEditorToolbarControllerVisibilityAnimatedKey;
 
-@protocol PSPDFDocumentEditorToolbarControllerDelegate <PSPDFFlexibleToolbarContainerDelegate>
+PSPDF_AVAILABLE_DECL @protocol PSPDFDocumentEditorToolbarControllerDelegate <PSPDFFlexibleToolbarContainerDelegate>
 
 /// Called when the toolbar changes the selected pages. The delegate should update its state and UI for the new selection.
 - (void)documentEditorToolbarController:(PSPDFDocumentEditorToolbarController *)controller didSelectPages:(NSSet<NSNumber *> *)pages;

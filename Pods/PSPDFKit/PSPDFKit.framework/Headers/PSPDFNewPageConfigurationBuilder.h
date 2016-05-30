@@ -18,7 +18,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PSPDFNewPageConfigurationBuilder : PSPDFModel
+PSPDF_CLASS_AVAILABLE_SUBCLASSING_RESTRICTED @interface PSPDFNewPageConfigurationBuilder : PSPDFModel
 
 /// The page size. This is `CGSizeZero` by default - the size of the first page in the resulting document will be used.
 @property (nonatomic) CGSize pageSize;
@@ -31,6 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// Add a image or PDF file to the page.
 @property (nonatomic, nullable) PSPDFProcessorItem *item;
+
+/// Allows you to specify page margins. This allows you to align items around the page margins instead of the edge of the document.
+@property (nonatomic) UIEdgeInsets pageMargins;
 
 @end
 

@@ -49,7 +49,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFTextFieldFormElement : PSPDFFormElement
 /// `isFinal` defines if the user is typing (NO) or if the string should be committed (YES).
 /// The change is the change in text.
 /// Returns the new text contents (possibly different from the passed change) to be applied. Otherwise, if failed, returns nil.
-- (NSString *)textFieldChangedWithContents:(NSString *)contents change:(NSString *)change range:(NSRange)range isFinal:(BOOL)isFinal application:(nullable id<PSPDFApplicationJSExport>)application error:(NSError * __autoreleasing *)validationError;
+- (nullable NSString *)textFieldChangedWithContents:(NSString *)contents change:(NSString *)change range:(NSRange)range isFinal:(BOOL)isFinal application:(nullable id<PSPDFApplicationJSExport>)application error:(NSError * __autoreleasing *)validationError;
 
 /// Returns the contents formatted based on rules in the annotation (including JavaScript)
 @property (nonatomic, readonly) NSString *formattedContents;

@@ -70,7 +70,12 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFToolbarButton : PSPDFButton
 /// (similar to UIBarButtonSystemItemFlexibleSpace and UIBarButtonSystemItemFixedSpace).
 /// Does not allow user interaction and is not visible, but takes up space on the toolbar.
 /// Use the properties described under "Metrics" form `PSPDFToolbarButton` for sizing.
-PSPDF_CLASS_AVAILABLE @interface PSPDFToolbarSpacerButton : PSPDFToolbarButton @end
+PSPDF_CLASS_AVAILABLE @interface PSPDFToolbarSpacerButton : PSPDFToolbarButton
+
+/// Convenience factory method for creating flexible spacer button.
++ (instancetype)flexibleSpacerButton;
+
+@end
 
 /// Sends out `PSPDFControlEventTick` events while the button is pressed.
 PSPDF_CLASS_AVAILABLE @interface PSPDFToolbarTickerButton : PSPDFToolbarButton

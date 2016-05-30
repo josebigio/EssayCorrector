@@ -1,5 +1,5 @@
 //
-//  PSPDFDecryptorOutputStream.h
+//  PSPDFCryptoOutputStream.h
 //  PSPDFKit
 //
 //  Copyright (c) 2014-2016 PSPDFKit GmbH. All rights reserved.

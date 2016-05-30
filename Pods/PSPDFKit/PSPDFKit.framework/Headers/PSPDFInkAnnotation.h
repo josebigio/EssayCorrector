@@ -66,7 +66,7 @@ PSPDF_EXPORT NSArray<NSArray<NSValue *> *> *PSPDFConvertViewLinesToPDFLines(NSAr
 /// Converts a single line of boxed `PSPDFDrawingPoints`.
 PSPDF_EXPORT NSArray<NSValue *> *PSPDFConvertViewLineToPDFLines(NSArray<NSValue *> *line, CGRect cropBox, NSUInteger rotation, CGRect bounds);
 
-/// Will convert PDF lines to view lines (operates on every point)
+/// Will convert PDF lines to view lines (arrays of `PSPDFDrawingPoints`) (operates on every point)
 PSPDF_EXPORT NSArray<NSArray<NSValue *> *> *PSPDFConvertPDFLinesToViewLines(NSArray<NSArray<NSValue *> *> *lines, CGRect cropBox, NSUInteger rotation, CGRect bounds);
 
 NS_ASSUME_NONNULL_END

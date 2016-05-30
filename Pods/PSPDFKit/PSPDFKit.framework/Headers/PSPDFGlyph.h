@@ -50,7 +50,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 @end
 
 /// Converts an array of glyphs to a string.
-PSPDF_EXPORT NSString *PSPDFStringFromGlyphs(NSArray<PSPDFGlyph *> *glyphs);
+PSPDF_EXPORT NSString *PSPDFStringFromGlyphs(NSArray<PSPDFGlyph *> *_Nullable glyphs);
 
 /// Returns the bounding box that includes all glyphs.
 /// `t` is the `rotationTransform` of `PSPDFPageInfo`.

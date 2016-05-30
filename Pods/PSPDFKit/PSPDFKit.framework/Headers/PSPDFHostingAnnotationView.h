@@ -16,7 +16,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// View that will render an annotation.
-@interface PSPDFHostingAnnotationView : PSPDFAnnotationView <PSPDFRenderDelegate>
+PSPDF_CLASS_AVAILABLE @interface PSPDFHostingAnnotationView : PSPDFAnnotationView <PSPDFRenderDelegate>
 
 /// Image View that shows the rendered annotation.
 @property (nonatomic, readonly) UIImageView *annotationImageView;

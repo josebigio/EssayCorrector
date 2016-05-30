@@ -13,6 +13,8 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     @IBOutlet weak var formTableView: UITableView!
     let DEFAULT_MAX_SCORE = 5
+    let DEFAULT_CELL_HEIGHT:CGFloat = 100
+
     
     enum VIEW_TYPES {
         case Normal
@@ -30,7 +32,8 @@ class NotesViewController: UIViewController, UITableViewDataSource, UITableViewD
         print("\(self): viewDidLoad()")
         
         formTableView.registerClass(UITableViewCell.self,forCellReuseIdentifier: "Cell")
-        
+        formTableView.estimatedRowHeight = DEFAULT_CELL_HEIGHT
+        formTableView.rowHeight = UITableViewAutomaticDimension
         footerCell = formTableView.dequeueReusableCellWithIdentifier("addCriteriaCell") as? AddTableViewCell
         footerCell!.addButton.addTarget(self, action: #selector(NotesViewController.addCriteria(_:)), forControlEvents: .TouchUpInside)
         formTableView.tableFooterView = footerCell!.contentView

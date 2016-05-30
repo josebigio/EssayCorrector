@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, PSPDFEditingOperation) {
     PSPDFEditingOperationInsert,
     /// The page at `affectedPageIndex` was rotated.
     PSPDFEditingOperationRotate
-};
+} PSPDF_ENUM_AVAILABLE;
 
 NS_ASSUME_NONNULL_BEGIN
 

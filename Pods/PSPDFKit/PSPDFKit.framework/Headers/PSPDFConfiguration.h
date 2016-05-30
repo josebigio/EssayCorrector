@@ -21,6 +21,7 @@
 #import "PSPDFDocumentSharingViewController.h"
 #import "PSPDFAnnotation.h"
 #import "PSPDFAppearanceModeManager.h"
+#import "PSPDFSettingsViewController.h"
 
 @protocol PSPDFSignatureStore;
 
@@ -201,7 +202,7 @@ typedef NS_ENUM(NSUInteger, PSPDFAdaptiveConditional) {
     PSPDFAdaptiveConditionalYES,
     /// Adaptive, the value is determinate based on the current app state (e.g., current size classes).
     PSPDFAdaptiveConditionalAdaptive
-};
+} PSPDF_ENUM_AVAILABLE;
 
 typedef NS_ENUM(NSUInteger, PSPDFScrollInsetAdjustment) {
     /// Never adjust scroll view insets.
@@ -211,7 +212,7 @@ typedef NS_ENUM(NSUInteger, PSPDFScrollInsetAdjustment) {
     PSPDFScrollInsetAdjustmentFixedElements,
     /// Adjust scrooll view insets whenever HUD elements are visible.
     PSPDFScrollInsetAdjustmentAllElements
-};
+} PSPDF_ENUM_AVAILABLE;
 
 @class PSPDFAnnotationGroup, PSPDFConfigurationBuilder, PSPDFGalleryConfiguration;
 
@@ -583,6 +584,12 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 /// Defaults to NO.
 @property (nonatomic, readonly) BOOL allowBackgroundSaving;
 
+/// Describes the time limit for recording sound annotations in seconds. After
+/// this time has been reached, the recording will stop.
+///
+/// Default to 300 (= 5 minutes).
+@property (nonatomic, readonly) NSTimeInterval soundAnnotationTimeLimit;
+
 
 /// @name Search
 
@@ -657,6 +664,8 @@ PSPDF_EXPORT NSString *const PSPDFActivityTypeOpenIn;
 /// The default sharing options for the message action.
 @property (nonatomic, readonly) PSPDFDocumentSharingOptions messageSharingOptions;
 
+/// Options that will be presented by `PSPDFSettingsViewController`. 
+@property (nonatomic, readonly) PSPDFSettingsOptions settingsOptions;
 
 /// @name Advanced Properties
 
@@ -767,6 +776,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 @property (nonatomic, copy, nullable) NSSet<NSString *> *editableAnnotationTypes;
 @property (nonatomic, getter=isAutosaveEnabled) BOOL autosaveEnabled;
 @property (nonatomic) BOOL allowBackgroundSaving;
+@property (nonatomic) NSTimeInterval soundAnnotationTimeLimit;
 @property (nonatomic) BOOL shouldCacheThumbnails;
 @property (nonatomic) BOOL shouldScrollToChangedPage;
 @property (nonatomic) PSPDFSearchMode searchMode;
@@ -786,6 +796,8 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 @property (nonatomic) PSPDFDocumentSharingOptions openInSharingOptions;
 @property (nonatomic) PSPDFDocumentSharingOptions mailSharingOptions;
 @property (nonatomic) PSPDFDocumentSharingOptions messageSharingOptions;
+@property (nonatomic) PSPDFSettingsOptions settingsOptions;
+
 @end
 
 

@@ -11,6 +11,10 @@
 //
 
 // @category: Common
+#import "PSPDFEnvironment.h"
+#import "PSPDFMacros.h"
+#import "PSPDFVersion.h"
+#import "PSPDFOverridable.h"
 #import "PSPDFKitObject.h"
 #import "PSPDFLogging.h"
 #import "PSPDFLocalization.h"
@@ -24,12 +28,24 @@
 #import "PSPDFPageInfo.h"
 #import "PSPDFRenderQueue.h"
 #import "PSPDFRenderJob.h"
-#import "PSPDFDownloadManager.h"
-#import "PSPDFRemoteFileObject.h"
 #import "PSPDFModel.h"
-#import "PSPDFProcessor.h"
+#import "PSPDFModel+NSCoding.h"
 #import "PSPDFFileManager.h"
 #import "PSPDFStreamProvider.h"
+
+// @category Networking
+#import "PSPDFReachability.h"
+#import "PSPDFDownloadManager.h"
+#import "PSPDFDownloadManagerPolicy.h"
+#import "PSPDFRemoteContentObject.h"
+#import "PSPDFRemoteFileObject.h"
+
+// @category Processor
+#import "PSPDFProcessor.h"
+#import "PSPDFProcessorConfiguration.h"
+#import "PSPDFProcessorItem.h"
+#import "PSPDFProcessorItemBuilder.h"
+#import "PSPDFProcessorSaveOptions.h"
 
 // @category: Data Provider
 #import "PSPDFDataProvider.h"
@@ -69,6 +85,7 @@
 #import "PSPDFIconFit.h"
 #import "PSPDFAnnotationSummarizer.h"
 #import "PSPDFAnnotationStyleManager.h"
+#import "PSPDFAnnotationStyle.h"
 #import "PSPDFSoundAnnotationController.h"
 #import "PSPDFAbstractShapeAnnotation.h"
 #import "PSPDFDrawingPoint.h"
@@ -94,11 +111,13 @@
 #import "PSPDFJavaScriptAction.h"
 #import "PSPDFRenditionAction.h"
 #import "PSPDFRichMediaExecuteAction.h"
+#import "PSPDFAbstractFormAction.h"
 #import "PSPDFSubmitFormAction.h"
 #import "PSPDFResetFormAction.h"
 #import "PSPDFHideAction.h"
+#import "PSPDFBackForwardActionList.h"
 
-// @category: Signatures
+// @category: Digital Signatures
 #import "PSPDFPKCS12.h"
 #import "PSPDFPKCS12Signer.h"
 #import "PSPDFRSAKey.h"
@@ -108,6 +127,7 @@
 #import "PSPDFX509.h"
 #import "PSPDFSignatureStatus.h"
 #import "PSPDFDigitalSignatureReference.h"
+#import "PSPDFSignatureValidator.h"
 
 // @category: Search
 #import "PSPDFSearchResult.h"
@@ -152,13 +172,19 @@
 #import "PSPDFXFDFWriter.h"
 #import "PSPDFXFDFAnnotationProvider.h"
 
+// @category JavaScript
+#import "PSPDFApplicationJSExport.h"
+
 // @category: View Model
 #import "PSPDFAnnotationGroup.h"
 #import "PSPDFAnnotationGroupItem.h"
+#import "PSPDFAnnotationToolbarConfiguration.h"
 #import "PSPDFColorPreset.h"
 
 // @category: Encryption
 #import "PSPDFCryptor.h"
+#import "PSPDFCryptoInputStream.h"
+#import "PSPDFCryptoOutputStream.h"
 #import "PSPDFAESCryptoDataProvider.h"
 #import "PSPDFAESCryptoInputStream.h"
 #import "PSPDFAESCryptoOutputStream.h"

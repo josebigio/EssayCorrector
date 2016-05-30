@@ -150,7 +150,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 
 @end
 
-@protocol PSPDFMediaPlayerControllerDelegate <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFMediaPlayerControllerDelegate <NSObject>
 
 @optional
 

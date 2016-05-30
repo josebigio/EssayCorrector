@@ -42,8 +42,8 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFUndoProtocol <NSObject>
 @optional
 
 /// Returns the localized undo action name for a given key.
-/// @note If this method is not implemented, the name of the key is used.
-+ (NSString *)localizedUndoActionNameForKey:(NSString *)key;
+/// @note If this method is not implemented or returns nil, the name of the key is used.
++ (nullable NSString *)localizedUndoActionNameForKey:(NSString *)key;
 
 /// Returns the coalescing for a given key.
 /// @note If this method is not implemented, `PSPDFUndoCoalescingNone` will be used for all keys.

@@ -44,6 +44,21 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFDocumentDelegate <NSObject>
 /// @warning Might be called from a background thread.
 - (void)pdfDocument:(PSPDFDocument *)document failedToSaveAnnotations:(NSArray<__kindof PSPDFAnnotation *> *)annotations error:(NSError *)error;
 
+/// Called when an underlying resource of the document is either altered or deleted
+/// and the change did not originate from the document itself.
+///
+/// You can check the `fileURL`'s `-checkResourceIsReachableAndReturnError:` if you
+/// want to determine if the file was deleted or updated.
+///
+/// @note A `PSPDFViewController` does handle this internally already, however if you
+///       are creating and modifying `PSPDFDocument`s outside of `PSPDFViewController`,
+///       this message is important. If you do not react to this problem correctly,
+///       this may result in data loss.
+///
+/// @param document the document that noticed the change.
+/// @param fileURL  the file url pointing to the resource that was changed or deleted.
+- (void)pdfDocument:(PSPDFDocument *)document underlyingFileDidChange:(NSURL *)fileURL;
+
 @end
 
 NS_ASSUME_NONNULL_END

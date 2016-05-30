@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 PSPDF_EXTERN NSString *const PSPDFUsernameHelperWillDismissAlertNotification;
 
 /// A helper that can be used to present a dialog, allowing the user to specify the annotation author name.
-@interface PSPDFUsernameHelper : NSObject
+PSPDF_CLASS_AVAILABLE @interface PSPDFUsernameHelper : NSObject
 
 /// Checks for `PSPDFDocumentDefaultAnnotationUsernameKey`.
 + (BOOL)isDefaultAnnotationUserNameSet;

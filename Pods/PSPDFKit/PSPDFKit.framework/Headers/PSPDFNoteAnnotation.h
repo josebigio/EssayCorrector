@@ -35,7 +35,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFNoteAnnotation : PSPDFAnnotation
 @property (nonatomic, readonly) UIImage *renderAnnotationIcon;
 
 /// Called to render the note image.
-- (void)drawImageInContext:(CGContextRef)context boundingBox:(CGRect)boundingBox;
+- (void)drawImageInContext:(CGContextRef)context boundingBox:(CGRect)boundingBox options:(nullable NSDictionary<NSString *, id> *)options;
 
 @end
 

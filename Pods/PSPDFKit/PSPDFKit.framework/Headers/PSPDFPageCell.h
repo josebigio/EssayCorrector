@@ -18,7 +18,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// This protocol is responsible for loading images and providing it to the `PSPDFPageCell` whenever requested by it.
-@protocol PSPDFPageCellImageLoading <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFPageCellImageLoading <NSObject>
 
 /// Called by the cell if it requires a new image from the image loader.
 ///

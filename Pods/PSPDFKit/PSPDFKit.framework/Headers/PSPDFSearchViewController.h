@@ -40,7 +40,7 @@ typedef NS_ENUM(NSUInteger, PSPDFSearchBarPinning) {
     PSPDFSearchBarPinningTop,
     /// Embed the search bar inside the table view.
     PSPDFSearchBarPinningNone,
-};
+} PSPDF_ENUM_AVAILABLE;
 
 @class PSPDFSearchViewController;
 
@@ -62,7 +62,7 @@ PSPDF_AVAILABLE_DECL @protocol PSPDFSearchViewControllerDelegate <PSPDFTextSearc
 - (NSArray<NSNumber *> *)searchViewControllerGetVisiblePages:(PSPDFSearchViewController *)searchController;
 
 /// Allows to narrow down the search range if a scope is set.
-- (NSIndexSet *)searchViewController:(PSPDFSearchViewController *)searchController searchRangeForScope:(NSString *)scope;
+- (nullable NSIndexSet *)searchViewController:(PSPDFSearchViewController *)searchController searchRangeForScope:(NSString *)scope;
 
 /// Requests the text search class. Creates a custom class if not implemented.
 - (PSPDFTextSearch *)searchViewControllerTextSearchObject:(PSPDFSearchViewController *)searchController;
@@ -136,7 +136,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFSearchViewController : PSPDFBaseTableViewC
 @interface PSPDFSearchViewController (SubclassingHooks)
 
 /// Called every time the text in the search bar changes.
-- (void)filterContentForSearchText:(NSString *)searchText scope:(NSString *)scope;
+- (void)filterContentForSearchText:(NSString *)searchText scope:(nullable NSString *)scope;
 
 /// Will update the status and insert/reload/remove search rows
 - (void)setSearchStatus:(PSPDFSearchStatus)searchStatus updateTable:(BOOL)updateTable;

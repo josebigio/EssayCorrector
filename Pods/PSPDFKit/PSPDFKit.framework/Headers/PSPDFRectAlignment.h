@@ -22,4 +22,4 @@ typedef NS_ENUM(NSInteger, PSPDFRectAlignment) {
     PSPDFRectAlignBottomLeft,
     PSPDFRectAlignBottomRight,
     PSPDFRectAlignRight
-};
+} PSPDF_ENUM_AVAILABLE;

@@ -32,7 +32,7 @@ typedef NS_ENUM(NSUInteger, PSPDFAppearanceCharacteristicsTextPosition) {
     PSPDFAppearanceCharacteristicsTextPositionCaptionRightFromIcon,
     /// 6 Caption overlaid directly on the icon
     PSPDFAppearanceCharacteristicsTextPositionCaptionOverlaid
-} PSPDF_CLASS_AVAILABLE;
+} PSPDF_ENUM_AVAILABLE;
 
 /// Saves all elements of the appearance characteristics dictionary. Not all options are supported yet.
 //// Rotation, border and fill color are defined in the widget annotation directly.

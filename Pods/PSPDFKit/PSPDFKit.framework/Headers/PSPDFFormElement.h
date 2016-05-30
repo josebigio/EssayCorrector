@@ -105,7 +105,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFFormElement : PSPDFWidgetAnnotation
 @property (nonatomic, readonly) NSString *formTypeName;
 
 /// Returns child form element with given field name found in `kids` array (nil if not found)
-- (PSPDFFormElement *)findKidWithFieldName:(NSString *)fieldName;
+- (nullable PSPDFFormElement *)findKidWithFieldName:(NSString *)fieldName;
 
 @end
 

@@ -15,7 +15,6 @@ class PDFPreviewViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     
     let FILE_NAME = "FILE_NAME"
-    let TEST_DATA =  ["Puntualidad":[("Entregado antes de la hora final",(0,5)),("Entregado antes de la mañana siguiente",(0,5)),("Entregado antes del fin de semana siguiente",(0,5))],"Redaccion":[("Ortografia, sintaxis y lexico correctos",(0,5)),("Desarrollo de un estilo propio",(0,5)),("Coherencia",(0,4)),("Cohesion",(0,8))],"Manejo":[("Identificacion del 100% de ellos",(0,5)),("Profundidad en el conocimiento/definiciones exaustivas",(0,5)),("Articulacion apropiada",(0,5))]]
     
     override func viewDidLoad() {
         super.viewDidLoad()

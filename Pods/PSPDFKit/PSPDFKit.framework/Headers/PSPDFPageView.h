@@ -135,7 +135,7 @@ PSPDF_EMPTY_INIT_UNAVAILABLE
 /// Access parent `PSPDFScrollView` if available. (zoom controller)
 /// @note this only lets you access the scrollView if it's in the view hierarchy.
 /// If we use pageCurl mode, we have a global scrollView which can be accessed with `pdfController.pagingScrollView`
-@property (nonatomic, readonly) PSPDFScrollView *scrollView;
+@property (nonatomic, readonly, nullable) PSPDFScrollView *scrollView;
 
 /// Returns an array of `UIView` `PSPDFAnnotationViewProtocol` objects currently in the view hierarchy.
 @property (nonatomic, readonly) NSArray<UIView<PSPDFAnnotationViewProtocol> *> *visibleAnnotationViews;

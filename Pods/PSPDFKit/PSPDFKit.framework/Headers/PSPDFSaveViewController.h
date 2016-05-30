@@ -17,7 +17,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol PSPDFSaveViewControllerDelegate <NSObject>
+PSPDF_AVAILABLE_DECL @protocol PSPDFSaveViewControllerDelegate <NSObject>
 
 /// Called when the save or cancel button is pressed. The delegate should save the document requested.
 - (void)saveViewControllerDidEnd:(PSPDFSaveViewController *)controller shouldSave:(BOOL)shouldSave;

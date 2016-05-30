@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/PSPDFAESCryptoInputStream.h</key>
 		<data>
-		wTW9yXXRXx0GmZdycalYsAnWM8s=
+		fyit7kVStb3LIzWoFGbEqkZN9sM=
 		</data>
 		<key>Headers/PSPDFAESCryptoOutputStream.h</key>
 		<data>
-		sx69kTo1fXzcO1n4zYe1QYx4keA=
+		SOd+GgU91L600isI8ePfZWQXDqw=
 		</data>
 		<key>Headers/PSPDFAbstractFormAction.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Headers/PSPDFAppearanceCharacteristics.h</key>
 		<data>
-		AFBlrdMSfnril4dbIbeHBTrROfU=
+		163yivqmo8PxA2IaKR5y0ARQYew=
 		</data>
 		<key>Headers/PSPDFAppearanceModeManager.h</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>Headers/PSPDFApplication.h</key>
 		<data>
-		UwL3OrfOUWKIfENLoNuKs07ckOU=
+		6U95H5PL1qe6JaJP8f7z+6qdQhk=
 		</data>
 		<key>Headers/PSPDFApplicationJSExport.h</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Headers/PSPDFAvoidingScrollView.h</key>
 		<data>
-		ydDnAOYRMbtklEKLBhJKPvs98Fc=
+		ef6d5ZFlCcvdYe41pElBrtnGQLI=
 		</data>
 		<key>Headers/PSPDFBackForwardActionList.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Headers/PSPDFBackForwardButton.h</key>
 		<data>
-		wg0S67vT6UzZXg1Xl3pQe07tp8c=
+		W136QXXfmdSlDWPBo+i8CWMginU=
 		</data>
 		<key>Headers/PSPDFBaseTableViewController.h</key>
 		<data>
@@ -178,11 +178,11 @@
 		</data>
 		<key>Headers/PSPDFBookmark.h</key>
 		<data>
-		sJ4YxeHtoxASY5zth1+zC2BOEMM=
+		Sd5NNAhU2X2tf/lrXGgVrW1xoZQ=
 		</data>
 		<key>Headers/PSPDFBookmarkCell.h</key>
 		<data>
-		qZbpXDtqh6d/qEylf6EfSyUvF5g=
+		DGw0J6r2Lc0vm51Jk/4WzKGi/1A=
 		</data>
 		<key>Headers/PSPDFBookmarkParser.h</key>
 		<data>
@@ -192,9 +192,13 @@
 		<data>
 		fvgYcaAIuc+F+CTPP1zqS1xt8wY=
 		</data>
+		<key>Headers/PSPDFBrightnessManager.h</key>
+		<data>
+		4kAE4+nF+44uBUo5yx6T6hJsGx0=
+		</data>
 		<key>Headers/PSPDFBrightnessViewController.h</key>
 		<data>
-		WXl4iw8sTanhJ2694BhHazUa49I=
+		4WBxxqgumpVDsK1s2VaJsgkFKco=
 		</data>
 		<key>Headers/PSPDFButton.h</key>
 		<data>
@@ -234,7 +238,11 @@
 		</data>
 		<key>Headers/PSPDFColorButton.h</key>
 		<data>
-		CzLDjn60Hzi7Ou2GDtk3LQHYl90=
+		0BaFnJjHalXeKBUdKAhuO6SxmRk=
+		</data>
+		<key>Headers/PSPDFColorPicker.h</key>
+		<data>
+		s8VMvsvjtJ//J67B7BfAYXaYdVw=
 		</data>
 		<key>Headers/PSPDFColorPreset.h</key>
 		<data>
@@ -242,7 +250,7 @@
 		</data>
 		<key>Headers/PSPDFConfiguration.h</key>
 		<data>
-		/SQHOlVSinlXWiiiyQLhUNyfM6g=
+		vAucJQ9SWoA0ZJwvw9wf9a7T++I=
 		</data>
 		<key>Headers/PSPDFContainerAnnotationProvider.h</key>
 		<data>
@@ -266,11 +274,11 @@
 		</data>
 		<key>Headers/PSPDFCryptoInputStream.h</key>
 		<data>
-		r8mZ3IKW8oZU652/1pM6N2hX+44=
+		QD7fpcvosssH35rSneNb+xB3IIQ=
 		</data>
 		<key>Headers/PSPDFCryptoOutputStream.h</key>
 		<data>
-		0JFzSQUKrJ4263KlMyqN8gIBtzo=
+		9zPI0FkGP/0iRwhnFTQnPe4t6UM=
 		</data>
 		<key>Headers/PSPDFCryptor.h</key>
 		<data>
@@ -282,11 +290,11 @@
 		</data>
 		<key>Headers/PSPDFDataProvider.h</key>
 		<data>
-		vwM3FrMh7WUzJh/rV8O2pgPnm/c=
+		8fEWuZvYrvZLYsbpz/TD3GnTp7Q=
 		</data>
 		<key>Headers/PSPDFDataSink.h</key>
 		<data>
-		JLvVISTU5suGlNOyMaOfiWbGNd0=
+		r4/4ZzTf4DHfG+fioDGc0zh2rVk=
 		</data>
 		<key>Headers/PSPDFDatabaseEncryptionProvider.h</key>
 		<data>
@@ -298,7 +306,7 @@
 		</data>
 		<key>Headers/PSPDFDiskCache.h</key>
 		<data>
-		KCmBc6QRG3wL4mUPwnbkSQ6oMZk=
+		rbgg393Pu4sbsAWhva9pYSTUXPw=
 		</data>
 		<key>Headers/PSPDFDocument+DataDetection.h</key>
 		<data>
@@ -310,19 +318,19 @@
 		</data>
 		<key>Headers/PSPDFDocument.h</key>
 		<data>
-		Fs9w3Tq+ZMivUGxcdLnH+VT4eSg=
+		Ng1e7bqGVK4zIDVbDhQsAFn4Uk8=
 		</data>
 		<key>Headers/PSPDFDocumentActionExecutor.h</key>
 		<data>
-		TPP4uA8R+QXNR9eO+/+1OqiG15o=
+		6RsfCn3n4sAQh3z9bhDio1IJK7M=
 		</data>
 		<key>Headers/PSPDFDocumentDelegate.h</key>
 		<data>
-		ePojG3Gvuj3FsNYhs+CZSrqh694=
+		IZSyJNHjRrWCH8ZUUcSxx0xSxxE=
 		</data>
 		<key>Headers/PSPDFDocumentEditor.h</key>
 		<data>
-		0vjdKuBnLs6ZigfmNAma/YZHFbw=
+		GCJCkWvv7Su8uFbNjyaMlxwWOSE=
 		</data>
 		<key>Headers/PSPDFDocumentEditorCell.h</key>
 		<data>
@@ -330,7 +338,7 @@
 		</data>
 		<key>Headers/PSPDFDocumentEditorConfiguration.h</key>
 		<data>
-		EKSNVH3n08yb6tOM8FfQIcyW+98=
+		QS497bea3XlUzVWS0kxxo2ZvycY=
 		</data>
 		<key>Headers/PSPDFDocumentEditorToolbar.h</key>
 		<data>
@@ -338,7 +346,7 @@
 		</data>
 		<key>Headers/PSPDFDocumentEditorToolbarController.h</key>
 		<data>
-		ZVfka+jBgckNvo1MX7ihaho7avI=
+		WquLeVSzqqkAsgX9tm32k4Y08/A=
 		</data>
 		<key>Headers/PSPDFDocumentEditorViewController.h</key>
 		<data>
@@ -374,7 +382,7 @@
 		</data>
 		<key>Headers/PSPDFDocumentSharingViewController.h</key>
 		<data>
-		Qqek9c+pmpEXsOHFj/96rwxJga0=
+		tAR/r5n2HrcshBUnNpzwKkjdk90=
 		</data>
 		<key>Headers/PSPDFDownloadManager.h</key>
 		<data>
@@ -394,7 +402,7 @@
 		</data>
 		<key>Headers/PSPDFEditingChange.h</key>
 		<data>
-		nJJVo+6GflLRn3eZ1CL1td3/ISg=
+		7kk4K+4J2UWFOx7kyl1If8/GCrM=
 		</data>
 		<key>Headers/PSPDFEmbeddedFile.h</key>
 		<data>
@@ -418,7 +426,7 @@
 		</data>
 		<key>Headers/PSPDFEnvironment.h</key>
 		<data>
-		HVRo49IbrGnsMWC4DE2ADbbfyC8=
+		BztyITO0hzLZY1aUdZ1bK1EplKw=
 		</data>
 		<key>Headers/PSPDFEraseOverlay.h</key>
 		<data>
@@ -426,7 +434,7 @@
 		</data>
 		<key>Headers/PSPDFError.h</key>
 		<data>
-		9FfFbNIgRc8vJxtik17nA7HAegA=
+		k60n85NGp0kcJQBtx1H7Z2xJi6c=
 		</data>
 		<key>Headers/PSPDFErrorHandler.h</key>
 		<data>
@@ -438,7 +446,7 @@
 		</data>
 		<key>Headers/PSPDFFile.h</key>
 		<data>
-		69uX/EX4lcY85wJma97R+cck1RE=
+		O9q2g50a8QAccIvIf9mfPObP2YY=
 		</data>
 		<key>Headers/PSPDFFileAnnotation.h</key>
 		<data>
@@ -458,7 +466,7 @@
 		</data>
 		<key>Headers/PSPDFFlexibleToolbarContainer.h</key>
 		<data>
-		Fe3hMMFEcQDtPIl7lVMLaL7OXGg=
+		lVPo1/2mHVntZnoiKqiYDW1kaSw=
 		</data>
 		<key>Headers/PSPDFFlexibleToolbarController.h</key>
 		<data>
@@ -470,23 +478,23 @@
 		</data>
 		<key>Headers/PSPDFFormElement.h</key>
 		<data>
-		9mli0W1sA7UUQRiRBv6gjmsfECI=
+		l/bQNHmEuBPLp4KtcH1e2c/0abI=
 		</data>
 		<key>Headers/PSPDFFormElementView.h</key>
 		<data>
-		iIi4kfJZiS7vmHKkJL1n3fITtws=
+		VVkXc7jdLO21JqjU7teJAxR5ZjA=
 		</data>
 		<key>Headers/PSPDFFormInputAccessoryView.h</key>
 		<data>
-		JmORwo5s65fztSTm+20ufnVmPHE=
+		rpa0qotTAC+fY2qhn9v4KhIZai8=
 		</data>
 		<key>Headers/PSPDFFormInputAccessoryViewDelegate.h</key>
 		<data>
-		WXvjXhsFXGzRAqdJplqNTKUWuaM=
+		iRntYe3inilov7LqOtEshRollI4=
 		</data>
 		<key>Headers/PSPDFFormParser.h</key>
 		<data>
-		RRoBAEJt1WLdFkeLRv9kJDvtnno=
+		vHnzIVzDtN3F7V1OVr0p5B6/2FU=
 		</data>
 		<key>Headers/PSPDFFormRequest.h</key>
 		<data>
@@ -498,7 +506,7 @@
 		</data>
 		<key>Headers/PSPDFFreeTextAccessoryView.h</key>
 		<data>
-		ECbs43euDz6ENn+4x/hmRZ4DUtk=
+		FDEjpd7EcMLnq5CWNfmmkRRtRoM=
 		</data>
 		<key>Headers/PSPDFFreeTextAnnotation.h</key>
 		<data>
@@ -514,7 +522,7 @@
 		</data>
 		<key>Headers/PSPDFGalleryContainerView.h</key>
 		<data>
-		ufchnt8yQGIjFLQXx3iSZS7hgk0=
+		dOgiYiP7dXlMrdab+UBTBm/OmQM=
 		</data>
 		<key>Headers/PSPDFGalleryContentCaptionView.h</key>
 		<data>
@@ -570,11 +578,11 @@
 		</data>
 		<key>Headers/PSPDFGalleryWebItem.h</key>
 		<data>
-		EjPB/Sl/+Xo2e5kOGF1iJL0n8gM=
+		L5KHPsCC7FMcdWC9+lnQZoClQL4=
 		</data>
 		<key>Headers/PSPDFGlyph.h</key>
 		<data>
-		LdrcWOhoKpLXtRnVpc0aL4wgzhY=
+		1M7WfGhCOCPetLp+67VffA6KC6g=
 		</data>
 		<key>Headers/PSPDFGoToAction.h</key>
 		<data>
@@ -594,7 +602,7 @@
 		</data>
 		<key>Headers/PSPDFHostingAnnotationView.h</key>
 		<data>
-		BFcTC5MtW7ntETH5cpb9qL8JY/4=
+		oP6vTQWSIFp1MDj3nsLUvGBWh9Q=
 		</data>
 		<key>Headers/PSPDFIconFit.h</key>
 		<data>
@@ -614,7 +622,7 @@
 		</data>
 		<key>Headers/PSPDFInkAnnotation.h</key>
 		<data>
-		hR3s5mJzpOJbi6RzvIMrSH5yWKk=
+		MQipkrjcCgmZq6wgRENVNEgJX7E=
 		</data>
 		<key>Headers/PSPDFInlineSearchManager.h</key>
 		<data>
@@ -626,7 +634,7 @@
 		</data>
 		<key>Headers/PSPDFJavaScriptAction.h</key>
 		<data>
-		viSPjkox9RQGEMuHHD922TyYf9A=
+		Z8AKr1R4L/9RMKCnuE7YRlPG9mk=
 		</data>
 		<key>Headers/PSPDFKit+PSPDFUI.h</key>
 		<data>
@@ -634,11 +642,11 @@
 		</data>
 		<key>Headers/PSPDFKit.h</key>
 		<data>
-		P/sjcLg6NxrJ+ZTOoQMOdNjppn4=
+		+KEI06woSI2fiFZdLiH4eAMxP7E=
 		</data>
 		<key>Headers/PSPDFKitObject.h</key>
 		<data>
-		ddnSuMxr3X9c7pM5pgZbaU3eTVA=
+		0zjLxrshTSHwUG8lGymPCwZSOMo=
 		</data>
 		<key>Headers/PSPDFLabelParser.h</key>
 		<data>
@@ -650,7 +658,7 @@
 		</data>
 		<key>Headers/PSPDFLibrary.h</key>
 		<data>
-		MkmlQj56PyscljHzSowfiqPKfaU=
+		9r4wv/blIV5BGgH3oANf4w0HWqk=
 		</data>
 		<key>Headers/PSPDFLineAnnotation.h</key>
 		<data>
@@ -670,7 +678,7 @@
 		</data>
 		<key>Headers/PSPDFLocalization.h</key>
 		<data>
-		b3gF49ZX+ukxkunlpTqqZm7i9PM=
+		EC0ujE/Me8CUVUw1EBMaLdUzjxQ=
 		</data>
 		<key>Headers/PSPDFLogging.h</key>
 		<data>
@@ -686,7 +694,7 @@
 		</data>
 		<key>Headers/PSPDFMediaPlayerController.h</key>
 		<data>
-		bzExCQQNBerwdNwFoIgK1OwZZG0=
+		U4s8nXxIJ30e1ikgQ1uvQiPVGgQ=
 		</data>
 		<key>Headers/PSPDFMediaPlayerCoverView.h</key>
 		<data>
@@ -704,13 +712,17 @@
 		<data>
 		IdHaK0Zi/GxNUsRaVVSM82KrWVo=
 		</data>
+		<key>Headers/PSPDFModel+NSCoding.h</key>
+		<data>
+		7WsWbuOIjPGtl0s20ZxR0RPRBlU=
+		</data>
 		<key>Headers/PSPDFModel.h</key>
 		<data>
 		5+NOEdxIwuwkGhRWg+wP3Rg6CYM=
 		</data>
 		<key>Headers/PSPDFModelUmbrella.h</key>
 		<data>
-		Whb7nSunC9oZghsIL5w8fap9uYg=
+		gQXKxh5dtdPv+dyKb6vDgmnaCYc=
 		</data>
 		<key>Headers/PSPDFMultiDocumentListController.h</key>
 		<data>
@@ -718,7 +730,7 @@
 		</data>
 		<key>Headers/PSPDFMultiDocumentViewController.h</key>
 		<data>
-		5XxbRipeVuGKohqD945dODU/94E=
+		h7n5VqDmjTM+wt7Dk2VB2mc80Y0=
 		</data>
 		<key>Headers/PSPDFMultimediaAnnotationView.h</key>
 		<data>
@@ -734,7 +746,7 @@
 		</data>
 		<key>Headers/PSPDFNavigationController.h</key>
 		<data>
-		Gcqm06newHeof2jsGw6gWanHj68=
+		pUjI7ciYDIn6rAYD5quoroAmLNc=
 		</data>
 		<key>Headers/PSPDFNavigationItem.h</key>
 		<data>
@@ -746,19 +758,19 @@
 		</data>
 		<key>Headers/PSPDFNewPageConfiguration.h</key>
 		<data>
-		xIFuvuYSHtaGiZggaxBZmsiq1YQ=
+		sToeTnzrntVXiYEBGKCL4Iqvh0E=
 		</data>
 		<key>Headers/PSPDFNewPageConfigurationBuilder.h</key>
 		<data>
-		668EPouaYpFglETzq7BljntzDiE=
+		injeLx38DN6qoL7DFdVVKBvQ3YE=
 		</data>
 		<key>Headers/PSPDFNewPageViewController.h</key>
 		<data>
-		QGZBhKIr2voxp3BBXoDU+M2wbx0=
+		taZoPDcvJoJKs91fg2jvL+ewFn0=
 		</data>
 		<key>Headers/PSPDFNoteAnnotation.h</key>
 		<data>
-		RzaU711R3Y7Fc+IlHEUdvZi+SsM=
+		6VYLz1xqyJcbXFwPPRha6DK5x7o=
 		</data>
 		<key>Headers/PSPDFNoteAnnotationView.h</key>
 		<data>
@@ -790,7 +802,7 @@
 		</data>
 		<key>Headers/PSPDFOverridable.h</key>
 		<data>
-		NQsfLsaXQzETUigMdjUhooWtg/0=
+		nbmE2r9NHs+2rwF6QfPAE1xXinY=
 		</data>
 		<key>Headers/PSPDFPKCS12.h</key>
 		<data>
@@ -802,7 +814,7 @@
 		</data>
 		<key>Headers/PSPDFPageCell.h</key>
 		<data>
-		1FAfGF1AqaAmz+G91R2VTok4rHg=
+		OfKWWJVECkTeJ2mW1Ejeq0Hhz9w=
 		</data>
 		<key>Headers/PSPDFPageInfo.h</key>
 		<data>
@@ -822,7 +834,7 @@
 		</data>
 		<key>Headers/PSPDFPageView.h</key>
 		<data>
-		cILO8hnH6BJD/4vXEJXJK4vM+eE=
+		0xTbjyoHJLjTThN6nLbQoiBOI7k=
 		</data>
 		<key>Headers/PSPDFPlugin.h</key>
 		<data>
@@ -854,11 +866,11 @@
 		</data>
 		<key>Headers/PSPDFProcessor.h</key>
 		<data>
-		bLThKLKFS0WywPLlYWMAALwptsE=
+		hOI4dkKuar3c3pVYPzkw/OT7v+g=
 		</data>
 		<key>Headers/PSPDFProcessorConfiguration.h</key>
 		<data>
-		DiUslHvGuOKNtuM5Cj0V6MPD8pk=
+		qAmLgtgvDRE8UjMp02GiSAxWweE=
 		</data>
 		<key>Headers/PSPDFProcessorItem.h</key>
 		<data>
@@ -866,11 +878,11 @@
 		</data>
 		<key>Headers/PSPDFProcessorItemBuilder.h</key>
 		<data>
-		h1BwAnoyZ33URaJbiVMIbGq5C3w=
+		rc19xKNdE0I0+W+UcVmWNcldvxg=
 		</data>
 		<key>Headers/PSPDFProcessorSaveOptions.h</key>
 		<data>
-		Pj0V9nZz2YkxlmEOD+w4YBnbBJ0=
+		JrSoBMIYF8KisFLs3LveF/+LmAs=
 		</data>
 		<key>Headers/PSPDFRSAKey.h</key>
 		<data>
@@ -878,11 +890,11 @@
 		</data>
 		<key>Headers/PSPDFReachability.h</key>
 		<data>
-		DVojRY1qxqAenfIWWbNsmU+w6Vg=
+		ayrZKlrNzuIa9nVFOxW/NCW53rg=
 		</data>
 		<key>Headers/PSPDFRectAlignment.h</key>
 		<data>
-		RtR1Om8czDHME0l5CjRFHfnOkrs=
+		1J22jSwR2dLkn61K5eD035zQfGU=
 		</data>
 		<key>Headers/PSPDFRelayTouchesView.h</key>
 		<data>
@@ -906,15 +918,15 @@
 		</data>
 		<key>Headers/PSPDFRenderManager.h</key>
 		<data>
-		j6F2pGVx+1uZBySJl6YTEAkumFM=
+		52A/0F8msVm2RmAgHD8fXuPOQBs=
 		</data>
 		<key>Headers/PSPDFRenderQueue.h</key>
 		<data>
-		YnJTSe1msC6bRr0amvFG9NnBqn4=
+		orD6TRXIs7B6qdrgmyo57AnP0No=
 		</data>
 		<key>Headers/PSPDFRenditionAction.h</key>
 		<data>
-		tKHx6ws+lLro9nQ4UpBJD446bas=
+		sT/0KEhIzJ1yLIA+DfYl+LYAqvc=
 		</data>
 		<key>Headers/PSPDFResetFormAction.h</key>
 		<data>
@@ -922,7 +934,7 @@
 		</data>
 		<key>Headers/PSPDFResizableView.h</key>
 		<data>
-		LBiklHbsF/NIypA7WqvPdvp6M/g=
+		RYa9V7pDCtQVOcyp7dp8ED6TsZ0=
 		</data>
 		<key>Headers/PSPDFRichMediaAnnotation.h</key>
 		<data>
@@ -938,7 +950,7 @@
 		</data>
 		<key>Headers/PSPDFSaveViewController.h</key>
 		<data>
-		MijsYwbHMzk30dIexRCTvsIRDO8=
+		bL+f1FPaH3lf3MVTTcXXb6jNk6E=
 		</data>
 		<key>Headers/PSPDFSavedAnnotationsViewController.h</key>
 		<data>
@@ -962,7 +974,7 @@
 		</data>
 		<key>Headers/PSPDFSearchHighlightViewManager.h</key>
 		<data>
-		bE/WVBbgWuONoA8GmyXeefrb+2w=
+		zqFL+iwFuXHIct9llO4/VSIBRVE=
 		</data>
 		<key>Headers/PSPDFSearchResult.h</key>
 		<data>
@@ -970,7 +982,7 @@
 		</data>
 		<key>Headers/PSPDFSearchResultCell.h</key>
 		<data>
-		olOHI2oP+CHHqIY3X7d4QrgZmCY=
+		zLsR4bFGsTzleC0u/Hv9+V+ibF4=
 		</data>
 		<key>Headers/PSPDFSearchStatusCell.h</key>
 		<data>
@@ -978,7 +990,7 @@
 		</data>
 		<key>Headers/PSPDFSearchViewController.h</key>
 		<data>
-		rRqPccfWHaTtQ4x0/g40ZSg3Y5Y=
+		NDauMUGXbFsnn8ySVTgmUe5HbE4=
 		</data>
 		<key>Headers/PSPDFSegmentedControl.h</key>
 		<data>
@@ -991,6 +1003,10 @@
 		<key>Headers/PSPDFSelectionView.h</key>
 		<data>
 		5rMoidQCUWiYrjzAeDNIs3gOC5M=
+		</data>
+		<key>Headers/PSPDFSettingsViewController.h</key>
+		<data>
+		m16HAoee7/4RAl0BgWWwePLpoLc=
 		</data>
 		<key>Headers/PSPDFSignatureCell.h</key>
 		<data>
@@ -1006,7 +1022,7 @@
 		</data>
 		<key>Headers/PSPDFSignatureManager.h</key>
 		<data>
-		nRmxLqvSXysjCdFdmXO0EeAoTE4=
+		MXTjSvMoog79EoxiV5W/dEtZ/sA=
 		</data>
 		<key>Headers/PSPDFSignatureSelectorViewController.h</key>
 		<data>
@@ -1038,7 +1054,7 @@
 		</data>
 		<key>Headers/PSPDFSoundAnnotation.h</key>
 		<data>
-		Ic9mgB1FWS4v90P4QS5FQZ2wAvQ=
+		ekRbt6IuBy4tETpVpOv6NlucWts=
 		</data>
 		<key>Headers/PSPDFSoundAnnotationController.h</key>
 		<data>
@@ -1046,7 +1062,7 @@
 		</data>
 		<key>Headers/PSPDFSpeechController.h</key>
 		<data>
-		V23BhGJzdxknlIcUJ1ovDlCmS9g=
+		OqvDE1jVkb6Oe5H7WR50iF/++rk=
 		</data>
 		<key>Headers/PSPDFSpinnerCell.h</key>
 		<data>
@@ -1106,7 +1122,7 @@
 		</data>
 		<key>Headers/PSPDFStylusTouch.h</key>
 		<data>
-		JPHnMoZ/C8+9hTpyCGi7jTHk4ko=
+		UUIZEYfq7W5lDYk+FaKlvbz/Pjs=
 		</data>
 		<key>Headers/PSPDFStylusViewController.h</key>
 		<data>
@@ -1134,7 +1150,7 @@
 		</data>
 		<key>Headers/PSPDFTextFieldFormElement.h</key>
 		<data>
-		M8R2hC2UPMudxhs3p5WT3/+cfLc=
+		Fd0mEALwnESUvOfGgkArGKmkyE8=
 		</data>
 		<key>Headers/PSPDFTextFieldFormElementView.h</key>
 		<data>
@@ -1162,7 +1178,7 @@
 		</data>
 		<key>Headers/PSPDFThumbnailFlowLayout.h</key>
 		<data>
-		29OgFefHYc1EEz4l8veRzUUE5wM=
+		kmdBv7ITbhr/cCiCMqYsZA3uUaM=
 		</data>
 		<key>Headers/PSPDFThumbnailGridViewCell.h</key>
 		<data>
@@ -1170,7 +1186,7 @@
 		</data>
 		<key>Headers/PSPDFThumbnailViewController.h</key>
 		<data>
-		7KC1YRj03f6sykkVQdw/WVLJuEQ=
+		LTQeXB+vzzxogvpPqdXWtfLiUnk=
 		</data>
 		<key>Headers/PSPDFToolbar.h</key>
 		<data>
@@ -1178,7 +1194,7 @@
 		</data>
 		<key>Headers/PSPDFToolbarButton.h</key>
 		<data>
-		VXOscRM4nXwLwwfjoe3Oq909q6k=
+		udEUr06EERS3Fw8UnEYuKUXxLoc=
 		</data>
 		<key>Headers/PSPDFURLAction.h</key>
 		<data>
@@ -1190,11 +1206,11 @@
 		</data>
 		<key>Headers/PSPDFUndoController.h</key>
 		<data>
-		VN+Ks2b1wlPsJ3c2LGekE3F/UcY=
+		7OXVcTdk1L0EfZlqnVkKPpxLjZU=
 		</data>
 		<key>Headers/PSPDFUndoProtocol.h</key>
 		<data>
-		E48KJn4Ota5tzKz4Q+cSl7IBSdw=
+		IQ5fpL/qBz2g/rNSWunH6WvLRwE=
 		</data>
 		<key>Headers/PSPDFUnsignedFormElementViewController.h</key>
 		<data>
@@ -1202,7 +1218,7 @@
 		</data>
 		<key>Headers/PSPDFUsernameHelper.h</key>
 		<data>
-		REBXU5h/F8T4oTnoiesIXm/4dj8=
+		jVBjzt/2Sb0xz8/7yL1dc8gJ8tQ=
 		</data>
 		<key>Headers/PSPDFVersion.h</key>
 		<data>
@@ -1214,7 +1230,7 @@
 		</data>
 		<key>Headers/PSPDFViewController.h</key>
 		<data>
-		RyXSvC33lgJgibRfVgOrD4nuiPw=
+		jJ81P7avjrqf8FhGl/L7ITtqiEw=
 		</data>
 		<key>Headers/PSPDFViewControllerDelegate.h</key>
 		<data>
@@ -1222,7 +1238,7 @@
 		</data>
 		<key>Headers/PSPDFViewModePresenter.h</key>
 		<data>
-		0YcUFu7TaugBoZHQL+I+jPdznJ0=
+		oHvP0Fv+kdW7sA78QUS3ehY3xj0=
 		</data>
 		<key>Headers/PSPDFViewState.h</key>
 		<data>
@@ -1254,7 +1270,7 @@
 		</data>
 		<key>Headers/PSPDFXFDFParser.h</key>
 		<data>
-		1GQY6P+349fhlm0yTG/dg21HXKQ=
+		zFlM1pzIecsqv3kibiiAHa9pEM0=
 		</data>
 		<key>Headers/PSPDFXFDFWriter.h</key>
 		<data>
@@ -1266,7 +1282,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SqGvgCZYIcswkff4DUNtPhcwAUo=
+		ufuNB+eAdRDCFx4azO2d9l+bz4w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1274,7 +1290,7 @@
 		</data>
 		<key>PSPDFKit-ACKNOWLEDGEMENTS.md</key>
 		<data>
-		7kkQpDvV6u7Ed0bvB26gzxh8V/Y=
+		KTCrQlSMoY1CQLl7bJoeuHdQhZ0=
 		</data>
 		<key>PSPDFKit-LICENSE</key>
 		<data>
@@ -1682,7 +1698,7 @@
 		</data>
 		<key>PSPDFKit.bundle/colors-rainbow.plist</key>
 		<data>
-		aSWDgA32R1L28ROb/W5XaypqrxM=
+		+JXED+vCbr8svpuxBkWHxB0b6uI=
 		</data>
 		<key>PSPDFKit.bundle/colors-vintage.plist</key>
 		<data>
@@ -1921,6 +1937,30 @@
 		<key>PSPDFKit.bundle/document-page-select-none@3x.png</key>
 		<data>
 		nH4FYAD/R5wXmKdCqAQODhNU0ck=
+		</data>
+		<key>PSPDFKit.bundle/document-pdf.png</key>
+		<data>
+		WBs2B75ha3tBK0R0etal/N64pNI=
+		</data>
+		<key>PSPDFKit.bundle/document-pdf@2x.png</key>
+		<data>
+		pPUB75rJ1NuUiVB1x6k04kXmjrg=
+		</data>
+		<key>PSPDFKit.bundle/document-pdf@3x.png</key>
+		<data>
+		lpnAkkoNzZYONYSH3cDkUr4V+Ck=
+		</data>
+		<key>PSPDFKit.bundle/document.png</key>
+		<data>
+		LiMYvnD5gAfJ3pfg+mbsZNG/d1I=
+		</data>
+		<key>PSPDFKit.bundle/document@2x.png</key>
+		<data>
+		HwgPiKUqvJFiBJh8cjVTn3WSoKs=
+		</data>
+		<key>PSPDFKit.bundle/document@3x.png</key>
+		<data>
+		jqlGtNjevwwojdM4H9ym46sgGsU=
 		</data>
 		<key>PSPDFKit.bundle/edit-annotations.png</key>
 		<data>
@@ -3010,6 +3050,30 @@
 		<data>
 		Uf7jF5Tuyoxit7+MrD/3tTEcQsQ=
 		</data>
+		<key>PSPDFKit.bundle/page-curl.png</key>
+		<data>
+		a3aNWD1r9PB8NCPrcQ/ZXUpI8Iw=
+		</data>
+		<key>PSPDFKit.bundle/page-curl@2x.png</key>
+		<data>
+		IZc0F0HsNTCKGMpwXKsBdLNbETk=
+		</data>
+		<key>PSPDFKit.bundle/page-curl@3x.png</key>
+		<data>
+		Cs6YqX+Pe+uOK6ys1YBKJE9Q9dM=
+		</data>
+		<key>PSPDFKit.bundle/page-mode-single.png</key>
+		<data>
+		Jl7P5D5LwB702aRmdXPlkB5YxlI=
+		</data>
+		<key>PSPDFKit.bundle/page-mode-single@2x.png</key>
+		<data>
+		jVh+mxA0ezpG+BEBTJmni16lclk=
+		</data>
+		<key>PSPDFKit.bundle/page-mode-single@3x.png</key>
+		<data>
+		sjhgIi+ntkrQb0CnIN7PK4SCCeA=
+		</data>
 		<key>PSPDFKit.bundle/pl.lproj/PSPDFKit.strings</key>
 		<dict>
 			<key>hash</key>
@@ -3182,6 +3246,30 @@
 		<data>
 		vUPgVajFMhws8vd1kIHtOLpQzls=
 		</data>
+		<key>PSPDFKit.bundle/scroll-horizontal.png</key>
+		<data>
+		0DvT4FK/FRTLPhDx7HVCgLE5Uek=
+		</data>
+		<key>PSPDFKit.bundle/scroll-horizontal@2x.png</key>
+		<data>
+		XhRIOcAyutZeyQnyCUHLg4DMhsg=
+		</data>
+		<key>PSPDFKit.bundle/scroll-horizontal@3x.png</key>
+		<data>
+		kJhW3Ih4F0bZclHMwP1MFaDXNHc=
+		</data>
+		<key>PSPDFKit.bundle/scroll-vertical.png</key>
+		<data>
+		9jUKNhgDiVNfqvOUmE4Hy2reTlo=
+		</data>
+		<key>PSPDFKit.bundle/scroll-vertical@2x.png</key>
+		<data>
+		1VK/p/KN3rdXIl2y1y1/WWxwMQE=
+		</data>
+		<key>PSPDFKit.bundle/scroll-vertical@3x.png</key>
+		<data>
+		VgahdiaxhQpOljWbSrC+phC/ypg=
+		</data>
 		<key>PSPDFKit.bundle/search-activity-7.png</key>
 		<data>
 		gZJFJm9HA1qDVW1ecW14Yywk0G8=
@@ -3249,6 +3337,26 @@
 		<key>PSPDFKit.bundle/selectiontool@3x.png</key>
 		<data>
 		X0tGMourj6sBAZ9oVLqPXzNMQGk=
+		</data>
+		<key>PSPDFKit.bundle/settings-landscape.png</key>
+		<data>
+		U2nf22+ErWtLigc7kHHD9Zdzm5E=
+		</data>
+		<key>PSPDFKit.bundle/settings-landscape@2x.png</key>
+		<data>
+		iLZ51+EaZ6jevrUZzZJLZ13oz2U=
+		</data>
+		<key>PSPDFKit.bundle/settings.png</key>
+		<data>
+		U2nf22+ErWtLigc7kHHD9Zdzm5E=
+		</data>
+		<key>PSPDFKit.bundle/settings@2x.png</key>
+		<data>
+		iLZ51+EaZ6jevrUZzZJLZ13oz2U=
+		</data>
+		<key>PSPDFKit.bundle/settings@3x.png</key>
+		<data>
+		oJPW9eW08xiriAh9qQ7nwRSg7ik=
 		</data>
 		<key>PSPDFKit.bundle/share.png</key>
 		<data>
@@ -3886,22 +3994,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wTW9yXXRXx0GmZdycalYsAnWM8s=
+			fyit7kVStb3LIzWoFGbEqkZN9sM=
 			</data>
 			<key>hash2</key>
 			<data>
-			syizg8PXrl55gGFDbC19vLk/RN5/fQGhNbLc1zAwv7Y=
+			yQRRKBVK3lnIutsWoeNEAMuunHo69yrhmt3QFKHhRR8=
 			</data>
 		</dict>
 		<key>Headers/PSPDFAESCryptoOutputStream.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sx69kTo1fXzcO1n4zYe1QYx4keA=
+			SOd+GgU91L600isI8ePfZWQXDqw=
 			</data>
 			<key>hash2</key>
 			<data>
-			CGXaB2e5n15rEQy1gYr1svaQ/2T+V7gg04Z5dfeHZD8=
+			MeyGdPJTQeAMlqo456bbJbjPEzFUjEC0LVW9GLasRTE=
 			</data>
 		</dict>
 		<key>Headers/PSPDFAbstractFormAction.h</key>
@@ -4216,11 +4324,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AFBlrdMSfnril4dbIbeHBTrROfU=
+			163yivqmo8PxA2IaKR5y0ARQYew=
 			</data>
 			<key>hash2</key>
 			<data>
-			NENuFce3nxaQ9bXtQBoG3qZYN67xWBKjA9XFSVDQVQo=
+			tgpjq3wjbNEQyyPeGkT7m/3utvblCK55/KjxLEyDnbU=
 			</data>
 		</dict>
 		<key>Headers/PSPDFAppearanceModeManager.h</key>
@@ -4238,11 +4346,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UwL3OrfOUWKIfENLoNuKs07ckOU=
+			6U95H5PL1qe6JaJP8f7z+6qdQhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			mm+l6dmacIXJmlWhMiEVNrTsnlvA4O8Db9yFYd+Yir8=
+			oMXSii+JmDC8QnR00OLguNsnEzTWiAipZCXJbTxFLh0=
 			</data>
 		</dict>
 		<key>Headers/PSPDFApplicationJSExport.h</key>
@@ -4282,11 +4390,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ydDnAOYRMbtklEKLBhJKPvs98Fc=
+			ef6d5ZFlCcvdYe41pElBrtnGQLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			+MCtUoTujtR5qcnCpLqnbe11SokacN+yzrgQdT+LNdU=
+			G/jnEnUyYNCmrv0wJ+qJfzuEjKhS4ViBRsiOhXme0C0=
 			</data>
 		</dict>
 		<key>Headers/PSPDFBackForwardActionList.h</key>
@@ -4304,11 +4412,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wg0S67vT6UzZXg1Xl3pQe07tp8c=
+			W136QXXfmdSlDWPBo+i8CWMginU=
 			</data>
 			<key>hash2</key>
 			<data>
-			AxOuUqy8IWAMjtKKafuW8FJR/LgaZr+6E7+G8BgvQjQ=
+			Xia6r6YzDNksWfYDB06Avt+toeX0X4VBrxiAoF/+ACU=
 			</data>
 		</dict>
 		<key>Headers/PSPDFBaseTableViewController.h</key>
@@ -4348,22 +4456,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sJ4YxeHtoxASY5zth1+zC2BOEMM=
+			Sd5NNAhU2X2tf/lrXGgVrW1xoZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			GByTZIY+VZrjcdVUT+bnpsPjKC8BRPn8SnmqmdqFbg8=
+			znW+j+TGZQWOSl/tojitBqIrOJf6A6SfpjEj18HUOII=
 			</data>
 		</dict>
 		<key>Headers/PSPDFBookmarkCell.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qZbpXDtqh6d/qEylf6EfSyUvF5g=
+			DGw0J6r2Lc0vm51Jk/4WzKGi/1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			4M41mZDpfwKwpb7fxdTD/ce1WhnH8lwQEe8OD5LTWxc=
+			MHsuxddSJk4JOm3POYi3xXKY66KWcmrRaXuwUYA8N6E=
 			</data>
 		</dict>
 		<key>Headers/PSPDFBookmarkParser.h</key>
@@ -4388,15 +4496,26 @@
 			GeIpJLgLxOGc3jx80Pv4SF7WDyyDRx16O8Upv4d4ZGc=
 			</data>
 		</dict>
+		<key>Headers/PSPDFBrightnessManager.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4kAE4+nF+44uBUo5yx6T6hJsGx0=
+			</data>
+			<key>hash2</key>
+			<data>
+			0H6MSdTz/njCPk8PjnhrC35qxlxVQgqUxrhPnN3hhus=
+			</data>
+		</dict>
 		<key>Headers/PSPDFBrightnessViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WXl4iw8sTanhJ2694BhHazUa49I=
+			4WBxxqgumpVDsK1s2VaJsgkFKco=
 			</data>
 			<key>hash2</key>
 			<data>
-			CZcr6GblLx4sOxOgU8UAXCq7kccVaAnYaMY5U63ChVg=
+			X9cNu4CEec9f1PWyTZMTSPi78rLhkBEHEa9zE/CkCic=
 			</data>
 		</dict>
 		<key>Headers/PSPDFButton.h</key>
@@ -4502,11 +4621,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CzLDjn60Hzi7Ou2GDtk3LQHYl90=
+			0BaFnJjHalXeKBUdKAhuO6SxmRk=
 			</data>
 			<key>hash2</key>
 			<data>
-			dmb+PJj4neHYD19M2IbD0ZsqrSOmwRBgZgAhVpvQpvI=
+			AyvsHf6WbyT/Gq+MRbWHGF6DdD0d7b+bwTCX3w7oWII=
+			</data>
+		</dict>
+		<key>Headers/PSPDFColorPicker.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s8VMvsvjtJ//J67B7BfAYXaYdVw=
+			</data>
+			<key>hash2</key>
+			<data>
+			OIgeqfe9u74+B8XFUlhnT78K3uvAmvxfLKk0PRKOez0=
 			</data>
 		</dict>
 		<key>Headers/PSPDFColorPreset.h</key>
@@ -4524,11 +4654,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/SQHOlVSinlXWiiiyQLhUNyfM6g=
+			vAucJQ9SWoA0ZJwvw9wf9a7T++I=
 			</data>
 			<key>hash2</key>
 			<data>
-			619YVV2jEYYBWZdoLMlsWWx2NlTTj54gV4U6os4brC8=
+			1cHd4J9PZ2Jt2yKqXR/ziw3NtEDn63kzAr5uz4aqr1o=
 			</data>
 		</dict>
 		<key>Headers/PSPDFContainerAnnotationProvider.h</key>
@@ -4590,22 +4720,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			r8mZ3IKW8oZU652/1pM6N2hX+44=
+			QD7fpcvosssH35rSneNb+xB3IIQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			hyAYjLVcfZXwv0PJ78W3N7ykbIctoZcm2LUpl/IDNA8=
+			AltsLHxJRurDbnCZBZNP1rwO9EHY9SH37jOEIJdfDXU=
 			</data>
 		</dict>
 		<key>Headers/PSPDFCryptoOutputStream.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0JFzSQUKrJ4263KlMyqN8gIBtzo=
+			9zPI0FkGP/0iRwhnFTQnPe4t6UM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z79MvDqVlj9TvCE9IGRdQsRmoiB1hwR/k8IKqnsbAbA=
+			AWu1JIXHgw3ISMcD0eEfGzRJm7auWV59EYZixGYnxTQ=
 			</data>
 		</dict>
 		<key>Headers/PSPDFCryptor.h</key>
@@ -4634,22 +4764,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vwM3FrMh7WUzJh/rV8O2pgPnm/c=
+			8fEWuZvYrvZLYsbpz/TD3GnTp7Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			dE1pZ/R5GYcKRFDOxsGk5iJh/re+xlU/YC+I23HIx8E=
+			8gcdzIm1TdX1ohk2GMQjT/tcoVKqhqhC/Y+6g4S/SoM=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDataSink.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JLvVISTU5suGlNOyMaOfiWbGNd0=
+			r4/4ZzTf4DHfG+fioDGc0zh2rVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ValCAo9uUEImAXjQyD5MefAtQwmuvXUpBXfFTlvBl08=
+			jOPwd5srM+aHKNrU6hytoGx5WbEpGJD3A66/+A56sYE=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDatabaseEncryptionProvider.h</key>
@@ -4678,11 +4808,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KCmBc6QRG3wL4mUPwnbkSQ6oMZk=
+			rbgg393Pu4sbsAWhva9pYSTUXPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			HCxunTIFoac8u9PHOZGJzenzjamZ0rBnWqH1uETdOiA=
+			ddmmofix079QTU6+BVtITZuhAKLBpERAz8fRCMb4WSQ=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDocument+DataDetection.h</key>
@@ -4711,44 +4841,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fs9w3Tq+ZMivUGxcdLnH+VT4eSg=
+			Ng1e7bqGVK4zIDVbDhQsAFn4Uk8=
 			</data>
 			<key>hash2</key>
 			<data>
-			USOOtC7GyAQlywtsPzcqi2EnhYhY2HHIZxXnJEvptNs=
+			0jEXF+lzfKmIJGkyDoAfrxvEOPRK1h6c4eDiHb820fY=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDocumentActionExecutor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TPP4uA8R+QXNR9eO+/+1OqiG15o=
+			6RsfCn3n4sAQh3z9bhDio1IJK7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			iNjvap2ldPFfuLuWAg93cHyAOa20ZrmpPrvZCDsjRTc=
+			8csP2rVldZjL1Zb4QpXKhcSLWvqL8MzXDQK6wJQtkNM=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDocumentDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ePojG3Gvuj3FsNYhs+CZSrqh694=
+			IZSyJNHjRrWCH8ZUUcSxx0xSxxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			1z9GDiS05VNKSJ2JngHP5+Y0MoMZVbyHUQTgw3xw0gc=
+			dYK+WLRq6oofyaey+YHlxIgisY6nJ+s7RWSc+URttcQ=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDocumentEditor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0vjdKuBnLs6ZigfmNAma/YZHFbw=
+			GCJCkWvv7Su8uFbNjyaMlxwWOSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tbSqXsGWqWJe81mTCHT6vgOFmptNG1m4uUQIYMXeHKk=
+			2aN3VucDm032lo3u0WnM3t938WznTabPKwb9Kg2ECmw=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDocumentEditorCell.h</key>
@@ -4766,11 +4896,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EKSNVH3n08yb6tOM8FfQIcyW+98=
+			QS497bea3XlUzVWS0kxxo2ZvycY=
 			</data>
 			<key>hash2</key>
 			<data>
-			nbMTCCZb+Pi6VPxDdC8pguuvdhrjzlxujD0FBpXZhpk=
+			CqIEnzcd5RSDCrliLZE7hqExBOrQaqsOF6ANhJEtJ7o=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDocumentEditorToolbar.h</key>
@@ -4788,11 +4918,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZVfka+jBgckNvo1MX7ihaho7avI=
+			WquLeVSzqqkAsgX9tm32k4Y08/A=
 			</data>
 			<key>hash2</key>
 			<data>
-			19MEd4KOtIPoFj4IbYeQFIJ7eKvJBU7LewlWyiLSmvA=
+			8CC3eaJ+oMfBiearFgxCoyJX/iCe/dPpBQUeeFs0tNY=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDocumentEditorViewController.h</key>
@@ -4887,11 +5017,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qqek9c+pmpEXsOHFj/96rwxJga0=
+			tAR/r5n2HrcshBUnNpzwKkjdk90=
 			</data>
 			<key>hash2</key>
 			<data>
-			QhUF89tpjHEtz4UvopdD3s/HkjNWHeSY6PgVi8Vvvsw=
+			XZBXmNNr+76bSB9YyngKd04Uizn+Yz3DaqrsBjVyRLY=
 			</data>
 		</dict>
 		<key>Headers/PSPDFDownloadManager.h</key>
@@ -4942,11 +5072,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nJJVo+6GflLRn3eZ1CL1td3/ISg=
+			7kk4K+4J2UWFOx7kyl1If8/GCrM=
 			</data>
 			<key>hash2</key>
 			<data>
-			KhqhyfZboegrpm1KU+TVYlhntxShZ0VdED0Dy13+4A4=
+			Kjdw9aZ+vTKPThHy1+gCg0XjNYjc0tspWgWkjv9CVj0=
 			</data>
 		</dict>
 		<key>Headers/PSPDFEmbeddedFile.h</key>
@@ -5008,11 +5138,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HVRo49IbrGnsMWC4DE2ADbbfyC8=
+			BztyITO0hzLZY1aUdZ1bK1EplKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			G+IDR9CEyyOq6kjQ4ydUbI3ODQkINkawRbwo1MQUxnw=
+			cKZuLOUtpQGf21nu4KSgImcL3rSDoBB8sW00yhrbtnM=
 			</data>
 		</dict>
 		<key>Headers/PSPDFEraseOverlay.h</key>
@@ -5030,11 +5160,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9FfFbNIgRc8vJxtik17nA7HAegA=
+			k60n85NGp0kcJQBtx1H7Z2xJi6c=
 			</data>
 			<key>hash2</key>
 			<data>
-			9RMcSBBTZ5bGQBZrC45KM+J4NlyWu6GQccEPf2HfVqY=
+			bFjRrxxcmWSm+1r8phMlxPOsPhax+xc3+iPuG8jBn2A=
 			</data>
 		</dict>
 		<key>Headers/PSPDFErrorHandler.h</key>
@@ -5063,11 +5193,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			69uX/EX4lcY85wJma97R+cck1RE=
+			O9q2g50a8QAccIvIf9mfPObP2YY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0FcG46DGiR1UzCULG4fwQ3dAwdJRdjQOA2uL+I4uBf0=
+			Hkm3PJAcZCC5WptdPw6NEguNEs8eZZwI4AHIbweEty4=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFileAnnotation.h</key>
@@ -5118,11 +5248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Fe3hMMFEcQDtPIl7lVMLaL7OXGg=
+			lVPo1/2mHVntZnoiKqiYDW1kaSw=
 			</data>
 			<key>hash2</key>
 			<data>
-			5R0sVSo2HNPvVWohks/rsaZAOT5nraMOnHH3RS4OhwI=
+			aYGxdY0JfKIunyCJnW8hcN68BK+VBcbDnQ698AF5+0g=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFlexibleToolbarController.h</key>
@@ -5151,55 +5281,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9mli0W1sA7UUQRiRBv6gjmsfECI=
+			l/bQNHmEuBPLp4KtcH1e2c/0abI=
 			</data>
 			<key>hash2</key>
 			<data>
-			8wXTQ3YfdlTjNkXxXrk0SHM7EZd28AajvVC1oPlvLZU=
+			9UtQUIBcMcV41Ug3sQL2imUDCDJP/hj8TWL7IAytLFU=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFormElementView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iIi4kfJZiS7vmHKkJL1n3fITtws=
+			VVkXc7jdLO21JqjU7teJAxR5ZjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			PxEjYyiYjUtQCADBrIf8DAcQ3AQJHTCJqRWunboIqCM=
+			VrgVBeRuZZpIm9CyQXyBuCAXqHCVJKRfefqndWdSQd4=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFormInputAccessoryView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JmORwo5s65fztSTm+20ufnVmPHE=
+			rpa0qotTAC+fY2qhn9v4KhIZai8=
 			</data>
 			<key>hash2</key>
 			<data>
-			GlJxawnx42mLYXzEG0G/whMyJeFjA8/s+DyR84qXto4=
+			PAQ8eDXbXic2dy+lsIOjeaamxmvU3hjBsAUZigQcXqI=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFormInputAccessoryViewDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WXvjXhsFXGzRAqdJplqNTKUWuaM=
+			iRntYe3inilov7LqOtEshRollI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8HxIVzIwWeSmid2McJHBTiM9MkChoKa3qb3XOhaVPho=
+			/2hEq0dkhF5N9UG3HqCVJYqy2VFiGUwHQpYc5ld8tQA=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFormParser.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RRoBAEJt1WLdFkeLRv9kJDvtnno=
+			vHnzIVzDtN3F7V1OVr0p5B6/2FU=
 			</data>
 			<key>hash2</key>
 			<data>
-			4ip5GAM3xXG3o6wt5Fyj+Rm0sbU30oMyaGlatDcbAtI=
+			qQ+Yq+LPwE+DgydHvdNsbeRzNmmdW0heBvxKfJz2hYU=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFormRequest.h</key>
@@ -5228,11 +5358,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ECbs43euDz6ENn+4x/hmRZ4DUtk=
+			FDEjpd7EcMLnq5CWNfmmkRRtRoM=
 			</data>
 			<key>hash2</key>
 			<data>
-			nveeA0FegIwFbhaagXTv4Vd/8U5h3TZDkn8UWVCqbxc=
+			nlFN9eJJiyCFuRwBzKSYzCnNT0hR2/5ZaPgd66C74/s=
 			</data>
 		</dict>
 		<key>Headers/PSPDFFreeTextAnnotation.h</key>
@@ -5272,11 +5402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ufchnt8yQGIjFLQXx3iSZS7hgk0=
+			dOgiYiP7dXlMrdab+UBTBm/OmQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OBKilJa5TaV1H/2UkuCywUeMJcj+W9jd1QuUAC+n3BA=
+			9UJw/qiUNY01JhO/IiWfWO0bzxqp7anqUjkxM8fMc3s=
 			</data>
 		</dict>
 		<key>Headers/PSPDFGalleryContentCaptionView.h</key>
@@ -5426,22 +5556,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EjPB/Sl/+Xo2e5kOGF1iJL0n8gM=
+			L5KHPsCC7FMcdWC9+lnQZoClQL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			GUSv5FpU37rkXcQhNbfV3yCnjZB+P12YtRCEy8kCCxU=
+			llQcq3WcR4CFzxOqQUnY8IvsN+gUpkNp2uc5E2+WzXw=
 			</data>
 		</dict>
 		<key>Headers/PSPDFGlyph.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LdrcWOhoKpLXtRnVpc0aL4wgzhY=
+			1M7WfGhCOCPetLp+67VffA6KC6g=
 			</data>
 			<key>hash2</key>
 			<data>
-			yN0vPyIOCEv/dCp84p1xFB+aCv5NOZ0g5dX5itCmouw=
+			vGqGKdRMhkY1ojCdL2BX0n8B3gETJn379qp408x2H1k=
 			</data>
 		</dict>
 		<key>Headers/PSPDFGoToAction.h</key>
@@ -5492,11 +5622,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BFcTC5MtW7ntETH5cpb9qL8JY/4=
+			oP6vTQWSIFp1MDj3nsLUvGBWh9Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			bnl2hr9Q4AVJtNd9i7mCn91byK2YbhTAwYEyuAMvZ5k=
+			1VS/2KOhDo12FZD5k6VTQAE2eDwAQi15GEgbxS23WUs=
 			</data>
 		</dict>
 		<key>Headers/PSPDFIconFit.h</key>
@@ -5547,11 +5677,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hR3s5mJzpOJbi6RzvIMrSH5yWKk=
+			MQipkrjcCgmZq6wgRENVNEgJX7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			9bNv7N39ygAUJ5Dd06LsVRx8e9tl5IXVLqQDiWet4dU=
+			OD8iDL5FFruPSiOVW82PNnxublFaa0k5ZnQjUGDzGWM=
 			</data>
 		</dict>
 		<key>Headers/PSPDFInlineSearchManager.h</key>
@@ -5580,11 +5710,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			viSPjkox9RQGEMuHHD922TyYf9A=
+			Z8AKr1R4L/9RMKCnuE7YRlPG9mk=
 			</data>
 			<key>hash2</key>
 			<data>
-			cU7v8F39SgL4JLQpwHSDkyvi4UDFj/hQIphdlx3BCgk=
+			inMojjDApNJlO1qNYAbRZjX1V9wrAP4o+rny1uDRCR0=
 			</data>
 		</dict>
 		<key>Headers/PSPDFKit+PSPDFUI.h</key>
@@ -5602,22 +5732,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P/sjcLg6NxrJ+ZTOoQMOdNjppn4=
+			+KEI06woSI2fiFZdLiH4eAMxP7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			QU268k3RuTF/meTQwUMfs6SmzgpS0uWJHs1OzhTkxd0=
+			Mbnvkb+OBJLXuUEKf3Q/sfzz9PCT38r0NEYXSh9EHnA=
 			</data>
 		</dict>
 		<key>Headers/PSPDFKitObject.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ddnSuMxr3X9c7pM5pgZbaU3eTVA=
+			0zjLxrshTSHwUG8lGymPCwZSOMo=
 			</data>
 			<key>hash2</key>
 			<data>
-			c/tZYiXfbvPP5nS95dtiEzjq/4aPXPwSxkYQoSWZ1Ac=
+			em4hHpn7aGd4vZOyVWT3uODbt0op9pkwfVWBFZ115Lk=
 			</data>
 		</dict>
 		<key>Headers/PSPDFLabelParser.h</key>
@@ -5646,11 +5776,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MkmlQj56PyscljHzSowfiqPKfaU=
+			9r4wv/blIV5BGgH3oANf4w0HWqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			6MLiI/VbLtH89G41+7CEN5lApZQc80+g22TWa4jYPSc=
+			vuT/zHrJ9mHPQFylhJ/1aBw4dX3J4ZHMQ6zE6aj+bIk=
 			</data>
 		</dict>
 		<key>Headers/PSPDFLineAnnotation.h</key>
@@ -5701,11 +5831,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b3gF49ZX+ukxkunlpTqqZm7i9PM=
+			EC0ujE/Me8CUVUw1EBMaLdUzjxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			W/vVKFz9KAG9My1aGn/hZ5bX1y8ODWHpwDiaQy+k5W4=
+			YsDXLRj2V88gecdDisPgKziOCqQ07auUzlKI3un04UE=
 			</data>
 		</dict>
 		<key>Headers/PSPDFLogging.h</key>
@@ -5745,11 +5875,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bzExCQQNBerwdNwFoIgK1OwZZG0=
+			U4s8nXxIJ30e1ikgQ1uvQiPVGgQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			OQbhkjzZE02ExZrAyo31r2buH4CvmSddh9noHVZ56fQ=
+			O4E0+IcizlI/g2hu+S4/6pUaQhtPN5JbM5QCrCbjfWw=
 			</data>
 		</dict>
 		<key>Headers/PSPDFMediaPlayerCoverView.h</key>
@@ -5796,6 +5926,17 @@
 			kHicE920KyHoWlhBFkNRbxUYsCYaMnhKcVUgKedwx1M=
 			</data>
 		</dict>
+		<key>Headers/PSPDFModel+NSCoding.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7WsWbuOIjPGtl0s20ZxR0RPRBlU=
+			</data>
+			<key>hash2</key>
+			<data>
+			sjkOOZTARdJPg+laD+NgRnQHtx+cL+OgZYrWgVXaKWQ=
+			</data>
+		</dict>
 		<key>Headers/PSPDFModel.h</key>
 		<dict>
 			<key>hash</key>
@@ -5811,11 +5952,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Whb7nSunC9oZghsIL5w8fap9uYg=
+			gQXKxh5dtdPv+dyKb6vDgmnaCYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			rB0a1QMeLtUNWrg5yjSAxaIqcBfmhWKzw6RwnpM3i78=
+			2i6qOdzO6/LYJeaLnIXw6lKviMKrNvD1SUeAui5Qj5o=
 			</data>
 		</dict>
 		<key>Headers/PSPDFMultiDocumentListController.h</key>
@@ -5833,11 +5974,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5XxbRipeVuGKohqD945dODU/94E=
+			h7n5VqDmjTM+wt7Dk2VB2mc80Y0=
 			</data>
 			<key>hash2</key>
 			<data>
-			AG+FlTkBMJe5it8wmJtu0ycuvm3xAI+988hM6zIijN0=
+			THYxmZaWgs39rC2Jk32JJi2P6xpID3JJ5+z/n2xrd3I=
 			</data>
 		</dict>
 		<key>Headers/PSPDFMultimediaAnnotationView.h</key>
@@ -5877,11 +6018,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gcqm06newHeof2jsGw6gWanHj68=
+			pUjI7ciYDIn6rAYD5quoroAmLNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UbMTj+9dGiojiUqqVPPPdhLdbJAcymiRjqSGfCGKJR8=
+			RmYYLzH2bh+rNmULn/T3u24jPjNYAZEVFxw5m9xXYEc=
 			</data>
 		</dict>
 		<key>Headers/PSPDFNavigationItem.h</key>
@@ -5910,44 +6051,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xIFuvuYSHtaGiZggaxBZmsiq1YQ=
+			sToeTnzrntVXiYEBGKCL4Iqvh0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			7/30NG15BkJyHz+cLpuOzhGoj8cMeoRiw4oEdku+atM=
+			PS+LjOq8pq2LSfcztaq6r1wEsHjKQHH073EQ9EKqNQs=
 			</data>
 		</dict>
 		<key>Headers/PSPDFNewPageConfigurationBuilder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			668EPouaYpFglETzq7BljntzDiE=
+			injeLx38DN6qoL7DFdVVKBvQ3YE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kce4jUsL7tFa9VCWeKD3kopXfQ2VzKeZCKSHB2ZQA3M=
+			JVBhQDhmze38NrkSGsgGrHVsORNbixgMEygPTRfdZQE=
 			</data>
 		</dict>
 		<key>Headers/PSPDFNewPageViewController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QGZBhKIr2voxp3BBXoDU+M2wbx0=
+			taZoPDcvJoJKs91fg2jvL+ewFn0=
 			</data>
 			<key>hash2</key>
 			<data>
-			q9RyFZP1lhZGdaCBAsafXEm3XfnTETxV3USb8mxvarg=
+			uR5eWhpI737HUy5P9J55sAZm8BeMTR0c4zB8ndSWJUM=
 			</data>
 		</dict>
 		<key>Headers/PSPDFNoteAnnotation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RzaU711R3Y7Fc+IlHEUdvZi+SsM=
+			6VYLz1xqyJcbXFwPPRha6DK5x7o=
 			</data>
 			<key>hash2</key>
 			<data>
-			vX42ruzX8DHeuH5c/zfOsKkKfLG3qqGNacptVi9PNd4=
+			hwY0NPxkT3BVzmVO4IvNFVXb/jmYqM8ygRw0vmdLlIU=
 			</data>
 		</dict>
 		<key>Headers/PSPDFNoteAnnotationView.h</key>
@@ -6031,11 +6172,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NQsfLsaXQzETUigMdjUhooWtg/0=
+			nbmE2r9NHs+2rwF6QfPAE1xXinY=
 			</data>
 			<key>hash2</key>
 			<data>
-			KTIHjIpIe1/r/5ruD48/NjccYo8kjMbvn78b6W1Vqk0=
+			roJGc3Ui+Um6rEyKHkQi5gk8vl/sAp2WpfdswbTOEvk=
 			</data>
 		</dict>
 		<key>Headers/PSPDFPKCS12.h</key>
@@ -6064,11 +6205,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1FAfGF1AqaAmz+G91R2VTok4rHg=
+			OfKWWJVECkTeJ2mW1Ejeq0Hhz9w=
 			</data>
 			<key>hash2</key>
 			<data>
-			FjLS7wxAy9E74ucwXK2uD2XbnnYfrlFbQcO+eYvpNFU=
+			jT6TFymiGjp9b4tP5Zj0ud1n9dksImuyk+9vyThBzBI=
 			</data>
 		</dict>
 		<key>Headers/PSPDFPageInfo.h</key>
@@ -6119,11 +6260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cILO8hnH6BJD/4vXEJXJK4vM+eE=
+			0xTbjyoHJLjTThN6nLbQoiBOI7k=
 			</data>
 			<key>hash2</key>
 			<data>
-			InXe/ZOiRZmIm4q6Fwa564fYHcX3r3T/kq7oYOfcVwI=
+			egsjaIume1SH5rdVKA1szg784R1L6iezd9kVf9PiqFA=
 			</data>
 		</dict>
 		<key>Headers/PSPDFPlugin.h</key>
@@ -6207,22 +6348,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bLThKLKFS0WywPLlYWMAALwptsE=
+			hOI4dkKuar3c3pVYPzkw/OT7v+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			0OVNM21KwEsEt5ML5yNFZLbUXNh5vijpDe6m8/NS3f0=
+			n32yWeyluksg1qXykF6BSHkj8ukEx9gZ3Is7MqQ79wg=
 			</data>
 		</dict>
 		<key>Headers/PSPDFProcessorConfiguration.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DiUslHvGuOKNtuM5Cj0V6MPD8pk=
+			qAmLgtgvDRE8UjMp02GiSAxWweE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ue192WfjNbJF3R8vfKlTu2MqQsJdW0Yz0s9QamNKYCk=
+			zF34lM/0CjPBXK2AbJ5bKpBOBSd+X1VZFWKAtZZPq8k=
 			</data>
 		</dict>
 		<key>Headers/PSPDFProcessorItem.h</key>
@@ -6240,22 +6381,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h1BwAnoyZ33URaJbiVMIbGq5C3w=
+			rc19xKNdE0I0+W+UcVmWNcldvxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			cwfmbKoUtFi0XSp3QsB6TUtlxrGbx+unhdOsrVokEL4=
+			lwUSBwxwSQq6WO3GU+8INXxe1CazGgK9B8a7mLj44BE=
 			</data>
 		</dict>
 		<key>Headers/PSPDFProcessorSaveOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Pj0V9nZz2YkxlmEOD+w4YBnbBJ0=
+			JrSoBMIYF8KisFLs3LveF/+LmAs=
 			</data>
 			<key>hash2</key>
 			<data>
-			u/hzh8XgTnx0Zz+6fLU4IXrq29q+ilQ8RaU6hByYDhg=
+			KU0DAePvh3vVc4JqRe9npwN1s90giIGjSwiDYXxTg4Q=
 			</data>
 		</dict>
 		<key>Headers/PSPDFRSAKey.h</key>
@@ -6273,22 +6414,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DVojRY1qxqAenfIWWbNsmU+w6Vg=
+			ayrZKlrNzuIa9nVFOxW/NCW53rg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ox9pGOdBqLFVqXOKIWEBU0guZEAgmjRBjNM1e3d749o=
+			TSpCPsUVdYaeJHGx29SV7tY/QrXrGOaRYycHdOAAh98=
 			</data>
 		</dict>
 		<key>Headers/PSPDFRectAlignment.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RtR1Om8czDHME0l5CjRFHfnOkrs=
+			1J22jSwR2dLkn61K5eD035zQfGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			MJy/Plxw3GjwNhQZEAfx+nmN3qBjITqvQki+Zq6Flkk=
+			hZ27kVk/yZJ3w993LNYO1VrwLrBPaeHrdSFNGocDbYI=
 			</data>
 		</dict>
 		<key>Headers/PSPDFRelayTouchesView.h</key>
@@ -6350,33 +6491,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j6F2pGVx+1uZBySJl6YTEAkumFM=
+			52A/0F8msVm2RmAgHD8fXuPOQBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			a9HqenxNIxk7w2SzYouEBAcG11qXgunTbBNKxwG6ffo=
+			iaa5vnGJjS6LLekDPuCHN8PYUM6/Dz0EpNr5AWvDLEY=
 			</data>
 		</dict>
 		<key>Headers/PSPDFRenderQueue.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YnJTSe1msC6bRr0amvFG9NnBqn4=
+			orD6TRXIs7B6qdrgmyo57AnP0No=
 			</data>
 			<key>hash2</key>
 			<data>
-			BEJNAoYqHhFZd3mRscQoSfvp1PW+iJQQ1nRFDl3SMaY=
+			Dz+Irk1tFEeQafWPU5TCBeNLYccFB8LK7Vmqek4MVQI=
 			</data>
 		</dict>
 		<key>Headers/PSPDFRenditionAction.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tKHx6ws+lLro9nQ4UpBJD446bas=
+			sT/0KEhIzJ1yLIA+DfYl+LYAqvc=
 			</data>
 			<key>hash2</key>
 			<data>
-			b4KVw3oEZr+37Srnb5TwRIBeYxa28jy6EC5js5E/UNU=
+			WSq5USqeuSts96umKpRKo85u8uZBCA/ZPah5VuBRIL8=
 			</data>
 		</dict>
 		<key>Headers/PSPDFResetFormAction.h</key>
@@ -6394,11 +6535,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LBiklHbsF/NIypA7WqvPdvp6M/g=
+			RYa9V7pDCtQVOcyp7dp8ED6TsZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			OmspwUPPGu9T5BXmrwpVs6CxdXTm/lYUg3lvPETSx7Q=
+			mQ5khbO8rk16zMBig5mxZSJ5KSUvH3ygDxle1TtBdh0=
 			</data>
 		</dict>
 		<key>Headers/PSPDFRichMediaAnnotation.h</key>
@@ -6438,11 +6579,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MijsYwbHMzk30dIexRCTvsIRDO8=
+			bL+f1FPaH3lf3MVTTcXXb6jNk6E=
 			</data>
 			<key>hash2</key>
 			<data>
-			onYGNpujxhrq1kJejcKbdTUG4XeHKLG13UP76o3T0y4=
+			ZmIM/rlijA3UX7mikn+7DeKExd/hfgQXlQyeMY7oZAQ=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSavedAnnotationsViewController.h</key>
@@ -6504,11 +6645,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bE/WVBbgWuONoA8GmyXeefrb+2w=
+			zqFL+iwFuXHIct9llO4/VSIBRVE=
 			</data>
 			<key>hash2</key>
 			<data>
-			W0bSBgE5LGfcZrd6Q/SiJl2t+N8GGoZAT63ykEfx+Tw=
+			m/S5rxaZqos5XRFCQ3kHdtfTiWcYj5nypXa4OO0wudA=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSearchResult.h</key>
@@ -6526,11 +6667,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			olOHI2oP+CHHqIY3X7d4QrgZmCY=
+			zLsR4bFGsTzleC0u/Hv9+V+ibF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6N4ToJD0OQDiRTSaiDuz/4iLdMyvUEV2LS34i/2xq0k=
+			dJ89JNvrIhOpTsvLN5aDoellafqIvDyVVvX2KMaDZZc=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSearchStatusCell.h</key>
@@ -6548,11 +6689,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rRqPccfWHaTtQ4x0/g40ZSg3Y5Y=
+			NDauMUGXbFsnn8ySVTgmUe5HbE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			5AuW2sbH175g/McH++a8f1qLfbZygnPmVL5+TYLzf6M=
+			Ch/3nkPvkNTTgtFIbZ3eOp6kd/sI4FoUEfcixbsO3mM=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSegmentedControl.h</key>
@@ -6586,6 +6727,17 @@
 			<key>hash2</key>
 			<data>
 			xYzQJ8g/4MLvvEgRs+67ApHC39dFBoKxexkQz2jvrCc=
+			</data>
+		</dict>
+		<key>Headers/PSPDFSettingsViewController.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m16HAoee7/4RAl0BgWWwePLpoLc=
+			</data>
+			<key>hash2</key>
+			<data>
+			5Qxn8mksUxkPDKZ/tlkgmZkk/kXmCZlj/oyr7IHZMgI=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSignatureCell.h</key>
@@ -6625,11 +6777,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nRmxLqvSXysjCdFdmXO0EeAoTE4=
+			MXTjSvMoog79EoxiV5W/dEtZ/sA=
 			</data>
 			<key>hash2</key>
 			<data>
-			NtYGvYvoXX8Z/17UMT3PdMbSVSo0c5Qi5GebK6K5CRA=
+			AV4zetzL4UB8C3bIzxydlwRdm1Ap/vXyQlsqpQ8xOWI=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSignatureSelectorViewController.h</key>
@@ -6713,11 +6865,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ic9mgB1FWS4v90P4QS5FQZ2wAvQ=
+			ekRbt6IuBy4tETpVpOv6NlucWts=
 			</data>
 			<key>hash2</key>
 			<data>
-			ONf+5wSM+xGn5ClFOV0PNEi+Vj1aAXpY5E2tzWKiKT8=
+			oROuP8NGlYZIXsQe7l3VMQsA7l9oOLA7vXUJuffLkAo=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSoundAnnotationController.h</key>
@@ -6735,11 +6887,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V23BhGJzdxknlIcUJ1ovDlCmS9g=
+			OqvDE1jVkb6Oe5H7WR50iF/++rk=
 			</data>
 			<key>hash2</key>
 			<data>
-			cbJwiZb01y2PzpjuYwlJpGUwpoU/K0BjESov3H7A/Bo=
+			DWQStRNb1QIHCgT3wXH2Fa6rfIgGlNI0yOXKeaV73ts=
 			</data>
 		</dict>
 		<key>Headers/PSPDFSpinnerCell.h</key>
@@ -6900,11 +7052,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JPHnMoZ/C8+9hTpyCGi7jTHk4ko=
+			UUIZEYfq7W5lDYk+FaKlvbz/Pjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			B18k85rrsWymgqSTXAeJ6NqQqxVgB2PWLbYFJw+NrqI=
+			7uQ6+sqtnDDm1Bl9RIdqwJwZcEzAqUh1JHjMR7ZTZP0=
 			</data>
 		</dict>
 		<key>Headers/PSPDFStylusViewController.h</key>
@@ -6977,11 +7129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M8R2hC2UPMudxhs3p5WT3/+cfLc=
+			Fd0mEALwnESUvOfGgkArGKmkyE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			pjdOV+Q+G/+2IK6VWEJtKh0kesMGVUQDMNwX360M59o=
+			oGXLnCusHa1x6Z392MTyuh2+vgcFyYpN6sVVENANCZA=
 			</data>
 		</dict>
 		<key>Headers/PSPDFTextFieldFormElementView.h</key>
@@ -7054,11 +7206,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			29OgFefHYc1EEz4l8veRzUUE5wM=
+			kmdBv7ITbhr/cCiCMqYsZA3uUaM=
 			</data>
 			<key>hash2</key>
 			<data>
-			g21RTixCiUM7I15iDqOvpZ6WY5gcoh/txFp/o41knGg=
+			ZlgPQZl4I38XfcdimxzCtCr6cS4GSvWzPLXwZjDqCjs=
 			</data>
 		</dict>
 		<key>Headers/PSPDFThumbnailGridViewCell.h</key>
@@ -7076,11 +7228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7KC1YRj03f6sykkVQdw/WVLJuEQ=
+			LTQeXB+vzzxogvpPqdXWtfLiUnk=
 			</data>
 			<key>hash2</key>
 			<data>
-			+/YsKZomy5TMrvJW/YJEpYxihhkhwO768Pioo3HtVpA=
+			+MINhgok1LZKGMUb/W84cUGA030RAJLUCI3Z5g6hNRw=
 			</data>
 		</dict>
 		<key>Headers/PSPDFToolbar.h</key>
@@ -7098,11 +7250,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VXOscRM4nXwLwwfjoe3Oq909q6k=
+			udEUr06EERS3Fw8UnEYuKUXxLoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			virYBUsIsUjOGk3zCMk19Ws8/Hdiwr/T3To+tKZ+5B0=
+			3cHhzGqEDIH5v78nvKUKMU9184ZbFg7TIWKvcyxmujA=
 			</data>
 		</dict>
 		<key>Headers/PSPDFURLAction.h</key>
@@ -7131,22 +7283,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VN+Ks2b1wlPsJ3c2LGekE3F/UcY=
+			7OXVcTdk1L0EfZlqnVkKPpxLjZU=
 			</data>
 			<key>hash2</key>
 			<data>
-			sZ6tPhL/isTSndK6iw5IpVereOSSSlFrzHcxpJ5+kio=
+			xhufm/E0+HIuZJ3s5mHyuFtzZulDP8J6EmDapO7S9hs=
 			</data>
 		</dict>
 		<key>Headers/PSPDFUndoProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E48KJn4Ota5tzKz4Q+cSl7IBSdw=
+			IQ5fpL/qBz2g/rNSWunH6WvLRwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SUL4lattJ6re6kyxV1SttixI4oAuN67WTIhGJocvvfU=
+			qbfuNGHi90wXQzIjTMo8jGI+JJFStujPlJimcCH2lwc=
 			</data>
 		</dict>
 		<key>Headers/PSPDFUnsignedFormElementViewController.h</key>
@@ -7164,11 +7316,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			REBXU5h/F8T4oTnoiesIXm/4dj8=
+			jVBjzt/2Sb0xz8/7yL1dc8gJ8tQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			P32NuiiRS4J9p9aP3shl9tp3n+9gnA+8c1kNlpiBjfk=
+			s926iEfcT8MJBN/8FwDKtfDtUkDXet+vZI76gZdeE8Q=
 			</data>
 		</dict>
 		<key>Headers/PSPDFVersion.h</key>
@@ -7197,11 +7349,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RyXSvC33lgJgibRfVgOrD4nuiPw=
+			jJ81P7avjrqf8FhGl/L7ITtqiEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			znjVISqK4P8JfKDq2V3gGwPw2k3GAQXTtUt1At1ysnA=
+			2CDhQoBt07KJMBAdlzpsz8hG+SKrWCxrktIfh2MHnOQ=
 			</data>
 		</dict>
 		<key>Headers/PSPDFViewControllerDelegate.h</key>
@@ -7219,11 +7371,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0YcUFu7TaugBoZHQL+I+jPdznJ0=
+			oHvP0Fv+kdW7sA78QUS3ehY3xj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			GDyHC74ls3PD7K6rAQOnmDvqRY6HbjjIB1vk85ueAAU=
+			9A3tRitP0mEOOL1Fr1qG156PKVkDLQVsuiHhlgCKf8I=
 			</data>
 		</dict>
 		<key>Headers/PSPDFViewState.h</key>
@@ -7307,11 +7459,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1GQY6P+349fhlm0yTG/dg21HXKQ=
+			zFlM1pzIecsqv3kibiiAHa9pEM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			UlgA+9SfdujmUqZ8m6wDnKZAIMHCY/P8LDqwaRGqqHs=
+			eFSxoRajkG82sq3Zbytc3UT9Xv8e9seFe1oqdWFG2Hs=
 			</data>
 		</dict>
 		<key>Headers/PSPDFXFDFWriter.h</key>
@@ -7351,11 +7503,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7kkQpDvV6u7Ed0bvB26gzxh8V/Y=
+			KTCrQlSMoY1CQLl7bJoeuHdQhZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y0iw0Y2iz0cYyP7dzlcnwXSpxfIV+HPF9P8qcXncUcc=
+			XbmSceBOmSJR1d6v7kuADNzZvhhvwMPmJMVUvIQVl6M=
 			</data>
 		</dict>
 		<key>PSPDFKit-LICENSE</key>
@@ -8473,11 +8625,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aSWDgA32R1L28ROb/W5XaypqrxM=
+			+JXED+vCbr8svpuxBkWHxB0b6uI=
 			</data>
 			<key>hash2</key>
 			<data>
-			VIIKVpy3RtLLTsjQHwyq/elRFFS3rmCRGPS4juiFF04=
+			qXw+H5SQbN2anNA/X/BbaCNUxfBp6F3HgFM/N+zEqLc=
 			</data>
 		</dict>
 		<key>PSPDFKit.bundle/colors-vintage.plist</key>
@@ -9062,6 +9214,72 @@
 			<key>hash2</key>
 			<data>
 			3/i/eMvl+seXD6ZWusp++ifTQWdREyPWZKIEJGB3LkY=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/document-pdf.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WBs2B75ha3tBK0R0etal/N64pNI=
+			</data>
+			<key>hash2</key>
+			<data>
+			a8ymFRA69Wkh+aUKfeLZcqmuIylHd2L4ZdvjidKkE74=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/document-pdf@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pPUB75rJ1NuUiVB1x6k04kXmjrg=
+			</data>
+			<key>hash2</key>
+			<data>
+			eJ30+MhPohsQ8i1/m2M2wZk8+8NGUJMxXSVovkAPXO0=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/document-pdf@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lpnAkkoNzZYONYSH3cDkUr4V+Ck=
+			</data>
+			<key>hash2</key>
+			<data>
+			sD8PmTvL0J8cA1xBNcoDebnl4t4Skmi9G3t29bsXlxc=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/document.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LiMYvnD5gAfJ3pfg+mbsZNG/d1I=
+			</data>
+			<key>hash2</key>
+			<data>
+			ielzzTknM/dZDjKOBUGMatagxhsAMv8Ot97dkjlKraM=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/document@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HwgPiKUqvJFiBJh8cjVTn3WSoKs=
+			</data>
+			<key>hash2</key>
+			<data>
+			eExkis9Dm6u2n6kPlxxznJqvul6whwT52OY81BdSXdA=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/document@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jqlGtNjevwwojdM4H9ym46sgGsU=
+			</data>
+			<key>hash2</key>
+			<data>
+			uJvrfuSy/EXsTQWZfdfwLjk2UkAg13NDD4oF9/xAEok=
 			</data>
 		</dict>
 		<key>PSPDFKit.bundle/edit-annotations.png</key>
@@ -11774,6 +11992,72 @@
 			jLDHNOhEyHnFNJf2VYe8cB7QCblIkiuKOSsw7+do1eo=
 			</data>
 		</dict>
+		<key>PSPDFKit.bundle/page-curl.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a3aNWD1r9PB8NCPrcQ/ZXUpI8Iw=
+			</data>
+			<key>hash2</key>
+			<data>
+			fYt7Gt6UyeRjpDfEMGgv662bn56cV6NQUP1oNHeaPYA=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/page-curl@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IZc0F0HsNTCKGMpwXKsBdLNbETk=
+			</data>
+			<key>hash2</key>
+			<data>
+			nJHZ5dKZx3Ja3MvZ3aX7wAwjlNjscp9BBSW5jpPCGoY=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/page-curl@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cs6YqX+Pe+uOK6ys1YBKJE9Q9dM=
+			</data>
+			<key>hash2</key>
+			<data>
+			lbN8jk9WbPRulxxZ4K6xfgziCz9h1DagI0pS8JlNxy4=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/page-mode-single.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jl7P5D5LwB702aRmdXPlkB5YxlI=
+			</data>
+			<key>hash2</key>
+			<data>
+			d+MmXY/CGkcgjTjHzEcdfqE9A/QXbJpn4aNX68Q1tiQ=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/page-mode-single@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jVh+mxA0ezpG+BEBTJmni16lclk=
+			</data>
+			<key>hash2</key>
+			<data>
+			hD7wi7DLzWbmEb0WD1xr0mLtk3FtuitUz5RUNzZSqbo=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/page-mode-single@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sjhgIi+ntkrQb0CnIN7PK4SCCeA=
+			</data>
+			<key>hash2</key>
+			<data>
+			seWUW25mblOQafpl78th9tbl7CJ0uxF3HK/BniFiJ94=
+			</data>
+		</dict>
 		<key>PSPDFKit.bundle/pl.lproj/PSPDFKit.strings</key>
 		<dict>
 			<key>hash</key>
@@ -12153,6 +12437,72 @@
 			tYQ5FixtsnsL/7VrXAeCU0QwU21x5cQNd6ZbJ1IGt0Y=
 			</data>
 		</dict>
+		<key>PSPDFKit.bundle/scroll-horizontal.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0DvT4FK/FRTLPhDx7HVCgLE5Uek=
+			</data>
+			<key>hash2</key>
+			<data>
+			7lu8Lj4nE5puhBPWf3bf61QMBh1M2mPYwkO/K6D8Y1E=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/scroll-horizontal@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XhRIOcAyutZeyQnyCUHLg4DMhsg=
+			</data>
+			<key>hash2</key>
+			<data>
+			+ez9ZbGsiIdfNt9uhyEG8e4GJ9D5At1dvTSHKR5SsOw=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/scroll-horizontal@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kJhW3Ih4F0bZclHMwP1MFaDXNHc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ehh8edM0n97cI5IkLUoZTwWY6KOIZYfpxb8WU8vPV7A=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/scroll-vertical.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9jUKNhgDiVNfqvOUmE4Hy2reTlo=
+			</data>
+			<key>hash2</key>
+			<data>
+			snxtbUIEFvoPm4yv7WpEQ/3jVulaw6gqR33faVdYqCc=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/scroll-vertical@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1VK/p/KN3rdXIl2y1y1/WWxwMQE=
+			</data>
+			<key>hash2</key>
+			<data>
+			DeQMuT0gaslk28y/Zs2OXqYVaFkdaNcqR27SG6edP1E=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/scroll-vertical@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VgahdiaxhQpOljWbSrC+phC/ypg=
+			</data>
+			<key>hash2</key>
+			<data>
+			xvCPcsKJBVHqEZA4KwbE4NoMAcmzDWdH8h6BtVbLOxI=
+			</data>
+		</dict>
 		<key>PSPDFKit.bundle/search-activity-7.png</key>
 		<dict>
 			<key>hash</key>
@@ -12338,6 +12688,61 @@
 			<key>hash2</key>
 			<data>
 			0zzBfVti/jojasfsT8gRrBgXaG4ikGniWbNDZFwyci0=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/settings-landscape.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U2nf22+ErWtLigc7kHHD9Zdzm5E=
+			</data>
+			<key>hash2</key>
+			<data>
+			wiiQckkV8VDtfE75AE5z4FLXuiqAEce2mh4xgX4sB+M=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/settings-landscape@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iLZ51+EaZ6jevrUZzZJLZ13oz2U=
+			</data>
+			<key>hash2</key>
+			<data>
+			TuKB84l9fYYCEqOXarDzMe3zIJGAzriOviuNBnEFeRM=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/settings.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U2nf22+ErWtLigc7kHHD9Zdzm5E=
+			</data>
+			<key>hash2</key>
+			<data>
+			wiiQckkV8VDtfE75AE5z4FLXuiqAEce2mh4xgX4sB+M=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/settings@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iLZ51+EaZ6jevrUZzZJLZ13oz2U=
+			</data>
+			<key>hash2</key>
+			<data>
+			TuKB84l9fYYCEqOXarDzMe3zIJGAzriOviuNBnEFeRM=
+			</data>
+		</dict>
+		<key>PSPDFKit.bundle/settings@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oJPW9eW08xiriAh9qQ7nwRSg7ik=
+			</data>
+			<key>hash2</key>
+			<data>
+			f58GIc3oR1UgY+sVvsH1BQwCvnkpNS5NaLH3Xt9LvRQ=
 			</data>
 		</dict>
 		<key>PSPDFKit.bundle/share.png</key>

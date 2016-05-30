@@ -22,6 +22,8 @@
 #import "PSPDFApplication.h"
 #import "PSPDFConfiguration.h"
 #import "PSPDFControlDelegate.h"
+#import "PSPDFErrorHandler.h"
+#import "PSPDFExternalURLHandler.h"
 #import "PSPDFViewState.h"
 #import "PSPDFKit+PSPDFUI.h"
 #import "PSPDFPresentationContext.h"
@@ -52,12 +54,15 @@
 #import "PSPDFAnnotationGridViewController.h"
 #import "PSPDFStaticTableViewController.h"
 #import "PSPDFBaseTableViewController.h"
+#import "PSPDFBaseViewController.h"
+#import "PSPDFSettingsViewController.h"
 
 // @category: Main Views
 #import "PSPDFPageView.h"
 #import "PSPDFPageView+AnnotationMenu.h"
 #import "PSPDFContentScrollView.h"
 #import "PSPDFPageLabelView.h"
+#import "PSPDFBackForwardButton.h"
 #import "PSPDFHUDView.h"
 #import "PSPDFScrollView.h"
 #import "PSPDFTextSelectionView.h"
@@ -86,6 +91,7 @@
 #import "PSPDFHostingAnnotationView.h"
 #import "PSPDFFormElementView.h"
 #import "PSPDFFormInputAccessoryView.h"
+#import "PSPDFFormInputAccessoryViewDelegate.h"
 
 // @category: Forms
 #import "PSPDFFormRequest.h"
@@ -110,6 +116,7 @@
 
 // @category: View modes
 #import "PSPDFViewModePresenter.h"
+#import "PSPDFControllerState.h"
 
 // @category: Thumbnails
 #import "PSPDFCollectionReusableFilterView.h"
@@ -175,8 +182,11 @@
 #import "PSPDFSignatureValidator.h"
 #import "PSPDFUsernameHelper.h"
 #import "PSPDFStyleable.h"
+#import "PSPDFVisiblePagesDataSource.h"
 #import "PSPDFAppearanceModeManager.h"
+#import "PSPDFBrightnessManager.h"
 #import "PSPDFNavigationItem.h"
+#import "PSPDFColorPicker.h"
 
 // @category: Signatures
 #import "PSPDFSignedFormElementViewController.h"
@@ -186,6 +196,7 @@
 #import "PSPDFGalleryConfiguration.h"
 #import "PSPDFGalleryView.h"
 #import "PSPDFGalleryViewController.h"
+#import "PSPDFGalleryContentViewProtocols.h"
 #import "PSPDFGalleryContentView.h"
 #import "PSPDFGalleryImageContentView.h"
 #import "PSPDFGalleryVideoContentView.h"
@@ -201,13 +212,16 @@
 #import "PSPDFMediaPlayerController.h"
 #import "PSPDFRemoteContentObject.h"
 #import "PSPDFMultimediaViewController.h"
+#import "PSPDFPresentationActions.h"
 #import "PSPDFGalleryItem.h"
 #import "PSPDFIdentifiable.h"
 
 // @category: Stylus Support
 #import "PSPDFStylusManager.h"
+#import "PSPDFStylusTouch.h"
 #import "PSPDFStylusViewController.h"
 #import "PSPDFStylusDriver.h"
+#import "PSPDFStylusDriverDelegate.h"
 #import "PSPDFAnnotationStateManager+StylusSupport.h"
 
 // @category: Assisting Views

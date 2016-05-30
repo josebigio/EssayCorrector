@@ -29,6 +29,9 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFFile : PSPDFModel
 /// Data representation. If not set at construction time, we try to memory-map it on access.
 @property (nonatomic, copy, readonly, nullable) NSData *fileData;
 
+/// The mime type of the document as derived from `fileName`, falling back to `application/pdf` if no mime type could be derived.
+@property (nonatomic, copy, readonly) NSString *mimeType;
+
 /// Returns either the set data, or a memory-mapped version of `fileURL`.
 /// Guaranteed to not return an empty NSData object.
 - (nullable NSData *)fileDataMappedWithError:(NSError **)error;

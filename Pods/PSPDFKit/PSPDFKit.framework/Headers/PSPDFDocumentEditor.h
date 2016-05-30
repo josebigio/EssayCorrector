@@ -10,8 +10,7 @@
 //  This notice may not be removed from this file.
 //
 
-#import <Foundation/Foundation.h>
-#import "PSPDFMacros.h"
+#import "PSPDFEnvironment.h"
 
 @class PSPDFDocumentEditor, PSPDFDocument, PSPDFEditingChange, PSPDFNewPageConfiguration, PSPDFProcessorSaveOptions;
 
@@ -19,12 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^PSPDFDocumentEditorSaveBlock)(PSPDFDocument * _Nullable document, NSError * _Nullable error);
 
-@protocol PSPDFDocumentEditorDelegate <NSObject>
+/// Delegate that can be implemented to be notified of changes that the document editor performs.
+PSPDF_AVAILABLE_DECL @protocol PSPDFDocumentEditorDelegate <NSObject>
 
 @optional
 
-/// Called whenever a document operation performs changes. Use the provided `PSPDFEditingChange` objects to
-/// update the UI.
+/// Called whenever a document operation performs changes.
+/// Use the provided `PSPDFEditingChange` objects to update the UI.
 - (void)documentEditor:(PSPDFDocumentEditor *)editor didPerformChanges:(NSArray<PSPDFEditingChange *> *)changes;
 
 @end
@@ -138,7 +138,7 @@ PSPDF_CLASS_AVAILABLE @interface PSPDFDocumentEditor : NSObject
 /// @name Rendering
 
 /// Returns the rendered page as an `UIImage` with custom scale.
-- (UIImage *)imageForPage:(NSUInteger)pageIndex size:(CGSize)size scale:(CGFloat)scale;
+- (nullable UIImage *)imageForPage:(NSUInteger)pageIndex size:(CGSize)size scale:(CGFloat)scale;
 
 @end
 

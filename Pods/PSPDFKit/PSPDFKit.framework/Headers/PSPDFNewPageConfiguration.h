@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, PSPDFNewPageType) {
 
     /// A page from another document
     PSPDFNewPageTypeFromDocument
-};
+} PSPDF_ENUM_AVAILABLE;
 
 /// Specifies a pattern for a new page with a dot grid that is 5mm apart.
 PSPDF_EXPORT NSString *const PSPDFNewPagePatternDot5mm;

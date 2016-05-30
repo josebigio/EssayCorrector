@@ -23,6 +23,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol PSPDFDocumentDelegate;
 
+/// A document posts an underlying file changed notification each time one of the
+/// backing files of the document is changed and the change did not originate from
+/// the document itself.
+PSPDF_EXPORT NSString *const PSPDFDocumentUnderlyingFileChangedNotification;
+
+/// The underlying file url key identifies the file url of the changed file inside
+/// a `PSPDFDocumentUnderlyingFileChangedNotification`'s user info dictionary. It
+/// is of type `NSURL`.
+PSPDF_EXPORT NSString *const PSPDFDocumentUnderlyingFileURLKey;
+
 /// The `PSPDFDocument` class represents a set of PDF sources that are displayed as one document.
 /// The typical use case is one `fileURL`, however we also support `PSPDFDataProvider` (including `NSData`) as sources.
 ///
@@ -356,7 +366,7 @@ typedef NS_ENUM(NSInteger, PSPDFAnnotationSaveMode) {
     PSPDFAnnotationSaveModeEmbedded,
     /// Tries to save into the PDF if the file is writable, else falls back to external file.
     PSPDFAnnotationSaveModeEmbeddedWithExternalFileAsFallback
-};
+} PSPDF_ENUM_AVAILABLE;
 
 @interface PSPDFDocument (Annotations)
 
